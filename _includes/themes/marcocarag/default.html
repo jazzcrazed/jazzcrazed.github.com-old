@@ -37,27 +37,7 @@
     <h1 class="logoType"><a href="/" class="blockCutType">Marco Carag</a></h1>
     <h2 class="">Expert <span class="sansSerif">&hearts;</span>er of things.</h2>
   </header>
-  <div role="main" class="boxContainer">
-    {% for post in site.posts %}
-    <section class="box box2 postPreview">
-      <h1>
-        <a href="{{ post.url }}" class="deeplyEngravedType">
-          {{ post.title }}
-        </a>
-      </h1>
-      <time datetime="{{ post.date | date_to_xmlschema }}">
-        <b><i>{{ post.date | date_to_long_string }}</b> - {{ post.time }}</i>
-      </time>
-      {% if post.image %}
-      <div class="postImage">
-        <img src="{{ post.image }}"
-          alt="{% if post.image-alt %}{{ post.image-alt }}{% endif %}" />
-      </div>
-      {% endif %}
-      <p>{{ post.description }}</p>
-    </section>
-    {% endfor %}
-  </div>
+  {{ content }}
   <footer>
 
   </footer>

@@ -22,8 +22,34 @@ html, body {
 
 body {
   background-color: #046;
-  // @include background-image(linear-gradient(top, #057, #002944 66%));
   color: $copyColor;
   padding: .5em;
   @include text-shadow(1px 1px 0 rgba(0, 0, 0, .8));
+}
+
+p {
+  line-height: 1.8em;
+  margin: .5em 0;
+}
+
+code {
+  color: $lightCopyColor;
+}
+
+small {
+  font: {
+    family: audimat;
+    size: .75em;
+  }
+
+  a { font-weight: normal; }
+}
+
+pre {
+  background-color: #123;
+  color: goldenrod;
+  @include border-radius(.5em);
+  @include box-shadow(inset 0 0 10px black);
+  padding-top: 1em;
+  text-shadow: none;
 }

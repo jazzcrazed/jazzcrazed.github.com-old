@@ -3,33 +3,21 @@
    ========================================================================== */
 @mixin blockCutType($forecolor: #eee, $shadow1: #666, $shadow2: #999) {
   color: $forecolor;
-  @include text-shadow(0 .02em .05em $shadow1, 0 .07em 0em $shadow2, 0 .15em .2em rgba(0, 0, 0, 0.75));
+  @include text-shadow(0 .01em .05em $shadow1, 0 .06em 0em $shadow2, 0 .15em .2em rgba(0, 0, 0, 0.75));
 }
 
 .blockCutType {
   @include blockCutType;
   &:hover,
-  &.red {
-    color: #e44;
-    @include blockCutType(#e44, #700, #a00);
-  }
+  &.red { @include blockCutType(#f64, #700, #d00); }
 }
 
 .deeplyEngravedType {
   color: $darkCopyColor;
   @include text-shadow(
     -1px -1px 1px rgba(0, 0, 0, 0.85),
-    1px 1px 1px rgba(255, 255, 255, 0.3)
+    1px 1px 1px rgba(255, 255, 255, 0.4)
   );
-}
-
-a.deeplyEngravedType {
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  transition: all .2s;
-  transition: all .2s;
-  &, &:visited { color: $darkCopyColor; }
-  &:hover { color: $hoverColor; }
 }
 
 .embossedType {

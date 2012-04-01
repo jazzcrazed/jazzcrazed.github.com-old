@@ -1,4 +1,35 @@
----
-layout: default
----
-<h1>{{ page.title }}</h1>
+<div role="main" class="post">
+  <h1>{{ page.title }}</h1>
+  <div class="clearfix">
+    {% if page.image %}
+    <div class="postImage">
+      <img src="{{ page.image }}"
+        alt="{% if page.image-alt %}{{ page.image-alt }}{% endif %}" />
+    </div>
+    {% endif %}
+
+    <p>{{ page.description }}</p>
+  </div>
+
+  {{ page.content }}
+
+  <small>
+    On
+    <time datetime="{{ page.date | date_to_xmlschema }}">
+      <b><i>{{ page.date | date_to_long_string }}</b></i> at <i>{{ page.time }}</i>
+    </time>
+    {% if page.tags %}
+    {% assign tags_list = post.tags %}
+    in
+    <ul class="tags">
+      {% for tag in page.tags %}
+      <li><a href="{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </small>
+
+  <div class="comments">
+    {% include JB/comments %}
+  </div>
+</div>

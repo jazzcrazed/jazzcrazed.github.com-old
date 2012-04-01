@@ -17,6 +17,15 @@ body > header {
     font-size: $logotypeSize;
     letter-spacing: -.04em;
     text-transform: lowercase;
+
+    a {
+      color: #eee;
+
+      &:visited { color: #ddd; }
+      &:hover {
+        color: white;
+      }
+    }
   }
   > h2 {
     font-style: oblique;

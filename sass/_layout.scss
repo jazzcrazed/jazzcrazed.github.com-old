@@ -2,40 +2,37 @@
    Layout
    ========================================================================== */
 
-$universalSpacing: 20px;
+$universalSpacing: 1em;
 
-.boxContainer {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -o-box;
-  display: box;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -o-box-orient: horizontal;
-  box-orient: horizontal;
+@import "flexbox";
 
-  > .box, > .flexedBox {
-    padding-right: $universalSpacing;
-    margin-right: $universalSpacing;
-  }
-
-  > .flexedBox {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -o-box-flex: 1;
-    box-flex: 1;
-  }
+.box1, .box2 {
+  float: left;
+  padding: $universalSpacing;
 }
-
-.box1 {
-  width: 25%;
-}
-
+.box1 { width: 25%; }
 .box2 {
-  width: 28em;
+  width: 50%;
+  z-index: 1;
 
-  &:first-child {
-    border-right: 1px solid rgba(0,0,0,.3);
-    @include box-shadow(1px 0 0 rgba(255,255,255,.1));
+  &:nth-child(odd) {
+    clear: left;
+    padding-left: 0;
   }
+
+  &:nth-child(even) {
+    padding-right: 0;
+  }
+}
+
+.clearfix { overflow: hidden; }
+
+.middleSeparator:after {
+  border-right: 1px solid rgba(0,0,0,.5);
+  @include box-shadow(1px 0 0 rgba(255,255,255,.25));
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 50%;
 }
