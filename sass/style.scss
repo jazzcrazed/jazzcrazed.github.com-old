@@ -232,9 +232,13 @@ td { vertical-align: top; }
 /* Specifics */
 @import "masthead";
 @import "posts";
+@import "footer";
 
 /* Media Query Overrides */
 @import "media_queries";
+
+/* Other overrides */
+@import "non_semantic";
 
 /* ==|== print styles =======================================================
    Print styles.

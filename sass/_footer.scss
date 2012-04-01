@@ -1,0 +1,21 @@
+/* =============================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+  background: #353535;
+  @include box-shadow(inset 0 1em 1em -1em black);
+  color: #aaa;
+  padding: 1em;
+  position: absolute;
+  right: 0; left: 0; bottom: 0;
+  text-align: center;
+
+  > .blockCutType {
+    font: {
+      size: 160%;
+      weight: bold;
+    }
+    text-transform: lowercase;
+  }
+}

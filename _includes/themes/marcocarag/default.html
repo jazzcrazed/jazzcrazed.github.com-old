@@ -33,13 +33,15 @@
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header class="">
+  <header>
     <h1 class="logoType"><a href="/" class="blockCutType">Marco Carag</a></h1>
     <h2 class="">Expert <span class="sansSerif">&hearts;</span>er of things.</h2>
   </header>
-  {{ content }}
-  <footer>
-
+  <div role="main" class="clearfix">
+    {{ content }}
+  </div>
+  <footer class="audimat">
+    &copy; {{ site.time | date: "%Y" }} by <a class="blockCutType" href="about.html">Marco Carag</a>.
   </footer>
 
 

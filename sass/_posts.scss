@@ -3,6 +3,13 @@
    ========================================================================== */
 
 .postPreview {
+  @extend .bottomSeparator;
+
+  &:last-child {
+    border: none;
+    @include box-shadow(none);
+  }
+
   > h1 {
     font-size: 175%;
     line-height: 1em;
@@ -41,8 +48,11 @@
   }
 }
 
-.comments {
-  border-top: 1px solid rgba(255,255,255,.25);
-  @include box-shadow(0 -1px 0 rgba(0,0,0,.5));
-  margin-top: 1em;
+.comments { @extend .topSeparator; }
+
+aside {
+  @extend .pullQuote;
+  float: right;
+  margin: 0 -1em 0 .5em;
+  width: 10em;
 }

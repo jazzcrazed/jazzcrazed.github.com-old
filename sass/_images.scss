@@ -5,27 +5,45 @@
   content: '';
   bottom: 7px;
   @include box-shadow(0 6px 7px rgba(0, 0, 0, .7));
-  height: 5px;
+  width: 80%; height: 20%;
   position: absolute;
 }
 
+figure,
 .postImage {
-  background-color: #fff;
   float: left;
-  margin: 0 1em 0 -5px;
-  max-width: 100%;
+  margin: 0 1em 0 0;
 
-  img { z-index: 1; }
+  img {
+    border-radius: .25em;
+    @include box-shadow(0 5px 5px -5px rgba(0,0,0,.7));
+    max-width: 100%;
+    z-index: 1;
+  }
 
   &:before {
     @include curledShadow;
     @include rotate(-2deg);
-    right: 5px; left: 0;
+    left: 10px;
   }
 
   &:after {
     @include curledShadow;
     @include rotate(2deg);
-    right: 0; left: 5px;
+    right: 10px;
   }
+
+  &.fullWidth {
+    float: none;
+    margin: 0 0 1em;
+    text-align: center;
+  }
+}
+
+figcaption {
+  @extend small;
+  display: block;
+  margin: .5em;
+  position: absolute;
+  z-index: 1;
 }

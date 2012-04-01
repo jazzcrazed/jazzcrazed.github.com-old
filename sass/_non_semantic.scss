@@ -18,6 +18,8 @@
 .invisible { visibility: hidden; }
 
 /* Contain floats: h5bp.com/q */
+.left { float: left; }
+.right { float: right; }
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }

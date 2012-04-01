@@ -14,25 +14,31 @@ $universalSpacing: 1em;
 .box2 {
   width: 50%;
   z-index: 1;
-
-  &:nth-child(odd) {
-    clear: left;
-    padding-left: 0;
-  }
-
-  &:nth-child(even) {
-    padding-right: 0;
-  }
 }
 
 .clearfix { overflow: hidden; }
 
-.middleSeparator:after {
-  border-right: 1px solid rgba(0,0,0,.5);
-  @include box-shadow(1px 0 0 rgba(255,255,255,.25));
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0; bottom: 0;
-  width: 50%;
+.middleSeparator {
+  overflow: hidden;
+  &:after {
+    border-right: 1px solid rgba(0,0,0,.5);
+    @include box-shadow(1px 0 0 rgba(255,255,255,.25));
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 50%;
+  }
+}
+
+.topSeparator {
+  border-top: 1px solid rgba(255,255,255,.25);
+  @include box-shadow(0 -1px 0 rgba(0,0,0,.5));
+  margin-top: 1em;
+}
+
+.bottomSeparator {
+  border-bottom: 1px solid rgba(0,0,0,.5);
+  @include box-shadow(0 1px 0 rgba(255,255,255,.25));
+  margin-top: 1em;
 }

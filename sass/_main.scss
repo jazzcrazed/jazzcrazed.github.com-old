@@ -29,7 +29,7 @@ body {
 
 p {
   line-height: 1.8em;
-  margin: .5em 0;
+  margin: 0 0 1em;
 }
 
 code {
@@ -45,11 +45,16 @@ small {
   a { font-weight: normal; }
 }
 
-pre {
-  background-color: #123;
-  color: goldenrod;
+.pullQuote {
+  @extend .pullQuoteBG;
   @include border-radius(.5em);
   @include box-shadow(inset 0 0 10px black);
+  padding: 1em;
+}
+
+pre {
+  @extend .pullQuote;
+  color: goldenrod;
   padding-top: 1em;
   text-shadow: none;
 }
