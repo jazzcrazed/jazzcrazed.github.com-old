@@ -1,0 +1,134 @@
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+@font-face {
+  font-family: 'LindenHillRegular';
+  src: url('fonts/LindenHill-webfont.eot');
+  src: url('fonts/LindenHill-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/LindenHill-webfont.woff') format('woff'),
+       url('fonts/LindenHill-webfont.ttf') format('truetype'),
+       url('fonts/LindenHill-webfont.svg#LindenHillRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LindenHillItalic';
+  src: url('fonts/LindenHill-Italic-webfont.eot');
+  src: url('fonts/LindenHill-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/LindenHill-Italic-webfont.woff') format('woff'),
+       url('fonts/LindenHill-Italic-webfont.ttf') format('truetype'),
+       url('fonts/LindenHill-Italic-webfont.svg#LindenHillItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'junctionregularRegular';
+  src: url('fonts/Junction-webfont.eot');
+  src: url('fonts/Junction-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Junction-webfont.woff') format('woff'),
+       url('fonts/Junction-webfont.ttf') format('truetype'),
+       url('fonts/Junction-webfont.svg#junctionregularRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('fonts/Merriweather-webfont.eot');
+  src: url('fonts/Merriweather-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Merriweather-webfont.woff') format('woff'),
+       url('fonts/Merriweather-webfont.ttf') format('truetype'),
+       url('fonts/Merriweather-webfont.svg#MerriweatherRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('fonts/Merriweather-Bold-webfont.eot');
+  src: url('fonts/Merriweather-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Merriweather-Bold-webfont.woff') format('woff'),
+       url('fonts/Merriweather-Bold-webfont.ttf') format('truetype'),
+       url('fonts/Merriweather-Bold-webfont.svg#MerriweatherBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.junction {
+  font-family: 'junctionregularRegular';
+}
+
+.sansSerif {
+  font: {
+    family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    weight: 300;
+  }
+}
+
+@font-face {
+  font-family: 'audimat';
+  src: url('fonts/audimat-bold-webfont.eot');
+  src: url('fonts/audimat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/audimat-bold-webfont.woff') format('woff'),
+       url('fonts/audimat-bold-webfont.ttf') format('truetype'),
+       url('fonts/audimat-bold-webfont.svg#AUdimatBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'audimat';
+  src: url('fonts/audimat-italic-webfont.eot');
+  src: url('fonts/audimat-italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/audimat-italic-webfont.woff') format('woff'),
+       url('fonts/audimat-italic-webfont.ttf') format('truetype'),
+       url('fonts/audimat-italic-webfont.svg#AUdimatItalic') format('svg');
+  font-weight: normal;
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: 'audimat';
+  src: url('fonts/audimat-regular-webfont.eot');
+  src: url('fonts/audimat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/audimat-regular-webfont.woff') format('woff'),
+       url('fonts/audimat-regular-webfont.ttf') format('truetype'),
+       url('fonts/audimat-regular-webfont.svg#AUdimatRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'audimat';
+  src: url('fonts/audimat-bolditalic-webfont.eot');
+  src: url('fonts/audimat-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/audimat-bolditalic-webfont.woff') format('woff'),
+       url('fonts/audimat-bolditalic-webfont.ttf') format('truetype'),
+       url('fonts/audimat-bolditalic-webfont.svg#AUdimatBoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+
+body,
+.copyFont,
+.serif {
+  font: {
+    family: Merriweather;
+  }
+  text-transform: none;
+}
+
+h1, h2, h3 {
+  font-family: audimat;
+  font-weight: normal;
+  margin: .5em 0;
+}
+
+h1 { font-size: 200%; }
+h2 { font-size: 150%; }
+h3 { font-size: 125%; }
+
+p { line-height: 1.8em; }

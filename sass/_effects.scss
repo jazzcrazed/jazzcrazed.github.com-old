@@ -1,0 +1,40 @@
+/* =============================================================================
+   Effects
+   ========================================================================== */
+@mixin blockCutType($forecolor: #eee, $shadow1: #666, $shadow2: #999) {
+  color: $forecolor;
+  @include text-shadow(0 .02em .05em $shadow1, 0 .07em 0em $shadow2, 0 .15em .2em rgba(0, 0, 0, 0.75));
+}
+
+.blockCutType {
+  @include blockCutType;
+  &.red {
+    color: #d33;
+    @include blockCutType(#d33, #600, #900);
+  }
+}
+
+.deeplyEngravedType {
+  color: $darkCopyColor;
+  @include text-shadow(
+    -1px -1px 1px rgba(0, 0, 0, 0.85),
+    1px 1px 1px rgba(255, 255, 255, 0.3)
+  );
+}
+
+a.deeplyEngravedType {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  transition: all .2s;
+  transition: all .2s;
+  &, &:visited { color: $darkCopyColor; }
+  &:hover { color: $hoverColor; }
+}
+
+.embossedType {
+  @include text-shadow(-1px -1px 2px rgba(255, 255, 255, .5), 1px 1px 2px rgba(0, 0, 0, .5));
+
+  a:hover {
+    @include text-shadow(-2px -2px 2px rgba(0, 0, 0, .5));
+  }
+}

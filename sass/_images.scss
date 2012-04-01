@@ -1,0 +1,31 @@
+/* =============================================================================
+   Images
+   ========================================================================== */
+@mixin curledShadow {
+  content: '';
+  bottom: 7px;
+  @include box-shadow(0 6px 5px rgba(0, 0, 0, .5));
+  height: 5px;
+  position: absolute;
+}
+
+.postImage {
+  background-color: #fff;
+  float: left;
+  margin: 0 1em 0 -5px;
+  max-width: 100%;
+
+  img { z-index: 1; }
+
+  &:before {
+    @include curledShadow;
+    @include rotate(-2deg);
+    right: 5px; left: 0;
+  }
+
+  &:after {
+    @include curledShadow;
+    @include rotate(2deg);
+    right: 0; left: 5px;
+  }
+}

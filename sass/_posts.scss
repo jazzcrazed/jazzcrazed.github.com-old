@@ -1,0 +1,26 @@
+/* =============================================================================
+   Posts
+   ========================================================================== */
+
+time {
+  font: {
+    family: audimat;
+    size: .85em;
+  }
+}
+
+.postPreview {
+  padding: .5em;
+
+  > h1 {
+    font-size: 175%;
+    line-height: 1em;
+    margin-top: 0;
+
+    a:before {
+      content: '☙';
+      display: inline;
+      font: sans-serif;
+    }
+  }
+}

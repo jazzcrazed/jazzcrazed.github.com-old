@@ -1,0 +1,41 @@
+/* =============================================================================
+   Layout
+   ========================================================================== */
+
+$universalSpacing: 20px;
+
+.boxContainer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  box-orient: horizontal;
+
+  > .box, > .flexedBox {
+    padding-right: $universalSpacing;
+    margin-right: $universalSpacing;
+  }
+
+  > .flexedBox {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+  }
+}
+
+.box1 {
+  width: 25%;
+}
+
+.box2 {
+  width: 50%;
+
+  &:first-child {
+    border-right: 1px solid rgba(0,0,0,.3);
+    @include box-shadow(1px 0 0 rgba(255,255,255,.1));
+  }
+}

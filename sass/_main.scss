@@ -1,0 +1,29 @@
+/* =============================================================================
+   Main
+   ========================================================================== */
+
+* {
+  @include box-sizing(border-box);
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  position: relative;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  background-color: #046;
+  // @include background-image(linear-gradient(top, #057, #002944 66%));
+  color: $copyColor;
+  padding: .5em;
+  @include text-shadow(1px 1px 0 rgba(0, 0, 0, .8));
+}

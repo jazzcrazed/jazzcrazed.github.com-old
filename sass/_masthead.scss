@@ -1,0 +1,24 @@
+/* =============================================================================
+   Masthead
+   ========================================================================== */
+
+$logotypeSize: 500%;
+
+body > header {
+  padding-bottom:1em;
+
+  > h1, > h2 {
+    display: inline;
+    padding-right: 20px;
+    vertical-align: baseline;
+  }
+
+  > h1 {
+    font-size: $logotypeSize;
+    letter-spacing: -.04em;
+    text-transform: lowercase;
+  }
+  > h2 {
+    font-style: oblique;
+  }
+}
