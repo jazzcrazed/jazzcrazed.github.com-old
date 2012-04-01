@@ -8,9 +8,10 @@
 
 .blockCutType {
   @include blockCutType;
+  &:hover,
   &.red {
-    color: #d33;
-    @include blockCutType(#d33, #600, #900);
+    color: #e44;
+    @include blockCutType(#e44, #700, #a00);
   }
 }
 
