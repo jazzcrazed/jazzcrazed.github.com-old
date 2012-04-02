@@ -3,7 +3,6 @@
    ========================================================================== */
 
 a {
-  @extend .deeplyEngravedType;
   text-decoration: none;
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
@@ -13,3 +12,6 @@ a {
   &, &:visited { color: $darkCopyColor; }
   &:hover { color: $hoverColor; }
 }
+
+.postCopy a,
+.tags a { @extend .blockCutType; }

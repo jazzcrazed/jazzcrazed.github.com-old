@@ -15,7 +15,7 @@ layout: default
         alt="{% if post.image-alt %}{{ post.image-alt }}{% endif %}" />
     </div>
     {% endif %}
-    <p>{{ post.description }}</p>
+    <p class="postCopy">{{ post.description }}</p>
     <small>
       On
       <time datetime="{{ post.date | date_to_xmlschema }}">
