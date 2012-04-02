@@ -1,0 +1,122 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+article, aside, figure, footer, header, hgroup, nav, section { display:block; }
+
+ /* Primary Styles
+    Author: Marco Carag
+ */
+body{
+	color:#000;
+	font-family:sans-serif;
+	margin:20px;
+}
+h1{
+	font-size:3em;
+	letter-spacing:-1px;
+}
+section h1{
+	font-size:2em;
+}
+p{
+	font-size:5em;
+}
+.normal{
+	font-size:1em;
+	font-weight:normal;
+}
+ 
+/**Type**/
+.serif{
+	font-family:serif;
+}
+.condensed{
+	letter-spacing:-.2em;
+}
+.extraspace{
+	line-height:3em;
+}
+@font-face {
+	font-family: 'BallparkWeiner';
+	src: url('type/ballpark_weiner-webfont.eot');
+	src: local('☺'), url('type/ballpark_weiner-webfont.woff') format('woff'), url('type/ballpark_weiner-webfont.ttf') format('truetype'), url('type/ballpark_weiner-webfont.svg#webfontpducsBcZ') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.ballparkweiner{
+	font-family:BallparkWeiner;
+}
+@font-face {
+	/*Deftone Stylus by Ray Larabie - http://www.fontsquirrel.com/fonts/Deftone-Stylus*/
+	font-family: 'LeagueGothicRegular';
+	src: url('type/League_Gothic-webfont.eot');
+	src: local('☺'), url('type/League_Gothic-webfont.woff') format('woff'), url('type/League_Gothic-webfont.ttf') format('truetype'), url('type/League_Gothic-webfont.svg#webfontOTINA1xY') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.leaguegothicregular{
+	font-family:LeagueGothicRegular;
+}
+@font-face {
+	/*League Gothic by The League of Moveable Type - http://www.theleagueofmoveabletype.com/fonts/7-league-gothic*/
+	font-family: 'DeftoneStylusRegular';
+	src: url('type/deftone-webfont.eot');
+	src: local('☺'), url('type/deftone-webfont.woff') format('woff'), url('type/deftone-webfont.ttf') format('truetype'), url('type/deftone-webfont.svg#webfont7kocTB2j') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.deftonestylusregular{
+	font-family:DeftoneStylusRegular;
+}
+@font-face {
+	font-family: 'ChopinScriptRegular';
+	src: url('type/ChopinScript-webfont.eot');
+	src: local('☺'), url('type/ChopinScript-webfont.woff') format('woff'), url('type/ChopinScript-webfont.ttf') format('truetype'), url('type/ChopinScript-webfont.svg#webfont3XRolORY') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.chopinscriptregular{
+	font-family:ChopinScriptRegular;
+}
+@font-face {
+	font-family: 'AquilineRegular';
+	src: url('type/Aquiline-webfont.eot');
+	src: local('☺'), url('type/Aquiline-webfont.woff') format('woff'), url('type/Aquiline-webfont.ttf') format('truetype'), url('type/Aquiline-webfont.svg#webfont748lE9ON') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.aquilineregular{
+	font-family:AquilineRegular;
+}
+@font-face {
+	font-family: 'FreebooterScriptRegular';
+	src: url('type/freebooterscript-webfont.eot');
+	src: local('☺'), url('type/freebooterscript-webfont.woff') format('woff'), url('type/freebooterscript-webfont.ttf') format('truetype'), url('type/freebooterscript-webfont.svg#webfontc52wX0hc') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.freebooterscript{
+	font-family:FreebooterScriptRegular;
+}
+/**Colors**/
+.white{
+	color:#fff;
+}
+/**Transparency**/
+.alphaRgba{
+	color:rgba(0,0,0,.25);
+}
+.alphaOpacity{
+	opacity:.25;
+}

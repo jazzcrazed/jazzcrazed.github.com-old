@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><![endif]-->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Alpha transparency on fonts with overlapping glyphs</title>
+  <meta name="description" content="Comparison of fonts that have intentionally overlapping glyphs with transparency set via CSS rgba() and opacity.">
+  <meta name="author" content="Marco Carag">
+  <link rel="stylesheet" href="css/style.css?v=1">
+
+</head>
+<!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+
+  <div id="container">
+    <header>
+			<h1>Testing different types of transparency with glyph overlap</h1>
+    </header>
+    
+    <section id="main">
+			<h1>Normal fonts with negative <code>letter-spacing</code></h1>
+			<p class="normal">Default sans-serif and serif fonts intentionally condensed to show overlap via the <code>rgba()</code> and <code>opacity</code> css properties. If you're in OS X, the transparency is rendered per-glyph.</p>
+			<p class="alphaRgba condensed">
+				<b>This is a test using rgba.</b>
+			</p>
+			<p class="alphaOpacity condensed">
+				<b>This is a test using opacity.</b>
+			</p>
+			<p class="alphaRgba condensed serif">
+				<b>This is a test using rgba.</b>
+			</p>
+			<p class="alphaOpacity condensed serif">
+				<b>This is a test using opacity.</b>
+			</p>
+    </section>
+    
+    <footer>
+
+    </footer>
+  </div> <!-- end of #container -->
+
+</body>
+</html>

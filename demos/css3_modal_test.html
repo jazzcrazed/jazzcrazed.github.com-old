@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>HTML 5 complete</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+  article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block; }
+  
+  body{font-family:Helvetica,Arial,sans-serif;}
+    .modalOverlay{
+      background-color:rgba(0,0,0,.1);
+      display:none;
+      opacity:0;
+      position:fixed;
+      top:0;right:0;bottom:0;left:0;
+      z-index:10;
+    }
+    #modalWindow{
+      background-color:rgba(0,0,0,.15);
+      height:0;
+      margin-left:-100px;
+      opacity:0;
+      overflow:hidden;
+      position:fixed;
+      top:100px;left:50%;
+      -webkit-transition:all 0.25s;
+      width:300px;
+      z-index:15;
+    }
+      #modalWindow .shadow{
+      	background-color:#fff;
+        border:2px solid #999;
+        box-shadow:0 0 15px rgba(0,0,0,.5);
+        margin:15px;
+        padding:10px;
+        -moz-box-shadow:0 0 15px rgba(0,0,0,.5);
+        -webkit-box-shadow:0 0 15px rgba(0,0,0,.5);
+        position:relative;
+      }
+      .show{
+      	display:block !important;
+      	height:auto !important;
+        opacity:1 !important;
+      }
+      #modalWindow h1{margin:0 0 1em;}
+      .close{
+      	cursor:pointer;
+      	position:absolute;
+      	top:5px;right:5px;
+      }
+</style>
+</head>
+<body>
+
+<a id="modalTrigger" href="#modalWindow">Click me</a>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec magna diam, at eleifend nisi. Ut nec libero nec nibh pellentesque mattis. Nulla facilisi. Proin rutrum ligula condimentum augue mollis eu condimentum lacus dapibus. Cras sed velit in tortor ornare aliquam. Nunc vel scelerisque libero. Donec vitae egestas lorem. Cras eget erat non mi lacinia adipiscing aliquet in lorem. Pellentesque convallis facilisis augue. Nullam et eros in lacus facilisis fringilla. In hac habitasse platea dictumst. Donec non posuere ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent scelerisque magna vel arcu interdum consectetur a vitae enim. Sed at quam magna, id sodales tellus.
+
+<p>Aenean suscipit ligula sit amet magna fringilla aliquet. Nunc sit amet placerat sapien. Phasellus iaculis sapien sed dolor semper viverra. Curabitur sed nisl neque. Quisque tempus, dui et lobortis pellentesque, dui lacus accumsan eros, sit amet interdum ligula nisl non urna. Pellentesque nunc orci, lobortis sed posuere eget, tempus eget dolor. Mauris nec turpis purus, a congue urna. Vestibulum pretium odio quis lacus suscipit auctor facilisis magna laoreet. Praesent at erat eu ipsum faucibus mattis. Curabitur convallis lobortis nunc ut eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec et nulla quam. Duis accumsan pharetra enim, a convallis ligula porttitor non. Maecenas scelerisque consequat dapibus. Quisque aliquet dignissim mattis. Curabitur vitae tellus id libero molestie vehicula vitae eget orci.</p>
+
+<p>Sed dui neque, pellentesque quis ornare eu, vehicula id metus. Curabitur vehicula vehicula lectus sed varius. Etiam et nibh leo, in blandit orci. Suspendisse potenti. Ut in augue ut enim pulvinar lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam sodales, nisi a aliquet fermentum, elit ligula varius neque, suscipit adipiscing justo lectus ac sapien. Ut ac scelerisque neque. Nunc ut tortor felis. Vivamus accumsan fringilla semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris sit amet augue metus, vitae ultrices neque.</p>
+
+<p>Sed ac nisl ac quam facilisis bibendum. Quisque luctus tincidunt eros, sodales vestibulum libero dictum eu. Suspendisse lacinia volutpat accumsan. Morbi elementum consectetur mi a egestas. Pellentesque ac elementum lectus. Duis vel nibh a libero blandit aliquam. Integer scelerisque, lorem id dignissim posuere, risus ligula imperdiet massa, at egestas sapien mi ac odio. Curabitur venenatis auctor nibh, sit amet scelerisque nisi imperdiet quis. Aliquam vestibulum dolor tempor tortor auctor at faucibus urna tincidunt. Aliquam at lacus ac leo ullamcorper consectetur. Nam lacinia aliquet scelerisque.</p>
+
+<p>Praesent interdum elementum quam hendrerit mattis. Ut scelerisque mattis tortor at auctor. Ut eu justo orci. Vivamus eu diam mi, at vehicula libero. Vivamus vulputate sapien arcu. Praesent suscipit blandit nisl vitae iaculis. Phasellus hendrerit est nec nunc malesuada vehicula. Mauris lacus erat, accumsan in auctor at, porttitor quis lacus. Fusce in dui ante, ultrices dapibus sem. Quisque eget felis lorem.</p>
+
+<div id="modalWindow" class="modal">
+	<div class="shadow">
+		<h1>Hello!</h1>
+		<p>This is the modal window that shows up when you clicked that link. It is designed to match the styling of TheKnot.com modals.</p>
+		<span class="close">X</span>
+	</div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $('#modalTrigger').click(function(){
+      $('#modalWindow').addClass('show');
+   	  return false;
+   	});
+   	$('.modal .close').click(function(){$('#modalWindow').removeClass('show');});
+  });
+</script>
+</body>
+</html>

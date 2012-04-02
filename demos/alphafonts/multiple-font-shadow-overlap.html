@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en-us" class="no-js">
+
+<head>
+
+	<meta charset="utf-8" />
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+
+	<title>Text-shadow overlap</title>
+
+	<!--Modernizr should be the only script in the head-->
+	<script src="http://media.theknot.com/jscripts/shared/modernizr-1.5.min.js"></script>
+	<link rel="stylesheet" href="css/style.css?v=1">
+	<style>
+		p{margin-bottom:1em;}
+		.shadow{
+			text-shadow:0 1em 0 #000;
+		}
+		.shadowRGBA{
+			text-shadow:0 1em 0 rgba(0,0,0,.5);
+		}
+		.shadowBlurry{
+			text-shadow:0 1em 20px #000;
+		}
+	</style>
+
+</head>
+
+<!--[if lte IE 6 ]><body class="ie ie6"><![endif]--> 
+<!--[if IE 7 ]><body class="ie ie7"><![endif]--> 
+<!--[if IE 8 ]><body class="ie ie8"><![endif]--> 
+<!--[if !IE]>--><body><!--<![endif]-->
+
+	<div class="wrap">
+		<section>
+			<h1><code>rgba()</code> shadow</h1>
+			<p class="shadowRGBA condensed">
+				BOBOBO
+			</p>
+		</section>
+		<section>
+			<h1>Solid shadow with blur</h1>
+			<p class="shadowBlurry condensed">
+				BOBOBO
+			</p>
+		</section>
+		<section>
+			<h1>Solid shadow with lowered <code>opacity</code> on parent</h1>
+			<p class="shadow alphaOpacity condensed">
+				BOBOBO
+			</p>
+		</section>
+	</div>
+
+	<script src="http://media.theknot.com/jscripts/jquery/jquery-1.4.2.min.js"></script>
+
+</body>
+
+</html>
