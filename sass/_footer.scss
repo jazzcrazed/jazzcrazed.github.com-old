@@ -11,7 +11,13 @@ footer {
   right: 0; left: 0; bottom: 0;
   text-align: center;
 
-  > .blockCutType {
+  p {
+    line-height: normal;
+    margin: 1em auto;
+    width: 28em;
+  }
+
+  big {
     font: {
       size: 160%;
       weight: bold;

@@ -47,7 +47,11 @@
   }
 }
 
-.comments { @extend .topSeparator; }
+.comments {
+  @extend .topSeparator;
+
+  a { @extend .blockCutType; }
+}
 
 aside {
   @extend .pullQuote;
