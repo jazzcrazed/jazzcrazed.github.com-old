@@ -10,7 +10,8 @@ a {
   transition: all .2s;
 
   &, &:visited { color: $darkCopyColor; }
-  &:hover { color: $hoverColor; }
+  &:hover { color: $greenColor; }
+  &:active { color: $redColor; }
 }
 
 .postCopy a,

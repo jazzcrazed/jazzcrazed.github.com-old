@@ -1,25 +1,32 @@
 /* =============================================================================
    Effects
    ========================================================================== */
-@mixin blockCutType($forecolor: #eee, $shadow1: #666, $shadow2: #999) {
+@mixin blockCutType($forecolor: #eee, $shadow1: #666, $shadow2: #999, $activecolor: $greenColor) {
   &, &:visited {
     color: $forecolor;
     @include text-shadow(0 .01em .05em $shadow1, 0 .06em 0em $shadow2, 0 .15em .2em rgba(0, 0, 0, 0.75));
+  }
+  &:active {
+    color: $activecolor;
   }
 }
 
 .blockCutType {
   @include blockCutType;
   &:hover,
-  &.red { @include blockCutType(#f64, #700, #d00); }
+  &.red { @include blockCutType($redColor, #700, #d00); }
 }
 
+.blockCutType:active,
 .deeplyEngravedType {
-  color: $darkCopyColor;
   @include text-shadow(
     -1px -1px 1px rgba(0, 0, 0, 0.85),
     1px 1px 1px rgba(255, 255, 255, 0.6)
   );
+}
+
+.deeplyEngravedType {
+  color: $darkCopyColor;
 }
 
 .embossedType {
