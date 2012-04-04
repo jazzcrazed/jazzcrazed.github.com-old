@@ -15,6 +15,9 @@ figure,
 .postImage {
   float: left;
   margin: 0 1em 1em 0;
+  max-width: 60%;
+
+  &.right { margin: 0 0 1em 1em; }
 
   img {
     border-radius: .25em;
@@ -26,6 +29,7 @@ figure,
   &.fullWidth {
     float: none;
     margin: 0 0 2em;
+    max-width: 100%;
     text-align: center;
   }
 }
