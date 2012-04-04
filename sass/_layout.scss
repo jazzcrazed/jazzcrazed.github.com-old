@@ -8,7 +8,17 @@ $universalSpacing: 1em;
 
 .box1, .box2 {
   float: left;
-  padding: $universalSpacing;
+  padding: {
+    right: $universalSpacing;
+    bottom: $universalSpacing;
+  }
+
+  &.right {
+    padding: {
+      left: $universalSpacing;
+      right: 0;
+    }
+  }
 }
 .box1 { width: 25%; }
 .box2 {
