@@ -8,7 +8,8 @@ body > header {
   padding-bottom:1em;
 
   > h1, > h2 {
-    display: inline;
+    display: inline-block;
+    margin: 0;
     padding-right: 20px;
     vertical-align: baseline;
   }
@@ -28,6 +29,9 @@ body > header {
     }
   }
   > h2 {
-    font-style: oblique;
+    font: {
+      size: 175%;
+      style: oblique;
+    }
   }
 }

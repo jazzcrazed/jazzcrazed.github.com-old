@@ -18,7 +18,7 @@
   color: $darkCopyColor;
   @include text-shadow(
     -1px -1px 1px rgba(0, 0, 0, 0.85),
-    1px 1px 1px rgba(255, 255, 255, 0.4)
+    1px 1px 1px rgba(255, 255, 255, 0.6)
   );
 }
 

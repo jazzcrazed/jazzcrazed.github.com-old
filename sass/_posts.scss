@@ -23,10 +23,13 @@
 }
 
 .post {
-  width: 80%;
+  max-width: 43em;
 
   a { font-weight: bold; }
-  h1, h2 { @extend .deeplyEngravedType; }
+  h1 {
+    @extend .deeplyEngravedType;
+    font-size: 250%;
+  }
 }
 
 .tags {

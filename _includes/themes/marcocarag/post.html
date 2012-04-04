@@ -3,8 +3,10 @@
   <div class="clearfix">
     {% if page.image %}
     <div class="postImage">
-      <img src="{{ page.image }}"
-        alt="{% if page.image-alt %}{{ page.image-alt }}{% endif %}" />
+      <div class="curledShadow">
+        <img src="{{ page.image }}"
+          alt="{% if page.image-alt %}{{ page.image-alt }}{% endif %}" />
+      </div>
     </div>
     {% endif %}
 

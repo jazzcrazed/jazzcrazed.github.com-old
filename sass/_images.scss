@@ -1,10 +1,12 @@
 /* =============================================================================
    Images
    ========================================================================== */
+$curledShadowColor: rgba(0, 0, 0, .7);
 @mixin curledShadow {
+  background-color: $curledShadowColor;
+  bottom: 9px;
   content: '';
-  bottom: 7px;
-  @include box-shadow(0 6px 7px rgba(0, 0, 0, .7));
+  @include box-shadow(0 6px 10px $curledShadowColor);
   width: 80%; height: 20%;
   position: absolute;
 }
@@ -16,10 +18,20 @@ figure,
 
   img {
     border-radius: .25em;
-    @include box-shadow(0 5px 5px -5px rgba(0,0,0,.7));
+    @include box-shadow(0 0 8px rgba(0,0,0,.7));
     max-width: 100%;
     z-index: 1;
   }
+
+  &.fullWidth {
+    float: none;
+    margin: 0 0 1em;
+    text-align: center;
+  }
+}
+
+.curledShadow {
+  display: inline-block;
 
   &:before {
     @include curledShadow;
@@ -31,12 +43,6 @@ figure,
     @include curledShadow;
     @include rotate(2deg);
     right: 10px;
-  }
-
-  &.fullWidth {
-    float: none;
-    margin: 0 0 1em;
-    text-align: center;
   }
 }
 

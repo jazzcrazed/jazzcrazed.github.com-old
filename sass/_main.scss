@@ -21,9 +21,10 @@ html, body {
 }
 
 body {
-  background-color: #046;
+  background-color: #057;
+  @include background-image(radial-gradient(14em 7em, ellipse farthest-corner, #006585 0%, #046 100%));
   color: $copyColor;
-  padding: .5em;
+  padding: 1em 1em 14em;
   @include text-shadow(1px 1px 0 rgba(0, 0, 0, .8));
 }
 
@@ -34,12 +35,13 @@ p {
 
 code {
   color: $lightCopyColor;
+  font-weight: bold;
 }
 
 small {
   font: {
     family: audimat;
-    size: .75em;
+    size: .85em;
   }
 
   a { font-weight: normal; }

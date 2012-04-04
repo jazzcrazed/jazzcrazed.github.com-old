@@ -11,8 +11,10 @@ layout: default
     </h1>
     {% if post.image %}
     <div class="postImage {% if post.image-classes %}{{ post.image-classes }}{% endif %}">
-      <img src="{{ post.image }}"
-        alt="{% if post.image-alt %}{{ post.image-alt }}{% endif %}" />
+      <div class="curledShadow">
+        <img src="{{ post.image }}"
+          alt="{% if post.image-alt %}{{ post.image-alt }}{% endif %}" />
+      </div>
     </div>
     {% endif %}
     <p class="postCopy">{{ post.description }}</p>
