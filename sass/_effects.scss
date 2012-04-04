@@ -36,3 +36,66 @@
     @include text-shadow(-2px -2px 2px rgba(0, 0, 0, .5));
   }
 }
+
+@mixin colorframes {
+  10% { color: $redColor; }
+  36% { color: cyan; }
+  52% { color: $greenColor; }
+  68% { color: yellow; }
+  84% { color: violet; }
+}
+
+@-webkit-keyframes beating {
+  0% { -webkit-transform: scale(1); }
+  10% { -webkit-transform: scale(1.15); }
+  20% { -webkit-transform: scale(1); }
+  30% { -webkit-transform: scale(1); }
+  40% { -webkit-transform: scale(1.15); }
+  50% { -webkit-transform: scale(1) }
+}
+
+@-webkit-keyframes color-shift { @include colorframes }
+
+@-moz-keyframes beating {
+  0% { -moz-transform: scale(1); }
+  10% { -moz-transform: scale(1.15); }
+  20% { -moz-transform: scale(1); }
+  30% { -moz-transform: scale(1); }
+  40% { -moz-transform: scale(1.15); }
+  50% { -moz-transform: scale(1) }
+}
+
+@-moz-keyframes color-shift { @include colorframes }
+
+@-ms-keyframes beating {
+  0% { -ms-transform: scale(1); }
+  10% { -ms-transform: scale(1.15); }
+  20% { -ms-transform: scale(1); }
+  30% { -ms-transform: scale(1); }
+  40% { -ms-transform: scale(1.15); }
+  50% { -ms-transform: scale(1) }
+}
+
+@-ms-keyframes color-shift { @include colorframes }
+
+@-o-keyframes beating {
+  0% { -o-transform: scale(1); }
+  10% { -o-transform: scale(1.15); }
+  20% { -o-transform: scale(1); }
+  30% { -o-transform: scale(1); }
+  40% { -o-transform: scale(1.15); }
+  50% { -o-transform: scale(1) }
+}
+
+@-o-keyframes color-shift { @include colorframes }
+
+.heart {
+  display: inline-block;
+  -webkit-animation: color-shift 120s infinite;
+
+  @include scale(1);
+  &:hover {
+    color: white;
+    -webkit-animation: beating 2s infinite;
+  }
+}
