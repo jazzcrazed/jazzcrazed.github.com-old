@@ -1,0 +1,92 @@
+---
+layout: post
+title: "Back Again, with Jekyll"
+description: "The fact that it&rsquo;s been a year and a half since my last post
+  clearly evidences that blogging might not be the thing for me. Call me a glutton
+  for punishment, but I&rsquo;ve decided to return to it, and this time the tools
+  I&rsquo;m using are a large part of that -- namely, <a href='http://jekyllbootstrap.com'>
+  Jekyll Bootstrap</a> and <a href='http://github.com'>GitHub</a>."
+category:
+tags: [development, introductions, writing]
+date: 2012-04-02 18:12:00 -0400
+time: "6:12 AM EDT"
+image: "https://lh6.googleusercontent.com/-2pZYgTaczZs/T0iiC0FmJxI/AAAAAAAAGP0/XiXevmSgHRs/s640/P2195597.jpg"
+image-alt: "Random snapshot while walking around SoHo."
+image-classes: "fullWidth"
+---
+<p>
+  Obviously, I&rsquo;ve been pretty busy over the past couple of years. To start,
+  I got a new job in late 2010 &mdash; a month after my last post &mdash; with a
+  dating startup named <a href="http://www.howaboutwe.com">HowAboutWe</a>.
+  It&rsquo;s been an incredible experience so far that comes with many firsts:
+</p>
+
+<ol>
+  <li>
+    It&rsquo;s my first time working with <a href="http://rubyonrails.org/">
+    Ruby on Rails</a>.
+  </li>
+  <li>
+    It&rsquo;s my first time using <a href="http://www.vim.org/">Vim</a> regularly
+    as an editor. (As opposed to using it quickly to change config files and such.)
+  </li>
+  <li>
+    It&rsquo;s my first time working with <a href="http://git-scm.com/">Git</a>
+    and <a href="http://www.github.com">Github</a>.
+  </li>
+  <li>
+    It&rsquo;s my first time using compiled stylesheets via <a href="http://compass-style.org">
+    Compass</a> and <a href="http://sass-lang.com">Sass</a>.
+  </li>
+</ol>
+
+<p>
+  These and a host of others came as a big shock to my system after years of working
+  at <a href="http://microsoft.com/net">.NET</a> shops. Perhaps the biggest shock wasn&rsquo;t simply how different this
+  experience has been, but really how much I absolutely <em>love</em> the workflow.
+  I&rsquo;d been satisfactorily productive using Microsoft Visual Studio in Windows
+  2003 and Team Foundation Server. But getting a Github repo going, coding for
+  a bit in Vim, committing, pushing &mdash; doing it daily here feels practically
+  second nature to me. (Not to mention the addition of automated testing to my life.)
+</p>
+
+<p>
+  For a very long while now, I&rsquo;ve been wanting to come back to this blog
+  to document all of this change &mdash; and in general, get back into blogging.
+  But I couldn&rsquo;t get myself to return to it in its then-current form. To start,
+  I desperately wanted to redesign it. Which I began to do by getting a new 
+  <a href="http://www.wordpress.org">Wordpress</a> theme going for my existing
+  blog install.
+</p>
+
+<p>
+  But I realized quickly that the blog itself, its implementation and my use of it
+  are as much a part of the document than the post content. I also realized
+  that, quite frankly, if I wanted to maintain a decently regular posting
+  schedule, then I should probably incorporate the workflows that are most
+  productive to me.
+</p>
+
+<p>
+  At work, we&rsquo;ve talked a lot for a while about the value of server-generated pages
+  rather than static HTML files for certain components. For instance, we used to
+  have ad modules that would make crazy queries to conjure seemingly timely
+  and location-relevant 300x250s that would live on third-party websites.
+  This was nuts for a couple of reasons &mdash; namely, that trusting user-generated
+  content for the purpose of brand advertising is an extremely risky proposition,
+  but also the queries were not trivial, and despite caching the hit on our servers
+  was substantial (the ads themselves usually ran on ad-supported content sites that often see
+  tons and tons more hits than we do, such as <a href="http://nymag.com">New York Magazine</a>.
+  In this case, it made complete sense to curate the content, and just serve up quick
+  and fast static HTML that would be cached practically to infinity. A day later,
+  we replaced nearly all of these ads with the static content, and the elegance of the
+  solution had big payoffs in both performance, and code maintenance (a new style
+  of ad just means a new HTML file).
+</p>
+
+<p>
+  Blogs were another area that we&rsquo;ve talked about a lot as websites that
+  extremely rarely change enough to necessitate being dynamically generated on
+  the server. Instead, it seems to make more sense to move the CMS offline,
+  have the pages generated and compiled once after each update, and then upload
+  the resulting HTML &mdash; the results being super fast
