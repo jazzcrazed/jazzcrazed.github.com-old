@@ -33,7 +33,7 @@ figure,
     text-align: center;
   }
 
-  > .curledShadow { width: 100%; }
+  > .curledShadow { max-width: 100%; }
 }
 
 .boxshadow .postImage {
