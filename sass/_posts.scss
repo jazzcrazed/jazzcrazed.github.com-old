@@ -30,6 +30,7 @@
     @extend .deeplyEngravedType;
     font-size: 250%;
   }
+  h2 { color: $lightCopyColor; }
 }
 
 .tags {
