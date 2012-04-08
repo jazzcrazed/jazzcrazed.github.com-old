@@ -65,4 +65,6 @@ figcaption {
   margin: .5em;
   position: absolute;
   z-index: 1;
+
+  figure > & { position: relative; }
 }

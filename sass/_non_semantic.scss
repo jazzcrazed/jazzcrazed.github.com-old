@@ -20,6 +20,7 @@
 /* Contain floats: h5bp.com/q */
 .left { float: left; }
 .right { float: right; }
+.bottom { bottom: 0; }
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }

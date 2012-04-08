@@ -2,16 +2,29 @@
   <h1>{{ page.title }}</h1>
   <div class="postCopy">
     <div class="clearfix">
-      {% if page.image %}
-      <div class="postImage">
-        <div class="curledShadow">
-          <img src="{{ page.image }}"
-            alt="{% if page.image-alt %}{{ page.image-alt }}{% endif %}" />
-        </div>
-      </div>
-      {% endif %}
-
       <p>{{ page.description }}</p>
+
+      {% if page.image %}
+      <figure class="postImage {% if page.image-classes %}{{ page.image-classes }}{% endif %}">
+        <div class="curledShadow">
+          <a href="
+            {% if image-expand-url %}
+            {{ page.image-url }}
+            {% else %}
+            {{ page.image }}
+            {% endif %}
+            ">
+            <img src="{{ page.image }}"
+              alt="{% if page.image-alt %}{{ page.image-alt }}{% endif %}" />
+          </a>
+        </div>
+        {% if page.image-alt-as-caption == true %}
+        <figcaption>
+          {{ page.image-alt }}
+        </figcaption>
+        {% endif %}
+      </figure>
+      {% endif %}
     </div>
 
     {{ page.content }}
