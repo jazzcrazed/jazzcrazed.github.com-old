@@ -8,8 +8,18 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>{% if page.title %} {{ page.title }} | {% endif %}MarcoCarag.com</title>
-  <meta name="description" content="Marco Carag's blog about stuff he's into.">
+  <title>{% include themes/marcocarag/determineTitle %}</title>
+  <meta name="description" content="{% include themes/marcocarag/determineDescription %}">
+
+  <meta property="fb:app_id"      content="127177063996357">
+  <meta property="og:type"        content="article">
+  <meta property="og:url"         content="http://www.marcocarag.com{{ page.url }}">
+  <meta property="og:site_name"   content="MarcoCarag.com">
+  {% if page.image %}
+  <meta property="og:image"       content="{{ page.image }}">
+  {% endif %}
+  <meta property="og:title"       content="{% include themes/marcocarag/determineTitle %}">
+  <meta property="og:description" content="{% include themes/marcocarag/determineDescription %}">
 
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" href="/favicon.ico">
@@ -19,7 +29,7 @@
   <script src="/js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <header>
     <h1 class="logoType"><a href="/" class="blockCutType">Marco Carag</a></h1>
     <h2 class="">Expert <span class="sansSerif heart">&hearts;</span>er of things.</h2>

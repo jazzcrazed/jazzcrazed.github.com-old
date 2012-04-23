@@ -1,0 +1,10 @@
+{% assign currentTitle = page.title ? page.title | MarcoCarag.com || MarcoCarag.com %}
+{% assign currentDesc = page.description ? page.description || "Marco Carag's blog about stuff he's into." %}
+
+<meta property="fb:app_id"      content="127177063996357">
+<meta property="og:type"        content="article">
+<meta property="og:url"         content="{{ page.url }}">
+<meta property="og:site_name"   content="MarcoCarag.com">
+<meta property="og:image"       content="URL to an image">
+<meta property="og:title"       content="{{ currentTitle }}">
+<meta property="og:description" content="{{ currentDesc }}">
