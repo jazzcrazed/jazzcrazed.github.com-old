@@ -14,10 +14,10 @@ $curledShadowColor: rgba(0, 0, 0, .7);
 figure,
 .postImage {
   float: left;
-  margin: 0 1em 1em 0;
+  margin: 0 1em .5em 0;
   max-width: 60%;
 
-  &.right { margin: 0 0 1em 1em; }
+  &.right { margin: 0 0 .5em 1em; }
 
   img {
     border-radius: .25em;
@@ -28,7 +28,7 @@ figure,
 
   &.fullWidth {
     float: none;
-    margin: 0 0 2em;
+    margin: 0 0 .5em;
     max-width: 100%;
     text-align: center;
   }
@@ -62,7 +62,7 @@ figure,
 figcaption {
   @extend small;
   display: block;
-  margin: .5em;
+  margin: .5em .5em 0;
   position: absolute;
   z-index: 1;
 
