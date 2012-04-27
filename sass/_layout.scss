@@ -52,3 +52,15 @@ $universalSpacing: 1em;
   @include box-shadow(0 1px 0 rgba(255,255,255,.25));
   margin-top: 1em;
 }
+
+.halfColumn {
+  margin: {
+    left: 0;
+    right: 0;
+  }
+  width: 48%;
+
+  &:last-child {
+    float: right;
+  }
+}
