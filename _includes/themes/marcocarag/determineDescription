@@ -1,1 +1,1 @@
-{% if page.description %}{{ page.description }}{% else %}Marco Carag's blog about stuff he's into.{% endif %}
+{% if page.description %}{{ page.description | escape | markdown }}{% else %}Marco Carag's blog about stuff he's into.{% endif %}
