@@ -57,17 +57,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'audimat';
-  src: url('fonts/audimat-bolditalic-webfont.eot');
-  src: url('fonts/audimat-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/audimat-bolditalic-webfont.woff') format('woff'),
-       url('fonts/audimat-bolditalic-webfont.ttf') format('truetype'),
-       url('fonts/audimat-bolditalic-webfont.svg#AUdimatBoldItalic') format('svg');
-  font-weight: bold;
-  font-style: italic, oblique;
-}
-
 .audimat {
   font-family: audimat;
 }
