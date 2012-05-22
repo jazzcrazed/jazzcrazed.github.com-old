@@ -2,6 +2,15 @@
    Links
    ========================================================================== */
 
+@mixin centeredLinkFont {
+  font: {
+    family: serif;
+    size: 1.2em;
+    weight: bold;
+    vertical-align: .1em;
+  }
+}
+
 a {
   text-decoration: none;
   -webkit-transition: all .2s;
@@ -16,3 +25,27 @@ a {
 
 .postCopy a,
 small a { @extend .blockCutType; }
+
+.centeredLink {
+  font: {
+    family: Merriweather;
+    style: oblique;
+    size: .8em;
+  }
+  margin-bottom: 1em;
+  text: {
+    align: center;
+    transform: lowercase;
+  }
+
+  a {
+    &::before {
+      content: '\00AB';
+      @include centeredLinkFont;
+    }
+    &::after {
+      content: '\00BB';
+      @include centeredLinkFont;
+    }
+  }
+}

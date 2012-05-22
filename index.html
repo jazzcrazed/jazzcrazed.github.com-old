@@ -19,7 +19,14 @@ layout: default
     {% endif %}
     <div class="postCopy">
     {% if post.description %}
-      <p class="description">{{ post.description }}</p>
+      <p class="description">
+        {{ post.description }}
+      </p>
+      <div class="centeredLink">
+        <a href="{{ post.url }}">
+          Continue reading
+        </a>
+      </div>
     {% else %}
       {{ post.content }}
     {% endif %}

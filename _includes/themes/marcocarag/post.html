@@ -20,9 +20,9 @@
               alt="{% if page.image-alt %}{{ page.image-alt }}{% endif %}" />
           </a>
         </div>
-        {% if page.image-alt-as-caption == true %}
+        {% if page.image-caption || (page.image-alt-as-caption == true) %}
         <figcaption>
-          {{ page.image-alt }}
+          {{ page.image-caption || page.image-alt }}
         </figcaption>
         {% endif %}
       </figure>
