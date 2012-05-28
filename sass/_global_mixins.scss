@@ -1,0 +1,12 @@
+/* =============================================================================
+   Global Mixins
+   ========================================================================== */
+@mixin blockCutType($forecolor: #eee, $shadow1: #666, $shadow2: #999, $activecolor: $greenColor) {
+  &, &:visited {
+    color: $forecolor;
+    @include text-shadow(0 .01em .05em $shadow1, 0 .06em 0em $shadow2, 0 .15em .2em rgba(0, 0, 0, 0.75));
+  }
+  &:active {
+    color: $activecolor;
+  }
+}

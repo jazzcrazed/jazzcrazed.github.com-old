@@ -24,7 +24,7 @@ body {
   background-color: #057;
   @include background-image(radial-gradient(14em 7em, ellipse farthest-corner, #006585 0%, #046 100%));
   color: $copyColor;
-  padding: 1em 1em 14em;
+  padding: 1em 1em 17em;
   @include text-shadow(1px 1px 0 rgba(0, 0, 0, .8));
 }
 
@@ -60,3 +60,5 @@ pre {
   padding-top: 1em;
   text-shadow: none;
 }
+
+.pagination { margin: 1em 0; }

@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'IcoMoon';
+	src: url('IcoMoon.eot');
+	src: url('IcoMoon.eot?#iefix') format('embedded-opentype'),
+		url('IcoMoon.svg#IcoMoon') format('svg'),
+		url('IcoMoon.woff') format('woff'),
+		url('IcoMoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Add the following classes to your stylesheet if you want to use data attributes for inserting your icons */
+.iconb:before, .icona:after {
+	font-family: 'IcoMoon';
+	content: attr(data-icon);
+}
+
+/* Add the following CSS properties to your stylesheet if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'IcoMoon';
+	font-style: normal;
+}
+.icon-feed:before {
+	content: "\0061";
+}
+.icon-twitter:before {
+	content: "\0062";
+}
+.icon-triangle:before {
+	content: "\0063";
+}
+.icon-triangle-2:before {
+	content: "\0064";
+}
+.icon-triangle-3:before {
+	content: "\0065";
+}
+.icon-triangle-4:before {
+	content: "\0066";
+}
+.icon-github:before {
+	content: "\0067";
+}

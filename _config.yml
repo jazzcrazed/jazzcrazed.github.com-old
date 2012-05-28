@@ -120,3 +120,5 @@ JB :
   name: MarcoCarag.com
   description: Marco Carag's blog about stuff he's into.
   url: http://www.marcocarag.com
+
+paginate: 4

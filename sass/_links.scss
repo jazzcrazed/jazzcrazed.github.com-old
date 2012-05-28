@@ -23,6 +23,7 @@ a {
   &:active { color: $redColor; }
 }
 
+.pagination a,
 .postCopy a,
 small a { @extend .blockCutType; }
 

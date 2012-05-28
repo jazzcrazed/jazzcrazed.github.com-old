@@ -1,8 +1,28 @@
 ---
 layout: default
 ---
+
+<!-- Pagination links -->
+<nav class="audimat pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="/" class="previous" title="Previous page">Previous</a>
+    {% else %}
+      <a href="/page{{paginator.previous_page}}" class="previous" title="Previous page">
+        Previous
+      </a>
+    {% endif %}
+  {% endif %}
+  <span class="page_number ">Page {{paginator.page}} of {{paginator.total_pages}}</span>
+  {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="next" title="Next page">
+      Next
+    </a>
+  {% endif %}
+</nav>
+
 <div class="middleSeparator">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
   <section class="postPreview box2">
     <h1>
       <a href="{{ post.url }}" class="deeplyEngravedType">
@@ -49,3 +69,22 @@ layout: default
   </section>
   {% endfor %}
 </div>
+
+<!-- Pagination links -->
+<nav class="centeredCopy pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="/" class="previous" title="Previous page">Previous</a>
+    {% else %}
+      <a href="/page{{paginator.previous_page}}" class="previous" title="Previous page">
+        Previous
+      </a>
+    {% endif %}
+  {% endif %}
+  <span class="page_number ">Page {{paginator.page}} of {{paginator.total_pages}}</span>
+  {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="next" title="Next page">
+      Next
+    </a>
+  {% endif %}
+</nav>

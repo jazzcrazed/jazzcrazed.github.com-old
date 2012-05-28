@@ -222,6 +222,7 @@ td { vertical-align: top; }
 @import "colors";
 
 /* Base */
+@import "global_mixins";
 @import "typography";
 @import "main";
 @import "effects";

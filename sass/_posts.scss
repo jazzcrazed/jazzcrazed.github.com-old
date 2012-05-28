@@ -5,6 +5,7 @@
 .postPreview {
   @extend .bottomSeparator;
 
+  &:nth-child(3),
   &:last-child {
     border: none;
     @include box-shadow(none);

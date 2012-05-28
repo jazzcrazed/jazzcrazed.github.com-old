@@ -2,6 +2,8 @@
    Typography
    ========================================================================== */
 
+@import "font_icons";
+
 @font-face {
   font-family: 'Merriweather';
   src: url('fonts/Merriweather-webfont.eot');
@@ -86,3 +88,9 @@ h1, h2, h3 {
 h1 { font-size: 210%; }
 h2 { font-size: 185%; }
 h3 { font-size: 160%; }
+
+.centeredCopy {
+  @extend .audimat;
+  a { @extend .blockCutType; }
+  text-align: center;
+}

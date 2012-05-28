@@ -1,0 +1,108 @@
+/* =============================================================================
+   Font Icons
+   ========================================================================== */
+
+@font-face {
+	font-family: 'IcoMoon';
+	src: url('fonts/IcoMoon.eot');
+	src: url('fonts/IcoMoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/IcoMoon.svg#IcoMoon') format('svg'),
+		url('fonts/IcoMoon.woff') format('woff'),
+		url('fonts/IcoMoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Add the following classes to your stylesheet if you want to use data attributes for inserting your icons */
+.iconb:before, .icona:after {
+	font-family: 'IcoMoon';
+	content: attr(data-icon);
+}
+
+/* Add the following CSS properties to your stylesheet if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'IcoMoon';
+	font-style: normal;
+}
+.icon-feed:before {
+	content: "\0061";
+}
+.icon-twitter:before {
+	content: "\0062";
+}
+.icon-triangle:before {
+	content: "\0063";
+}
+.icon-triangle-2:before {
+	content: "\0064";
+}
+.icon-triangle-3:before {
+	content: "\0065";
+}
+.icon-triangle-4:before {
+	content: "\0066";
+}
+.icon-github:before {
+	content: "\0067";
+}
+
+.replaceTextWithIcon {
+  @extend .hideText;
+  display: inline-block;
+
+  &::before {
+    display: inline-block;
+    left: 0;
+    position: absolute;
+    text-indent: 0;
+    vertical-align: top;
+  }
+}
+
+.previous,
+.next {
+  @extend .replaceTextWithIcon;
+  width: 1em;
+
+  &::before {
+    font-size: 1.3em;
+    line-height: .8em;
+  }
+}
+
+.previous {
+  &::before { content: '\00AB'; }
+}
+
+.next {
+  &::before { content: '\00BB'; }
+}
+
+.otherLinks {
+  margin-bottom: 1em;
+  > .iconb {
+    vertical-align: middle;
+    width: 1.2em;
+
+    &.icon-feed {
+      @include blockCutType(#f60, #f60 - 150, #f60 - 80);
+      font-size: 1.7em;
+
+      &:hover { color: #f60 + 100; }
+    }
+
+    &.icon-twitter {
+      @include blockCutType(#0af, #0af - 150, #0af - 80);
+      font-size: 2.3em;
+
+      &:hover { color: #0af + 100; }
+    }
+
+    &.icon-github {
+      @include blockCutType(#67f, #67f - 150, #67f - 80);
+      font-size: 2em;
+
+      &:hover { color: #67f + 100; }
+    }
+  }
+}
