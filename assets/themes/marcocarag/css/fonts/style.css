@@ -9,16 +9,18 @@
 	font-style: normal;
 }
 
-/* Add the following classes to your stylesheet if you want to use data attributes for inserting your icons */
-.iconb:before, .icona:after {
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
 	font-family: 'IcoMoon';
 	content: attr(data-icon);
+	speak: none;
 }
 
-/* Add the following CSS properties to your stylesheet if you want to have a class per icon */
+/* Use the following CSS code if you want to have a class per icon */
 [class^="icon-"]:before, [class*=" icon-"]:before {
 	font-family: 'IcoMoon';
 	font-style: normal;
+	speak: none;
 }
 .icon-feed:before {
 	content: "\0061";
@@ -26,18 +28,15 @@
 .icon-twitter:before {
 	content: "\0062";
 }
-.icon-triangle:before {
-	content: "\0063";
-}
-.icon-triangle-2:before {
-	content: "\0064";
-}
-.icon-triangle-3:before {
-	content: "\0065";
-}
-.icon-triangle-4:before {
-	content: "\0066";
-}
 .icon-github:before {
 	content: "\0067";
+}
+.icon-picassa:before {
+	content: "\0021";
+}
+.icon-heart:before {
+	content: "\0023";
+}
+.icon-star:before {
+	content: "\0022";
 }
