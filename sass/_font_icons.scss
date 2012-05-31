@@ -3,44 +3,44 @@
    ========================================================================== */
 
 @font-face {
-	font-family: 'IcoMoon';
-	src: url('fonts/IcoMoon.eot');
-	src: url('fonts/IcoMoon.eot?#iefix') format('embedded-opentype'),
-		url('fonts/IcoMoon.svg#IcoMoon') format('svg'),
-		url('fonts/IcoMoon.woff') format('woff'),
-		url('fonts/IcoMoon.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'IcoMoon';
+  src: url('fonts/IcoMoon.eot');
+  src: url('fonts/IcoMoon.eot?#iefix') format('embedded-opentype'),
+    url('fonts/IcoMoon.svg#IcoMoon') format('svg'),
+    url('fonts/IcoMoon.woff') format('woff'),
+    url('fonts/IcoMoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Add the following classes to your stylesheet if you want to use data attributes for inserting your icons */
 .iconb:before, .icona:after {
-	font-family: 'IcoMoon';
-	content: attr(data-icon);
+  font-family: 'IcoMoon';
+  content: attr(data-icon);
 }
 
 /* Add the following CSS properties to your stylesheet if you want to have a class per icon */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-	font-family: 'IcoMoon';
-	font-style: normal;
+  font-family: 'IcoMoon';
+  font-style: normal;
 }
 .icon-feed:before {
-	content: "\0061";
+  content: "\0061";
 }
 .icon-twitter:before {
-	content: "\0062";
+  content: "\0062";
 }
 .icon-github:before {
-	content: "\0067";
+  content: "\0067";
 }
 .icon-picassa:before {
-	content: "\0021";
+  content: "\0021";
 }
 .icon-heart:before {
-	content: "\0023";
+  content: "\0023";
 }
 .icon-star:before {
-	content: "\0022";
+  content: "\0022";
 }
 
 .replaceTextWithIcon {
@@ -49,8 +49,9 @@
 
   &::before {
     display: inline-block;
-    left: 0;
+    left: 0; right: 0;
     position: absolute;
+    text-align: center;
     text-indent: 0;
     vertical-align: top;
   }
@@ -59,6 +60,8 @@
 .previous,
 .next {
   @extend .replaceTextWithIcon;
+  height: 1.2em;
+  vertical-align: middle;
   width: 1em;
 
   &::before {

@@ -1,0 +1,22 @@
+#minefold-logo {
+  display: inline-block;
+  margin-left: -.3em;
+  vertical-align: -1.3em;
+  .logo-face-1,
+  .logo-face-3 {
+    @include transition(all .2s);
+    fill: #0a66ae;
+  }
+  .logo-face-2,
+  .logo-face-4 {
+    @include transition(all .2s);
+    fill: #1087e1;
+  }
+
+  &:hover {
+    .logo-face-1,
+    .logo-face-3 { fill: #0a66ae + 100; }
+    .logo-face-2,
+    .logo-face-4 { fill: #1087e1 + 100; }
+  }
+}
