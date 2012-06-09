@@ -10,7 +10,7 @@ image-url: URL TO ZOOMED JPG
 image-alt:
   ALT TEXT
 image-classes: "CLASSES"
-image-alt-as-caption: "TRUE/FALSE"
+image-alt-as-caption: true/false
 ---
 <p>
   PARAGRAPH TEXT
