@@ -18,6 +18,8 @@
   body > header {
     > h1, > h2 { display: block; }
   }
+
+  .otherLinks { display: none; }
 }
 @media only screen and (min-width: 50em) {
   body {
