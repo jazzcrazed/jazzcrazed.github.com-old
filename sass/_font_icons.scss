@@ -6,9 +6,9 @@
   font-family: 'IcoMoon';
   src: url('fonts/IcoMoon.eot');
   src: url('fonts/IcoMoon.eot?#iefix') format('embedded-opentype'),
-    url('fonts/IcoMoon.woff') format('woff'),
-    url('fonts/IcoMoon.ttf') format('truetype'),
-    url('fonts/IcoMoon.svg#IcoMoon') format('svg');
+       url('fonts/IcoMoon.woff') format('woff'),
+       url('fonts/IcoMoon.ttf') format('truetype'),
+       url('fonts/IcoMoon.svg#IcoMoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,7 +33,7 @@
 .icon-github:before {
   content: "\0067";
 }
-.icon-picassa:before {
+.icon-picasa:before {
   content: "\0021";
 }
 .icon-heart:before {

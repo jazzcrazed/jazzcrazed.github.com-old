@@ -34,7 +34,7 @@ p {
 }
 
 code {
-  color: $lightCopyColor;
+  color: $lightCopyColor + 25;
   font-weight: bold;
 }
 
@@ -59,6 +59,15 @@ pre {
   color: goldenrod;
   padding-top: 1em;
   text-shadow: none;
+
+  &.limitHeight {
+    height: 15em;
+    overflow: scroll;
+  }
+
+  u, b, em, i {
+    color: #daa520 + 50;
+  }
 }
 
 .pagination {
