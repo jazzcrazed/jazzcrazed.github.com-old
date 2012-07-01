@@ -93,3 +93,10 @@ h3 { font-size: 160%; }
   a { @extend .blockCutType; }
   text-align: center;
 }
+
+.quotation {
+  border-left: .5em solid rgba(255,255,255,.25);
+  color: rgba(255,255,255,.9);
+  font-family: sans-serif;
+  padding-left: .5em;
+}
