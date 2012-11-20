@@ -3,7 +3,11 @@
   <div class="postCopy">
     <div class="clearfix">
       {% if page.image-classes == "fullWidth" %}
-        <p>{{ page.description }}</p>
+        {% if page.description %}
+          <p>{{ page.description }}</p>
+        {% elsif page.description_paragraphless %}
+          {{ page.description_paragraphless }}
+        {% endif %}
       {% endif %}
 
       {% if page.image %}
@@ -29,7 +33,11 @@
       {% endif %}
 
       {% unless page.image-classes == "fullWidth" %}
-        <p>{{ page.description }}</p>
+        {% if page.description %}
+          <p>{{ page.description }}</p>
+        {% elsif page.description_paragraphless %}
+          {{ page.description_paragraphless }}
+        {% endif %}
       {% endunless %}
     </div>
 

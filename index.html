@@ -47,6 +47,15 @@ layout: default
           Continue reading
         </a>
       </div>
+    {% elsif post.description_paragraphless %}
+      <div class="description">
+        {{ post.description_paragraphless }}
+      </div>
+      <div class="centeredLink">
+        <a href="{{ post.url }}">
+          Continue reading
+        </a>
+      </div>
     {% else %}
       {{ post.content }}
     {% endif %}
