@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10"> <![endif]-->
+<!--[if IE 10]>   <html class="no-js ie10"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class='no-js'>
+  <!--<![endif]-->
+  <head>
+    <meta charset='utf-8' />
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+    <title>
+      forms
+      - HowAboutWe Couples Style Guide
+    </title>
+    <meta content='' name='description' />
+    <meta content='width=device-width' name='viewport' />
+    <link href='stylesheets/application.css' rel='stylesheet' />
+    <script src="javascripts/modernizr.custom.08494.js" type="text/javascript"></script>
+    <link href="stylesheets/styleguide.css" media="screen" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body class='forms'>
+    <header>
+      <h1 class='paddedNarrow serif'>HowAboutWe Couples Styleguide</h1>
+      <nav>
+        <ul>
+          <li class='palette'>
+            <a class='paddedNarrow' href='palette.html'>Palette</a>
+          </li>
+          <li class='typography'>
+            <a class='paddedNarrow' href='typography.html'>Typography</a>
+          </li>
+          <li class='ui'>
+            <a class='paddedNarrow' href='ui.html'>UI</a>
+          </li>
+          <li class='forms'>
+            <a class='paddedNarrow' href='forms.html'>Forms</a>
+          </li>
+          <li class='layout'>
+            <a class='paddedNarrow' href='styleguide-layout.html'>Layout</a>
+          </li>
+          <li class='effects'>
+            <a class='paddedNarrow' href='effects.html'>Shadows and Effects</a>
+          </li>
+          <li class='boilerplate'>
+            <a class='paddedNarrow' href='boilerplate.html'>Boilerplate</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id='main' role='main'>
+      <h1 class='serif'>forms</h1>
+      <section class='padded'>
+  <h1>Default form</h1>
+  <div class='grid12 pattern padded beigeBackground'>
+    <form>
+      <fieldset>
+        <label>I am a label</label>
+        <input placeholder='Text field' type='text' />
+      </fieldset>
+      <fieldset>
+        <label>Another label</label>
+        <input placeholder='Password' type='password' />
+      </fieldset>
+      <fieldset>
+        <label>Labelification</label>
+        <textarea></textarea>
+      </fieldset>
+      <fieldset>
+        <div class='error'>This is an error, replacing label</div>
+        <input placeholder='Text field' type='text' />
+      </fieldset>
+      <fieldset>
+        <label>Stinkin&rsquo; label</label>
+        <select>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <option>Option 4</option>
+        </select>
+      </fieldset>
+      <button type='submit'>
+        <div class='text'>Submit me!</div>
+      </button>
+    </form>
+  </div>
+</section>
+    </div>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+
+    <script type='text/javascript'>
+      //<![CDATA[
+        $(document).ready(function() {
+          $('input[placeholder]').each(function() {
+            var inputElement = $(this)
+            var placeholderText = inputElement.attr('placeholder');
+            var placeholderContainer = $('<div class="placeholderContainer" />');
+            inputElement.attr('data-placeholder', placeholderText);
+            inputElement.removeAttr('placeholder').after(placeholderContainer);
+            inputElement.detach().appendTo(placeholderContainer);
+            placeholderContainer.append(
+              '<span class="placeholder" data-placeholder="' + placeholderText + '">'
+                + placeholderText
+              + '</span>');
+          });
+
+          function hidePlaceholder($placeholder) {
+            $placeholder.css('z-index','-10');
+          }
+
+          function showPlaceholder($placeholder) {
+            $placeholder.css('z-index','5');
+          }
+
+          $('form').on('blur', 'input', function() {
+            if ($(this).val() === '') {
+              showPlaceholder($(this).siblings('.placeholder'))
+            }
+          });
+
+          $('form').on('focus', 'input', function() {
+            hidePlaceholder($(this).siblings('.placeholder'))
+          });
+
+          $('form').on('click', '.placeholder', function() {
+            var placeholderText = $(this).text();
+            $(this).siblings('input[data-placeholder="' + placeholderText + '"]').focus();
+          });
+        });
+      //]]>
+    </script>
+  </body>
+</html>

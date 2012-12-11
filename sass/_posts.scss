@@ -31,7 +31,7 @@
     @extend .deeplyEngravedType;
     font-size: 250%;
   }
-  h2 { color: $lightCopyColor; }
+  h2 { color: $lightCopyColor + 15; }
 }
 
 .tags {
@@ -54,6 +54,7 @@
 
 .comments {
   @extend .topSeparator;
+  padding-top: 1em;
 
   a { @extend .blockCutType; }
 }

@@ -95,8 +95,40 @@ h3 { font-size: 160%; }
 }
 
 .quotation {
-  border-left: .5em solid rgba(255,255,255,.25);
+  border: {
+    width: 0 0 0 10px;
+    style: solid;
+    color: rgba(255,255,255,.25);
+  }
   color: rgba(255,255,255,.9);
   font-family: sans-serif;
   padding-left: .5em;
+
+  &.right, &.left {
+    margin-top: 0;
+    width: 40%;
+  }
+
+  $space: 4%;
+
+  &.left {
+    border: {
+      left-width: 0;
+      right-width: 10px;
+    }
+    margin-right: $space;
+    padding: {
+      left: 0;
+      right: $space / 2;
+    }
+  }
+  &.right {
+    margin-left: $space;
+    padding: {
+      left: $space / 2;
+      right: 0;
+    }
+  }
+
+  &.big{ @extend h3; }
 }

@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10"> <![endif]-->
+<!--[if IE 10]>   <html class="no-js ie10"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class='no-js'>
+  <!--<![endif]-->
+  <head>
+    <meta charset='utf-8' />
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+    <title>
+      Layout
+      - HowAboutWe Couples Style Guide
+    </title>
+    <meta content='' name='description' />
+    <meta content='width=device-width' name='viewport' />
+    <link href='stylesheets/application.css' rel='stylesheet' />
+    <script src="javascripts/modernizr.custom.08494.js" type="text/javascript"></script>
+    <link href="stylesheets/styleguide.css" media="screen" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body class='styleguide-layout'>
+    <header>
+      <h1 class='paddedNarrow serif'>HowAboutWe Couples Styleguide</h1>
+      <nav>
+        <ul>
+          <li class='palette'>
+            <a class='paddedNarrow' href='palette.html'>Palette</a>
+          </li>
+          <li class='typography'>
+            <a class='paddedNarrow' href='typography.html'>Typography</a>
+          </li>
+          <li class='ui'>
+            <a class='paddedNarrow' href='ui.html'>UI</a>
+          </li>
+          <li class='forms'>
+            <a class='paddedNarrow' href='forms.html'>Forms</a>
+          </li>
+          <li class='layout'>
+            <a class='paddedNarrow' href='styleguide-layout.html'>Layout</a>
+          </li>
+          <li class='effects'>
+            <a class='paddedNarrow' href='effects.html'>Shadows and Effects</a>
+          </li>
+          <li class='boilerplate'>
+            <a class='paddedNarrow' href='boilerplate.html'>Boilerplate</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id='main' role='main'>
+      <h1 class='serif'>Layout</h1>
+      <ul class='bulleted sg-tableOfContents'>
+  <li>
+    <a href='#grid'>Grid</a>
+  </li>
+  <li>
+    <a href='#padding'>Paddings and Margins</a>
+  </li>
+</ul>
+<section class='clearfix paddedNarrow' id='grid'>
+  <h1>The Grid</h1>
+  <div class='row'>
+    <div class='grid11 column'>
+      <p>
+        We use a grid that has no gutters, which makes it simpler than traditional CSS
+        grids. 34 columns is the widest column, but there can be an unlimited number
+        of columns per row.
+      </p>
+    </div>
+    <div class='grid11 column'>
+      <p>
+        The
+        <code><b>.column</b></code>
+        class is only needed if the columns are floating.
+        <code><b>.grid*</b></code>
+        classes can be used for applying standard widths anywhere.
+      </p>
+      <p>Make sure to clearfix on the columns&rsquo; parent.</p>
+    </div>
+  </div>
+</section>
+<section id='theGrid'>
+  <div class='clearfix numbers'>
+    <div class='grid1 column'>1</div>
+    <div class='grid1 column'>2</div>
+    <div class='grid1 column'>3</div>
+    <div class='grid1 column'>4</div>
+    <div class='grid1 column'>5</div>
+    <div class='grid1 column'>6</div>
+    <div class='grid1 column'>7</div>
+    <div class='grid1 column'>8</div>
+    <div class='grid1 column'>9</div>
+    <div class='grid1 column'>10</div>
+    <div class='grid1 column'>11</div>
+    <div class='grid1 column'>12</div>
+    <div class='grid1 column'>13</div>
+    <div class='grid1 column'>14</div>
+    <div class='grid1 column'>15</div>
+    <div class='grid1 column'>16</div>
+    <div class='grid1 column'>17</div>
+    <div class='grid1 column'>18</div>
+    <div class='grid1 column'>19</div>
+    <div class='grid1 column'>20</div>
+    <div class='grid1 column'>21</div>
+    <div class='grid1 column'>22</div>
+    <div class='grid1 column'>23</div>
+    <div class='grid1 column'>24</div>
+    <div class='grid1 column'>25</div>
+    <div class='grid1 column'>26</div>
+    <div class='grid1 column'>27</div>
+    <div class='grid1 column'>28</div>
+    <div class='grid1 column'>29</div>
+    <div class='grid1 column'>30</div>
+    <div class='grid1 column'>31</div>
+    <div class='grid1 column'>32</div>
+    <div class='grid1 column'>33</div>
+    <div class='grid1 column'>34</div>
+  </div>
+  <div class='clearfix grid34'>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid1 column'>
+      grid1
+      <br />
+      30px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid2 column'>
+      grid2
+      <br />
+      60px
+    </div>
+    <div class='grid3 column'>
+      grid3
+      <br />
+      90px
+    </div>
+    <div class='grid3 column'>
+      grid3
+      <br />
+      90px
+    </div>
+    <div class='grid3 column'>
+      grid3
+      <br />
+      90px
+    </div>
+    <div class='grid3 column'>
+      grid3
+      <br />
+      90px
+    </div>
+    <div class='grid3 column'>
+      grid3
+      <br />
+      90px
+    </div>
+    <div class='grid3 column'>
+      grid3
+      <br />
+      90px
+    </div>
+    <div class='grid3 column'>
+      grid3
+      <br />
+      90px
+    </div>
+    <div class='grid3 column'>
+      grid3
+      <br />
+      90px
+    </div>
+    <div class='grid3 column'>
+      grid3
+      <br />
+      90px
+    </div>
+    <div class='grid3 column'>
+      grid3
+      <br />
+      90px
+    </div>
+    <div class='grid3 column'>
+      grid3
+      <br />
+      90px
+    </div>
+    <div class='grid4 column'>
+      grid4
+      <br />
+      120px
+    </div>
+    <div class='grid4 column'>
+      grid4
+      <br />
+      120px
+    </div>
+    <div class='grid4 column'>
+      grid4
+      <br />
+      120px
+    </div>
+    <div class='grid4 column'>
+      grid4
+      <br />
+      120px
+    </div>
+    <div class='grid4 column'>
+      grid4
+      <br />
+      120px
+    </div>
+    <div class='grid4 column'>
+      grid4
+      <br />
+      120px
+    </div>
+    <div class='grid4 column'>
+      grid4
+      <br />
+      120px
+    </div>
+    <div class='grid4 column'>
+      grid4
+      <br />
+      120px
+    </div>
+    <div class='grid5 column'>
+      grid5
+      <br />
+      150px
+    </div>
+    <div class='grid5 column'>
+      grid5
+      <br />
+      150px
+    </div>
+    <div class='grid5 column'>
+      grid5
+      <br />
+      150px
+    </div>
+    <div class='grid5 column'>
+      grid5
+      <br />
+      150px
+    </div>
+    <div class='grid5 column'>
+      grid5
+      <br />
+      150px
+    </div>
+    <div class='grid5 column'>
+      grid5
+      <br />
+      150px
+    </div>
+    <div class='grid6 column'>
+      grid6
+      <br />
+      180px
+    </div>
+    <div class='grid6 column'>
+      grid6
+      <br />
+      180px
+    </div>
+    <div class='grid6 column'>
+      grid6
+      <br />
+      180px
+    </div>
+    <div class='grid6 column'>
+      grid6
+      <br />
+      180px
+    </div>
+    <div class='grid6 column'>
+      grid6
+      <br />
+      180px
+    </div>
+    <div class='grid7 column'>
+      grid7
+      <br />
+      210px
+    </div>
+    <div class='grid7 column'>
+      grid7
+      <br />
+      210px
+    </div>
+    <div class='grid7 column'>
+      grid7
+      <br />
+      210px
+    </div>
+    <div class='grid7 column'>
+      grid7
+      <br />
+      210px
+    </div>
+    <div class='grid8 column'>
+      grid8
+      <br />
+      240px
+    </div>
+    <div class='grid8 column'>
+      grid8
+      <br />
+      240px
+    </div>
+    <div class='grid8 column'>
+      grid8
+      <br />
+      240px
+    </div>
+    <div class='grid8 column'>
+      grid8
+      <br />
+      240px
+    </div>
+    <div class='grid9 column'>
+      grid9
+      <br />
+      270px
+    </div>
+    <div class='grid9 column'>
+      grid9
+      <br />
+      270px
+    </div>
+    <div class='grid9 column'>
+      grid9
+      <br />
+      270px
+    </div>
+    <div class='grid10 column'>
+      grid10
+      <br />
+      300px
+    </div>
+    <div class='grid10 column'>
+      grid10
+      <br />
+      300px
+    </div>
+    <div class='grid10 column'>
+      grid10
+      <br />
+      300px
+    </div>
+    <div class='grid11 column'>
+      grid11
+      <br />
+      330px
+    </div>
+    <div class='grid11 column'>
+      grid11
+      <br />
+      330px
+    </div>
+    <div class='grid11 column'>
+      grid11
+      <br />
+      330px
+    </div>
+    <div class='grid12 column'>
+      grid12
+      <br />
+      360px
+    </div>
+    <div class='grid12 column'>
+      grid12
+      <br />
+      360px
+    </div>
+    <div class='grid13 column'>
+      grid13
+      <br />
+      390px
+    </div>
+    <div class='grid13 column'>
+      grid13
+      <br />
+      390px
+    </div>
+    <div class='grid14 column'>
+      grid14
+      <br />
+      420px
+    </div>
+    <div class='grid14 column'>
+      grid14
+      <br />
+      420px
+    </div>
+    <div class='grid15 column'>
+      grid15
+      <br />
+      450px
+    </div>
+    <div class='grid15 column'>
+      grid15
+      <br />
+      450px
+    </div>
+    <div class='grid16 column'>
+      grid16
+      <br />
+      480px
+    </div>
+    <div class='grid16 column'>
+      grid16
+      <br />
+      480px
+    </div>
+    <div class='grid17 column'>
+      grid17
+      <br />
+      510px
+    </div>
+    <div class='grid17 column'>
+      grid17
+      <br />
+      510px
+    </div>
+    <div class='grid18 column'>
+      grid18
+      <br />
+      540px
+    </div>
+    <div class='grid19 column'>
+      grid19
+      <br />
+      570px
+    </div>
+    <div class='grid20 column'>
+      grid20
+      <br />
+      600px
+    </div>
+    <div class='grid21 column'>
+      grid21
+      <br />
+      630px
+    </div>
+    <div class='grid22 column'>
+      grid22
+      <br />
+      660px
+    </div>
+    <div class='grid23 column'>
+      grid23
+      <br />
+      690px
+    </div>
+    <div class='grid24 column'>
+      grid24
+      <br />
+      720px
+    </div>
+    <div class='grid25 column'>
+      grid25
+      <br />
+      750px
+    </div>
+    <div class='grid26 column'>
+      grid26
+      <br />
+      780px
+    </div>
+    <div class='grid27 column'>
+      grid27
+      <br />
+      810px
+    </div>
+    <div class='grid28 column'>
+      grid28
+      <br />
+      840px
+    </div>
+    <div class='grid29 column'>
+      grid29
+      <br />
+      870px
+    </div>
+    <div class='grid30 column'>
+      grid30
+      <br />
+      900px
+    </div>
+    <div class='grid31 column'>
+      grid31
+      <br />
+      930px
+    </div>
+    <div class='grid32 column'>
+      grid32
+      <br />
+      960px
+    </div>
+    <div class='grid33 column'>
+      grid33
+      <br />
+      990px
+    </div>
+    <div class='grid34 column'>
+      grid34
+      <br />
+      1020px
+    </div>
+  </div>
+</section>
+<section class='paddedNarrow' id='padding'>
+  <h1>Paddings and Margins</h1>
+  <p>There are three default padding/margin sizes and sass variables:</p>
+  <dl class='blue' style='overflow: hidden;'>
+    <dt class='column'>$defaultUnit:</dt>
+    <dd class='column'>30px</dd>
+    <dt class='column'>$narrowUnit:</dt>
+    <dd class='column'>20px</dd>
+    <dt class='column'>$thickUnit:</dt>
+    <dd class='column'>60px</dd>
+  </dl>
+  <p>Anything outside of the defaults can be specified, but should be used sparingly</p>
+  <div class='clearfix marginBottom'>
+    <div class='paddedNarrow grid8 pinkBackground column' style='height: 300px;'>
+      <div class='paddedNarrow beigeBackground' style='height: 100%;'>
+        The pink area has narrow padding.
+      </div>
+    </div>
+    <div class='padded column grid8 pinkBackground' style='height: 300px;'>
+      <div class='paddedNarrow darkBeigeBackground' style='height: 100%;'>
+        The pink area has normal padding.
+      </div>
+    </div>
+    <div class='paddedThick column grid8 pinkBackground' style='height: 300px;'>
+      <div class='paddedNarrow darkGrayBackground' style='height: 100%;'>
+        The pink area has thick padding.
+      </div>
+    </div>
+  </div>
+  <div class='pinkBackground grid26'>
+    <div class='beigeBackground marginBottomNarrow paddedNarrow'>
+      This has narrow bottom margin.
+    </div>
+    <div class='beigeBackground marginBottom paddedNarrow'>
+      This has normal bottom margin.
+    </div>
+    <div class='beigeBackground marginBottomThick paddedNarrow'>
+      This has thick bottom margin.
+    </div>
+    <div class='beigeBackground paddedNarrow'>
+      Content with no margin offset by the above margin.
+    </div>
+  </div>
+</section>
+    </div>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+
+
+  </body>
+</html>

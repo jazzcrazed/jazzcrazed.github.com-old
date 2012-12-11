@@ -21,6 +21,7 @@
 .left { float: left; }
 .right { float: right; }
 .bottom { bottom: 0; }
+.cleared { clear: both; }
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
