@@ -21,17 +21,19 @@ $(function() {
 
       this.avatars = '<a href="http://twitter.com/search?q=' + url + '">';
 
-      for(i = 0; i < tweets.length; i++) {
-        tweet = tweets[i];
+      if (tweets.length) {
+        for(i = 0; i < tweets.length; i++) {
+          tweet = tweets[i];
 
-        this.avatars = this.avatars +
-          '<img src="' + tweet.profile_image_url + '" alt="@' + tweet.from_user +
-          '" class="avatar" />'
+          this.avatars = this.avatars +
+            '<img src="' + tweet.profile_image_url + '" alt="@' + tweet.from_user +
+            '" class="avatar" />'
+        }
+
+        this.avatars = this.avatars + '</a>';
+
+        this.$container.append(this.avatars).removeClass('hidden');
       }
-
-      this.avatars = this.avatars + '</a>';
-
-      this.$container.append(this.avatars).removeClass('hidden');
     }
   };
 
