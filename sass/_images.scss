@@ -16,10 +16,12 @@ figure,
   float: left;
   margin: 0 1em .5em 0;
   max-width: 60%;
+  position: relative;
+  z-index: 5;
 
   &.right { margin: 0 0 .5em 1em; }
 
-  img {
+  img, .img {
     border-radius: .25em;
     @include box-shadow(0 0 8px rgba(0,0,0,.7));
     max-width: 100%;
