@@ -15,7 +15,9 @@
   <meta property="og:type"        content="article">
   <meta property="og:url"         content="http://marcocarag.com{{ page.url }}/">
   <meta property="og:site_name"   content="MarcoCarag.com">
-  {% if page.image %}
+  {% if page.fb-image %}
+  <meta property="og:image"       content="{{ page.fb-image }}">
+  {% elsif page.image %}
   <meta property="og:image"       content="{{ page.image }}">
   {% endif %}
   <meta property="og:title"       content="{% include themes/marcocarag/determineTitle %}">
