@@ -4,11 +4,12 @@
 $curledShadowColor: rgba(0, 0, 0, .7);
 @mixin curledShadow {
   background-color: $curledShadowColor;
-  bottom: 9px;
+  bottom: .65em;
   content: '';
-  @include box-shadow(0 6px 10px $curledShadowColor);
+  @include box-shadow(0 .4em .3em .05em $curledShadowColor);
   width: 80%; height: 20%;
   position: absolute;
+  z-index: -1;
 }
 
 figure,
@@ -23,14 +24,14 @@ figure,
 
   img, .img {
     border-radius: .25em;
-    @include box-shadow(0 0 8px rgba(0,0,0,.7));
+    @include box-shadow(0 0 .15em rgba(0,0,0,.8));
     max-width: 100%;
     z-index: 1;
   }
 
   &.fullWidth {
     float: none;
-    margin: 0 0 .5em;
+    margin: 0 0 .7em;
     max-width: 100%;
     text-align: center;
   }
@@ -40,8 +41,8 @@ figure,
 
 .boxshadow .postImage {
   padding: {
-    left: 8px;
-    right: 8px;
+    left: .5em;
+    right: .5em;
   }
 }
 
@@ -51,13 +52,13 @@ figure,
   &:before {
     @include curledShadow;
     @include rotate(-2deg);
-    left: 10px;
+    left: .6em;
   }
 
   &:after {
     @include curledShadow;
     @include rotate(2deg);
-    right: 10px;
+    right: .6em;
   }
 }
 

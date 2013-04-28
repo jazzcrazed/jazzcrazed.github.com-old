@@ -14,9 +14,21 @@
     display: none;
   }
 }
-@media only screen and (max-width: 43em) {
-  body > header {
-    > h1, > h2 { display: block; }
+@media only screen and (max-width: 49em) {
+  body {
+    > header {
+      > h1, > h2 { display: block; }
+    }
+
+    > header,
+    .postContent,
+    .postPreview {
+      margin: 0 1em;
+    }
+
+    #disqus_thread {
+      padding: 0 1em;
+    }
   }
 
   .otherLinks { display: none; }
@@ -24,16 +36,13 @@
 @media only screen and (min-width: 50em) {
   body {
     font-size: 1.3em;
-    padding: {
-      left: 2em;
-      right: 2em;
-    }
 
     > header,
-    > [role=main] {
+    .postContent,
+    .postPreview,
+    #disqus_thread {
       margin: 0 auto;
-      max-width: 1300px;
+      max-width: 43em;
     }
   }
-  small { font-size: .75em; }
 }

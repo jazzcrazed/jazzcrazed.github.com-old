@@ -13,19 +13,18 @@
 
 a {
   text-decoration: none;
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
+  @include transition(all .2s);
 
-  &, &:visited { color: $darkCopyColor; }
-  &:hover { color: $greenColor; }
-  &:active { color: $redColor; }
+  &, &:visited { color: $copyColor; }
+  &:hover { color: $redColor; }
+  &:active { color: $greenColor; }
 }
 
 .pagination a,
 .postCopy a,
-small a { @extend .blockCutType; }
+small a {
+  @extend .blockCutType;
+}
 
 .centeredLink {
   font: {

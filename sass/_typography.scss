@@ -4,47 +4,36 @@
 @import "font_icons";
 
 @font-face {
-  font-family: 'Merriweather';
-  src: url('fonts/Merriweather-webfont.eot');
-  src: url('fonts/Merriweather-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/Merriweather-webfont.woff') format('woff'),
-       url('fonts/Merriweather-webfont.ttf') format('truetype'),
-       url('fonts/Merriweather-webfont.svg#MerriweatherRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  src: url('fonts/Merriweather-Bold-webfont.eot');
-  src: url('fonts/Merriweather-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/Merriweather-Bold-webfont.woff') format('woff'),
-       url('fonts/Merriweather-Bold-webfont.ttf') format('truetype'),
-       url('fonts/Merriweather-Bold-webfont.svg#MerriweatherBold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'audimat';
-  src: url('fonts/audimat-bold-webfont.eot');
-  src: url('fonts/audimat-bold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/audimat-bold-webfont.woff') format('woff'),
-       url('fonts/audimat-bold-webfont.ttf') format('truetype'),
-       url('fonts/audimat-bold-webfont.svg#AUdimatBold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'audimat';
-  src: url('fonts/audimat-italic-webfont.eot');
-  src: url('fonts/audimat-italic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/audimat-italic-webfont.woff') format('woff'),
-       url('fonts/audimat-italic-webfont.ttf') format('truetype'),
-       url('fonts/audimat-italic-webfont.svg#AUdimatItalic') format('svg');
+  font-family: 'Afta Serif';
+  src: url('fonts/AftaSerifThin-Italic-webfont.eot');
+  src: url('fonts/AftaSerifThin-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/AftaSerifThin-Italic-webfont.woff') format('woff'),
+       url('fonts/AftaSerifThin-Italic-webfont.ttf') format('truetype'),
+       url('fonts/AftaSerifThin-Italic-webfont.svg#AftaSerifItalic') format('svg');
   font-weight: normal;
   font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: 'Afta Serif';
+  src: url('fonts/AftaSerifThin-Regular-webfont.eot');
+  src: url('fonts/AftaSerifThin-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/AftaSerifThin-Regular-webfont.woff') format('woff'),
+       url('fonts/AftaSerifThin-Regular-webfont.ttf') format('truetype'),
+       url('fonts/AftaSerifThin-Regular-webfont.svg#AftaSerifRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  src: url('fonts/YanoneKaffeesatz-Regular-webfont.eot');
+  src: url('fonts/YanoneKaffeesatz-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/YanoneKaffeesatz-Regular-webfont.woff') format('woff'),
+       url('fonts/YanoneKaffeesatz-Regular-webfont.ttf') format('truetype'),
+       url('fonts/YanoneKaffeesatz-Regular-webfont.svg#yanonekaffeesatzregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -62,34 +51,30 @@
   font-family: audimat;
 }
 
-.sansSerif {
-  font: {
-    family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    weight: 300;
-  }
-}
+.sansSerif { font-family: 'Yanone Kaffeesatz'; }
 
 body,
 .copyFont,
 .serif {
   font: {
-    family: Merriweather;
+    family: 'Afta Serif';
   }
   text-transform: none;
 }
 
 h1, h2, h3 {
-  font-family: audimat;
+  @extend .sansSerif;
   font-weight: normal;
+  line-height: 1.1;
   margin: .5em 0;
 }
 
-h1 { font-size: 210%; }
-h2 { font-size: 185%; }
-h3 { font-size: 160%; }
+h1 { font-size: 400%; }
+h2 { font-size: 300%; }
+h3 { font-size: 200%; }
 
 .centeredCopy {
-  @extend .audimat;
+  @extend .sansSerif;
   a { @extend .blockCutType; }
   text-align: center;
 }
@@ -98,10 +83,10 @@ h3 { font-size: 160%; }
   border: {
     width: 0 0 0 10px;
     style: solid;
-    color: rgba(255,255,255,.25);
+    color: rgba(black,.25);
   }
-  color: rgba(255,255,255,.9);
-  font-family: sans-serif;
+  color: $darkCopyColor;
+  @extend .sansSerif;
   padding-left: .5em;
 
   &.right, &.left {

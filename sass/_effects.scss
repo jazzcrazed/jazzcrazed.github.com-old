@@ -4,19 +4,21 @@
 .blockCutType {
   @include blockCutType;
   &:hover,
-  &.red { @include blockCutType($redColor, #700, #d00); }
+  &.red  { @include blockCutType($redColor, #700, #f00); }
 }
 
 .blockCutType:active,
 .deeplyEngravedType {
-  @include text-shadow(
-    -1px -1px 1px rgba(0, 0, 0, 0.85),
-    1px 1px 1px rgba(255, 255, 255, 0.6)
-  );
+  &, &.red {
+    @include text-shadow(
+      -1px -1px 1px rgba(0, 0, 0, 0.9),
+      1px 1px 1px rgba(255, 255, 255, 0.8)
+    );
+  }
 }
 
 .deeplyEngravedType {
-  color: $darkCopyColor;
+  color: $copyColor;
 }
 
 .embossedType {
@@ -29,9 +31,7 @@
 
 @mixin colorframes {
   10% { color: $redColor; }
-  36% { color: cyan; }
-  52% { color: $greenColor; }
-  68% { color: yellow; }
+  52% { color: red; }
   84% { color: violet; }
 }
 
@@ -64,9 +64,15 @@
 @-o-keyframes color-shift { @include colorframes }
 
 .heart {
+  color: orange;
   cursor: pointer;
   display: inline-block;
-  -webkit-animation: color-shift 120s infinite;
+  font: {
+    family: serif;
+    style: normal;
+  }
+  letter-spacing: -.1em;
+  -webkit-animation: color-shift 45s infinite;
 
   @include scale(1);
   &:hover {

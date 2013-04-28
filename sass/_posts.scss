@@ -5,15 +5,8 @@
 .postPreview {
   @extend .bottomSeparator;
 
-  &:nth-child(3),
-  &:last-child {
-    border: none;
-    @include box-shadow(none);
-  }
-
   > h1 {
-    line-height: 1.2em;
-    margin-top: 0;
+    line-height: 1.1em;
 
     a:before {
       content: '☙';
@@ -24,14 +17,28 @@
 }
 
 .post {
-  max-width: 43em;
-
   a { font-weight: bold; }
   h1 {
     @extend .deeplyEngravedType;
-    font-size: 250%;
+    margin-bottom: .2em;
   }
   h2 { color: $lightCopyColor + 15; }
+}
+
+.postMeta {
+  clear: both;
+  font: {
+    size: 65%;
+    style: italic;
+  }
+
+  strong, a:link {
+    font: {
+      style: normal;
+      weight: normal;
+    }
+    text-transform: uppercase;
+  }
 }
 
 .tags {
@@ -49,12 +56,18 @@
       &:before { content: ' and '; }
       &:after { content: '.'; }
     }
+
+    &:first-child {
+      &:before { content: ''; }
+    }
   }
 }
 
 .comments {
+  background-color: rgba(black,.1);
+  @include box-shadow(inset 0 0 5px rgba(black,.2));
   clear: both;
-  @extend .topSeparator;
+  margin-top: 1em;
   padding-top: 1em;
 
   a { @extend .blockCutType; }

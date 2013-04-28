@@ -2,70 +2,50 @@
 layout: default
 ---
 
-<!-- Pagination links -->
-<nav class="centeredCopy pagination">
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-      <a href="/" class="previous" title="Previous page">Previous</a>
-    {% else %}
-      <a href="/page{{paginator.previous_page}}" class="previous" title="Previous page">
-        Previous
-      </a>
-    {% endif %}
-  {% endif %}
-  <span class="page_number ">Page {{paginator.page}} of {{paginator.total_pages}}</span>
-  {% if paginator.next_page %}
-    <a href="/page{{paginator.next_page}}" class="next" title="Next page">
-      Next
+{% for post in paginator.posts %}
+<section class="postPreview">
+  <h1>
+    <a href="{{ post.url }}" class="deeplyEngravedType">
+      {{ post.title }}
     </a>
+  </h1>
+  {% if post.image %}
+  <div class="postImage {% if post.image-classes %}{{ post.image-classes }}{% endif %}">
+    <div class="curledShadow">
+      <img src="{{ post.image }}"
+        alt="{% if post.image-alt %}{{ post.image-alt }}{% endif %}" />
+    </div>
+  </div>
   {% endif %}
-</nav>
-
-<div class="middleSeparator">
-  {% for post in paginator.posts %}
-  <section class="postPreview box2">
-    <h1>
-      <a href="{{ post.url }}" class="deeplyEngravedType">
-        {{ post.title }}
+  <div class="postCopy">
+  {% if post.description %}
+    <p class="description">
+      {{ post.description }}
+    </p>
+    <div class="centeredLink">
+      <a href="{{ post.url }}">
+        Continue reading
       </a>
-    </h1>
-    {% if post.image %}
-    <div class="postImage {% if post.image-classes %}{{ post.image-classes }}{% endif %}">
-      <div class="curledShadow">
-        <img src="{{ post.image }}"
-          alt="{% if post.image-alt %}{{ post.image-alt }}{% endif %}" />
-      </div>
     </div>
-    {% endif %}
-    <div class="postCopy">
-    {% if post.description %}
-      <p class="description">
-        {{ post.description }}
-      </p>
-      <div class="centeredLink">
-        <a href="{{ post.url }}">
-          Continue reading
-        </a>
-      </div>
-    {% elsif post.description_paragraphless %}
-      <div class="description">
-        {{ post.description_paragraphless }}
-      </div>
-      <div class="centeredLink">
-        <a href="{{ post.url }}">
-          Continue reading
-        </a>
-      </div>
-    {% else %}
-      {{ post.content }}
-    {% endif %}
+  {% elsif post.description_paragraphless %}
+    <div class="description">
+      {{ post.description_paragraphless }}
     </div>
-    <small>
-      On
-      <time datetime="{{ post.date | date_to_xmlschema }}">
-        <b><i>{{ post.date | date_to_long_string }}</b></i> at <i>{{ post.time }}</i>
-      </time>
-      {% if post.tags %}
+    <div class="centeredLink">
+      <a href="{{ post.url }}">
+        Continue reading
+      </a>
+    </div>
+  {% else %}
+    {{ post.content }}
+  {% endif %}
+  </div>
+  <div class="postMeta">
+    On
+    <time datetime="{{ post.date | date_to_xmlschema }}">
+      <strong>{{ post.date | date: "%A, %B %d, %Y" }}</strong> at <strong>{{ post.date | date: "%H:%M"}}</strong>
+    </time>
+    {% if post.tags %}
       {% assign tags_list = post.tags %}
       in
       <ul class="tags">
@@ -73,11 +53,10 @@ layout: default
         <li><a href="{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }}</a></li>
         {% endfor %}
       </ul>
-      {% endif %}
-    </small>
-  </section>
-  {% endfor %}
-</div>
+    {% endif %}
+  </div>
+</section>
+{% endfor %}
 
 <!-- Pagination links -->
 <nav class="centeredCopy pagination">

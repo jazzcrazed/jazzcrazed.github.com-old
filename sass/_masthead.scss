@@ -5,7 +5,6 @@
 $logotypeSize: 500%;
 
 body > header {
-  padding-bottom:1em;
 
   > h1, > h2 {
     display: inline-block;
@@ -15,17 +14,14 @@ body > header {
   }
 
   > h1 {
+    @extend .audimat;
     font-size: $logotypeSize;
     letter-spacing: -.04em;
     text-transform: lowercase;
 
     a {
+      @extend .blockCutType;
       color: #eee;
-
-      &:visited { color: #ddd; }
-      &:hover {
-        color: white;
-      }
     }
   }
   > h2 {
