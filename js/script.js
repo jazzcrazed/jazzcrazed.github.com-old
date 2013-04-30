@@ -3,16 +3,6 @@ $(function() {
       recentTweets, i,
       url = encodeURIComponent('marcocarag.com/' + document.location.pathname);
 
-  if ($postPreviews.length) {
-    setTimeout(function() {
-      $postPreviews.each(function() {
-        if ($(this).position().left > 0) {
-          $(this).addClass('right');
-        }
-      });
-    }, 125);
-  }
-
   recentTweets = {
     '$container': $('#recentTweets'),
     avatars: '',
