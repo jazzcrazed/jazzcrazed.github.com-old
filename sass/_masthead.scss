@@ -5,12 +5,12 @@
 $logotypeSize: 500%;
 
 body > header {
-
   > h1, > h2 {
     display: inline-block;
     margin: 0;
     padding-right: 20px;
     vertical-align: baseline;
+    /*white-space: nowrap;*/
   }
 
   > h1 {

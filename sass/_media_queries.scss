@@ -1,37 +1,47 @@
-/* ==|== media queries ======================================================
-   EXAMPLE Media Query for Responsive Design.
-   This example overrides the primary ('mobile first') styles
-   Modify as content requires.
-   ========================================================================== */
-@media only screen and (max-width: 55em) {
-  .box2 {
-    float: none;
-    padding: 0 0 1em;
-    width: 100%;
-  }
+/* ==|== media queries ====================================================== */
 
-  .middleSeparator:after {
-    display: none;
+@media only screen and (max-width: 26em) {
+  body > header {
+    > h1 { font-size: 350%; }
+    > h2 { font-size: 120%; }
   }
 }
-@media only screen and (max-width: 49em) {
-  body {
-    > header {
-      > h1, > h2 { display: block; }
+@media only screen and (max-width: 35em) {
+  figure, .postImage {
+    &, &.right {
+      float: none;
+      text-align: center;
     }
 
-    > header,
-    .postContent,
-    .postPreview {
-      margin: 0 1em;
+    &, &.fullWidth {
+      margin: {
+        left: -1em;
+        right: -1em;
+      }
+      max-width: none;
     }
 
-    #disqus_thread {
-      padding: 0 1em;
-    }
+    img, .img { border-radius: 0; }
+
+    .boxshadow & { padding: 0; }
   }
 
-  .otherLinks { display: none; }
+  .curledShadow {
+    &:after, &:before { display: none; }
+  }
+}
+@media only screen and (max-width: 45em) {
+  body {
+    > header,
+    .postContent,
+    .postPreview,
+    #disqus_thread {
+      padding: {
+        left: 1em;
+        right: 1em;
+      }
+    }
+  }
 }
 @media only screen and (min-width: 50em) {
   body {
