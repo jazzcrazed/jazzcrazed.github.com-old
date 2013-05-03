@@ -27,11 +27,8 @@ small a {
 }
 
 .centeredLink {
-  font: {
-    family: Merriweather;
-    style: oblique;
-    size: .8em;
-  }
+  @extend .sansSerif;
+  font-size: 1.2em;
   margin-bottom: 1em;
   text: {
     align: center;
