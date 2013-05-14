@@ -1,0 +1,14 @@
+.tagBox {
+  @include column-count(3);
+  list: {
+    style: none;
+    style-position: inside;
+  }
+  padding: 0;
+
+  li {
+    @include column-break-inside(avoid);
+
+    strong { @extend h3; }
+  }
+}
