@@ -100,8 +100,6 @@ added texture. It&rsquo;s literally become pretty much my daily watch.
 ## Seiko 5 Features ##
 {% curved_shadow_image https://lh3.googleusercontent.com/-qMDI8gN7pKU/UZkTbFtIAOI/AAAAAAAANRA/LIJusLbUQrU/w1198-h898-no/P5170139.jpg|https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5879752144617734370?pid=5879752144617734370&amp;oid=101625155591132408533|right|Seiko SNKL07 and Parnis Pilot Watch width comparison|38mm is clearly smaller than 44. The Parnis is slightly skinnier, though. %}
 
-The movement in both is, like nearly all Seiko 5s, the [7S26](https://watchotaku.atlassian.net/wiki/display/swr/Seiko+7S26).
-
 Both Seikos are perfectly sized at around 38mm in diameter, and
 relatively narrow and light. They aren&rsquo;t quite as skinny as my
 Parnis, which is understandable as an automatic movement is typically
@@ -109,6 +107,9 @@ thicker than a manual-wind (also, undoubtedly the water resistance adds
 girth thanks to things like gaskets), but they&rsquo;re not thick
 either, and are obviously narrower in diameter and look more proportional
 on my skinny wrists.
+
+The movement in both is, like nearly all Seiko 5s, the [7S26](https://watchotaku.atlassian.net/wiki/display/swr/Seiko+7S26).
+
 It&rsquo;s an automatic movement that is the result of decades of
 polish and streamlining by Seiko to the point where they could churn
 these out blind. It&rsquo;s undecorated and purely utilitarian &mdash;
