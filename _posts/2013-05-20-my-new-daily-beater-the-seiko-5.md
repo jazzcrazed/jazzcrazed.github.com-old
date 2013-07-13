@@ -14,7 +14,7 @@ image-alt-as-caption: true
 image-classes: "fullWidth"
 ---
 
-My [Parnis pilot watch]({% post_url 2012-04-23-parnis-manual-wind-watches %}),
+My [Parnis pilot watch](/2012/04/23/parnis-manual-wind-watches),
 while running strong and looking great for a year, at 44mm was starting to feel
 large on the wrist. My Hamilton at 42mm was not much better &mdash; and
 thanks to its complicated automatic movement was thicker and heavier. I also
