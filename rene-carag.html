@@ -13,47 +13,58 @@ title: "Our beloved Rene Carag"
     font-weight: normal;
   }
   @font-face {
-    font-family: 'Gandhi Serif';
-    src: url('/assets/themes/marcocarag/css/fonts/GandhiSerif-Regular-webfont.eot');
-    src: url('/assets/themes/marcocarag/css/fonts/GandhiSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/themes/marcocarag/css/fonts/GandhiSerif-Regular-webfont.woff') format('woff'),
-         url('/assets/themes/marcocarag/css/fonts/GandhiSerif-Regular-webfont.ttf') format('truetype'),
-         url('/assets/themes/marcocarag/css/fonts/GandhiSerif-Regular-webfont.svg#GandhiSerifRegular') format('svg');
+    font-family: 'Fanwood Regular';
+    src: url('/assets/themes/marcocarag/css/fonts/fanwood-webfont.eot');
+    src: url('/assets/themes/marcocarag/css/fonts/fanwood-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/themes/marcocarag/css/fonts/fanwood-webfont.woff') format('woff'),
+         url('/assets/themes/marcocarag/css/fonts/fanwood-webfont.ttf') format('truetype'),
+         url('/assets/themes/marcocarag/css/fonts/fanwood-webfont.svg#FanwoodText') format('svg');
     font-weight: normal;
   }
   @font-face {
-    font-family: 'Gandhi Serif';
-    src: url('/assets/themes/marcocarag/css/fonts/GandhiSerif-Bold-webfont.eot');
-    src: url('/assets/themes/marcocarag/css/fonts/GandhiSerif-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/themes/marcocarag/css/fonts/GandhiSerif-Bold-webfont.woff') format('woff'),
-         url('/assets/themes/marcocarag/css/fonts/GandhiSerif-Bold-webfont.ttf') format('truetype'),
-         url('/assets/themes/marcocarag/css/fonts/GandhiSerif-Bold-webfont.svg#GandhiSerifBold') format('svg');
-    font-weight: bold;
+    font-family: 'Fanwood';
+    src: url('/assets/themes/marcocarag/css/fonts/fanwood_text-webfont.eot');
+    src: url('/assets/themes/marcocarag/css/fonts/fanwood_text-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/themes/marcocarag/css/fonts/fanwood_text-webfont.woff') format('woff'),
+         url('/assets/themes/marcocarag/css/fonts/fanwood_text-webfont.ttf') format('truetype'),
+         url('/assets/themes/marcocarag/css/fonts/fanwood_text-webfont.svg#FanwoodText') format('svg');
+    font-weight: normal;
   }
   @font-face {
-    font-family: 'Gandhi Serif';
-    src: url('/assets/themes/marcocarag/css/fonts/GandhiSerif-Italic-webfont.eot');
-    src: url('/assets/themes/marcocarag/css/fonts/GandhiSerif-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/themes/marcocarag/css/fonts/GandhiSerif-Italic-webfont.woff') format('woff'),
-         url('/assets/themes/marcocarag/css/fonts/GandhiSerif-Italic-webfont.ttf') format('truetype'),
-         url('/assets/themes/marcocarag/css/fonts/GandhiSerif-Italic-webfont.svg#GandhiSerifItalic') format('svg');
+    font-family: 'Fanwood';
+    src: url('/assets/themes/marcocarag/css/fonts/fanwood_italic-webfont.eot');
+    src: url('/assets/themes/marcocarag/css/fonts/fanwood_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/themes/marcocarag/css/fonts/fanwood_italic-webfont.woff') format('woff'),
+         url('/assets/themes/marcocarag/css/fonts/fanwood_italic-webfont.ttf') format('truetype'),
+         url('/assets/themes/marcocarag/css/fonts/fanwood_italic-webfont.svg#FanwoodItalic') format('svg');
     font-weight: normal;
     font-style: italic;
   }
 
   body {
-    font-family: "Gandhi Serif", serif;
+    font-family: "Fanwood", serif;
     font-weight: normal;
+    padding-bottom: 4em;
   }
 
   body > header,
   body > footer { display: none; }
-  .postCopy a {
-  }
+  a { text-decoration: underline; }
+  a:hover { color: orangered; }
 
   header {
-    font-size: 2.25em;
+    font-size: 1.25em;
+    font-style: italic;
+    line-height: 1.2;
+    margin-bottom: 1.5em;
     text-align: center;
+  }
+  header strong {
+    font-family: "Fanwood Regular";
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
   }
   header:before {
     background-image: url(/images/laurel_wreath.svg);
@@ -62,13 +73,14 @@ title: "Our beloved Rene Carag"
     background-size: contain;
     content: '';
     display: block;
-    height: 2em;
-    margin-bottom: .3em;
+    height: 3.555em;
+    margin-bottom: 1em;
     opacity: .75;
   }
   header p { line-height: 1.2; }
   header .bebas {
-    font-size: 2.25em;
+    font-size: 4em;
+    font-style: normal;
     line-height: 1;
   }
 
@@ -87,27 +99,53 @@ title: "Our beloved Rene Carag"
     box-shadow: 0 0.65em 0.3em 0.05em rgba(0,0,0,0.7);
   }
   .allCaps { text-transform: uppercase; }
+  header sup { font-size: .5em; }
+  sup { font-size: .8em; }
+  .number { letter-spacing: -.08em; }
+  header .number { letter-spacing: -.1em; }
+  .contributions {
+    line-height: 1.2;
+    text-align: center;
+  }
+  i.or {
+    display: block;
+    margin: 1.2em 0;
+  }
+  figcaption a { text-decoration: none; }
 </style>
-<article class="post postCopy">
+<article class="post">
   <div class="postContent">
     <header>
       <p>
-        <span class="bebas">Rene Carag, 68</span><br/>
-        beloved husband, father,<br />
-        brother, son, and friend<br/>
+        <span class="bebas">Rene R. Carag, 68</span><br/>
+        beloved husband of
+        <strong>Cora</strong>,<br/>
+
+        father of <strong>Marco</strong>, <strong>Christine</strong>, &amp;
+        <strong>Carlo</strong>,<br />
+
+        son of <strong>Aurora</strong> &amp; <strong>Ramon</strong>,<br/>
+
+        brother of <strong>Ramon</strong>, <strong>Becky</strong>,
+        <strong>Jing</strong>,<br/>&amp; <strong>Raoul</strong>,
+
+        and friend of many,<br/>
         passed away in his home<br/>
-        on October 17<sup>th</sup>, 2013.
+        on <strong>October <span class="number">17</span><sup>th</sup>,
+          <span class="number">2013</span></strong>.
       </p>
     </header>
     <p>
-      A <b class="allCaps">public viewing</b> will be held on <i>Wednesday, October 23<sup>rd</sup></i>, from
-      <i>5:00 PM</i> to <i>8:00 PM</i> at <span class="vcard">
+      A <b class="allCaps">viewing</b> for family, relatives, friends, and colleagues
+      will be held on <i>Wednesday, October <span class="number">23</span><sup>rd</sup></i>, from
+      <i>5:00 PM</i> to <i>8:00 PM</i> at the chapel of
+      <span class="vcard">
         <span class="adr">
           <a href="http://olgcva.org" target="_blank" class="org allCaps">
           Our Lady of Good Counsel Catholic Church</a> located at
-          <span class="street-address">8601 Wolftrap Road</span>,
+          <span class="street-address"><span class="number">8601</span> Wolftrap Road</span>,
           <span class="locality">Vienna</span>,
-          <span class="region">Virginia</span>&nbsp;<span class="postal-code">22182:</span>
+          <span class="region">Virginia</span>&nbsp;<span class="postal-code number">22182:</span>
         </span>
       </span>
     </p>
@@ -125,20 +163,22 @@ title: "Our beloved Rene Carag"
     </figure>
 
     <p>
-      <b class="allCaps">Funeral mass and final viewing</b> will also be at
-      <span class="allCaps">Our Lady of Good
-        Counsel Church</span> on <i>Thursday, October 24<sup>th</sup></i>, at <i>10:30 AM</i>.
+      <b class="allCaps">Catholic funeral mass</b> for Rene will also be held at
+      the chapel of <span class="allCaps">Our Lady of Good Counsel Church</span>
+      on <i>Thursday, October <span class="number">24</span><sup>th</sup></i>,
+      at <i>10:30 AM</i>.
     </p>
     <p>
-      <b class="allCaps">Burial</b> will follow at the
+      <b class="allCaps">Catholic burial</b> will follow at the
       <span class="vcard">
         <span class="adr">
           <a href="http://oakwoodcemetery.co" target="_blank" class="org allCaps">
-            Oakwood Cemetery
-          </a> located on <span class="street-address"><b>N. Roosevelt Street</b></span>
+            Oakwood Cemetery</a> located on
+          <span class="street-address"><b>N. Roosevelt Street</b></span>
           &mdash;&nbsp;<i>not Roosevelt Boulevard</i>&nbsp;&mdash;
           <span class="locality">Falls Church</span>,
-          <span class="region">Virginia</span>&nbsp;<span class="postal-code">22044</span>
+          <span class="region">Virginia</span>&nbsp;<span class="postal-code number">
+            22044</span>
         </span>
       </span>:
     </p>
@@ -154,5 +194,41 @@ title: "Our beloved Rene Carag"
           View Larger Map</a>
       </figcaption>
     </figure>
+
+    <p>
+      A <span class="allCaps">reception</span> will be held after the
+      burial at the <span class="allCaps">De Sales Hall</span> of <span
+        class="allCaps">Our Lady of Good Counsel Catholic Church</span>.
+    </p>
+
+    <p>
+      <span class="allCaps">Memorial contributions</span> may be made out to:
+    </p>
+    <p class="contributions">
+      <span class="vcard">
+        <span class="adr">
+          <span class="org allCaps"><a href="http://www.vvfd.org/">
+            The Vienna Volunteer Fire Department</a></span><br/>
+          <span class="street-address">
+            P.O. Box <span class="number">1115</span>
+          </span>,<br/>
+          <span class="locality">Vienna</span>,
+          <span class="region">Virginia</span>,
+          <span class="postal-code number">22183-9907</span>.
+        </span>
+      </span>
+
+      <i class="or">or</i>
+
+      <span class="vcard">
+        <span class="adr">
+          <a href="http://olgcva.org" target="_blank" class="org allCaps">
+            Our Lady of Good Counsel Catholic Church</a><br/>
+          <span class="street-address"><span class="number">8601</span> Wolftrap Road</span>,<br/>
+          <span class="locality">Vienna</span>,
+          <span class="region">Virginia</span>&nbsp;<span class="postal-code number">22182:</span>
+        </span>
+      </span>
+    </p>
   </div>
 </article>
