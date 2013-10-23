@@ -56,14 +56,31 @@ $universalSpacing: 1em;
 
 .row { overflow: hidden; }
 
-.halfColumn {
+%column {
   margin: {
     left: 0;
-    right: 0;
+    right: 1%;
   }
-  width: 48%;
 
   &:last-child {
     float: right;
+    margin-right: 0;
   }
+}
+.halfColumn {
+  @extend %column;
+  margin-right: 0;
+  width: 49%;
+}
+.thirdColumn {
+  @extend %column;
+  width: 32.66%;
+}
+.quarterColumn {
+  @extend %column;
+  width: 24.25%
+}
+.fifthColumn {
+  @extend %column;
+  width: 19.2%
 }
