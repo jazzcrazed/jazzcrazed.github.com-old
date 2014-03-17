@@ -1,1 +1,0 @@
-{% if page.fb-description %}{{ page.fb-description | escape | markdown }}{% elsif page.description %}{{ page.description | escape | markdown }}{% else %}Marco Carag's blog about stuff he's into.{% endif %}

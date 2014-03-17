@@ -1,0 +1,45 @@
+extends default
+article.post
+  .postContent
+    h1= page.title
+    .postCopy
+      if page.image-classes == "fullWidth"
+        if page.description
+          p= page.description
+        else if page.description_paragraphless
+          = page.description_paragraphless
+
+      if page.image
+        figure.postImage(class=page.image-classes? page.image-classes : null)
+          .curledShadow
+            a(href=page.image-url? page.image-url : page.image)
+              img(src=page.image, alt=page.image-alt? page.image-alt : null)
+          if page.image-caption || page.image-alt-as-caption == true
+            figcaption
+              = page.image-caption || page.image-alt
+
+      if page.image-classes !== "fullWidth"
+        if page.description
+          p= page.description
+        else if page.description_paragraphless
+          = page.description_paragraphless
+      block content
+
+    .postMeta
+      On
+      time(datetime=page.date.toDateString())
+        strong // Day, Month Date, Year
+        | at
+        strong // Time
+      if page.tags
+        - var tags_list = post.tags
+        in
+        ul.tags
+          - for tag in page.tags
+            li: a(href="{{ site.JB.tags_path }}#{{ tag }}-ref") {{ tag }}
+
+  #recentTweets.hidden
+    h3 Tweeted recently by:
+
+  .comments
+    {% include JB/comments %}

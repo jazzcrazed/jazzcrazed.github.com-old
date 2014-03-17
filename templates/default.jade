@@ -1,0 +1,103 @@
+doctype html
+block vars
+  - var bodyclass = null;
+//if lt IE 7
+    <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+//if IE 7
+    <html class="no-js lt-ie9 lt-ie8" lang="en">
+//if IE 8
+    <html class="no-js lt-ie9" lang="en">
+// [if gt IE 8] <!
+html(class="no-js", lang="en")
+    // <![endif]
+  head
+    block head
+      meta(charset="utf-8")
+
+      meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+
+      title= include themes/marcocarag/determineTitle
+      meta(name="description", content=include themes/marcocarag/determineDescription)
+
+      meta(property="fb:app_id", content="127177063996357")
+      meta(property="og:type", content="article")
+      meta(property="og:url", content="http://marcocarag.com#{page.fb-path || page.url}")
+      meta(property="og:site_name", content="MarcoCarag.com")
+      if page.fb-image
+        meta(property="og:image", content="{{ page.fb-image }}")
+      else if page.image
+        meta(property="og:image", content="{{ page.image }}")
+      meta(property="og:title", content=include themes/marcocarag/determineTitle)
+      meta(property="og:description", content=include themes/marcocarag/determineDescription)
+
+      meta(name="viewport", content="width=device-width")
+      link(rel="shortcut icon", href="/favicon.ico")
+
+      link(rel="stylesheet", href="/css/style.css")
+
+      script(src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js")
+  body(class=bodyclass)
+    //if lt IE 8
+      <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+
+    header
+      h1.logoType: a(href="/") Marco Carag
+      h2
+        | Expert
+        span.sansSerif.heart &hearts;
+        | er of things.
+
+    .clearfix(role="main")
+      block content
+
+    footer.audimat
+      block footer
+        .otherLinks
+          a.iconb.replaceTextWithIcon.icon-feed(href="http://feeds.feedburner.com/marcocarag/iSwv")
+            | Subscribe to RSS
+          a.iconb.replaceTextWithIcon.icon-twitter(href="http://twitter.com/marcocarag")
+            | @marcocarag on Twitter
+          a.iconb.replaceTextWithIcon.icon-github(href="https://github.com/jazzcrazed/jazzcrazed.github.com")
+            | This blog&rsquo;s Github repo
+
+        small
+          p
+            | This site is generated using 
+            a(href="http://wintersmith.io/") Wintersmith
+            | , uses the incomparable 
+            a(href="http://html5boilerplate.com") HTML5 Boilerplate
+            | , and is hosted on 
+            a(href="https://github.com/jazzcrazed/jazzcrazed.github.com") GitHub
+            | .
+          p
+            | I&rsquo;m also using the fonts
+            a(href="http://www.smeltery.net/fonts/audimat") AUdimat by SMeltery
+            | , 
+            a(href="http://www.fontsquirrel.com/fonts/afta-serif") Afta Serif by Oriol Esparraguera
+            | , and 
+            a(href="http://www.yanone.de/typedesign/kaffeesatz/") Yanone Kaffeesatz by Yanone
+            | , kitted up using 
+            a(href="http://fontsquirrel.com") Font Squirrel&rsquo;s @font-face Generator
+            | . Also using icons by 
+            a(href="http://keyamoon.com/icomoon") IcoMoon 
+            | fonted up using their
+            a(href="http://keyamoon.com/icomoon/app/") excellent app
+            | .
+
+        | &copy; #{ new Date().getFullYear() } by
+        big: a(href="/about.html") Marco Carag
+        | .
+
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js")
+    script(src="/js/script.js")
+
+    script.
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '{{ site.JB.analytics.google.tracking_id }}']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
