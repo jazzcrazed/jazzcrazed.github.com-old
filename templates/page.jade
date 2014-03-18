@@ -1,5 +1,7 @@
-<div class="contentContainer">
-  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+.contentContainer
+  h1
+    = page.title
+    if (page.tagline)
+      small page.tagline
 
-  {{ content }}
-</div>
+  block content

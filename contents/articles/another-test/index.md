@@ -2,7 +2,7 @@
 title: Code and stuff!
 author: the-wintersmith
 date: 2012-10-01 15:00
-template: article-2.jade
+template: post.jade
 filenameTemplate: /this-is-a-test/index.html
 ---
 

@@ -1,6 +1,11 @@
 doctype html
 block vars
   - var bodyclass = null;
+  - var description = page.description? page.description : "Marco's blog about stuff he's into."
+  - var ogPath = page.fbPath? page.fbPath : page.url
+  - var fbImage = page.fbImage? page.fbImage : page.image
+  - var title = page.title? page.title + " | Marcocarag.com" : "Marcocarag.com"
+
 //if lt IE 7
     <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
 //if IE 7
@@ -16,19 +21,18 @@ html(class="no-js", lang="en")
 
       meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
 
-      title= include themes/marcocarag/determineTitle
-      meta(name="description", content=include themes/marcocarag/determineDescription)
+      title
+        block title
+          = title
+      meta(name="description", content=description)
 
       meta(property="fb:app_id", content="127177063996357")
       meta(property="og:type", content="article")
-      meta(property="og:url", content="http://marcocarag.com#{page.fb-path || page.url}")
+      meta(property="og:url", content="http://marcocarag.com" + ogPath)
       meta(property="og:site_name", content="MarcoCarag.com")
-      if page.fb-image
-        meta(property="og:image", content="{{ page.fb-image }}")
-      else if page.image
-        meta(property="og:image", content="{{ page.image }}")
-      meta(property="og:title", content=include themes/marcocarag/determineTitle)
-      meta(property="og:description", content=include themes/marcocarag/determineDescription)
+      meta(property="og:image", content=fbImage)
+      meta(property="og:title", content=title)
+      meta(property="og:description", content=description)
 
       meta(name="viewport", content="width=device-width")
       link(rel="shortcut icon", href="/favicon.ico")
@@ -101,3 +105,5 @@ html(class="no-js", lang="en")
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
+
+    block bottom
