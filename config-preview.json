@@ -1,0 +1,28 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "MarcoCarag.com",
+    "owner": "Marco Carag",
+    "description": "Marco Carag's blog about stuff he's into.",
+    "tagline": "Expert ♥er of things"
+  },
+  "plugins": [
+    "./plugins/paginator.coffee",
+    "./plugins/blog.coffee"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}
