@@ -12,3 +12,5 @@ Thumbs.db
 .sass-cache/
 
 server/
+
+node_modules/
