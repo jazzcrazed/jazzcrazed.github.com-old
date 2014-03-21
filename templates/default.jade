@@ -6,15 +6,7 @@ block vars
   - var fbImage = page.fbImage? page.fbImage : page.image
   - var title = page.title? page.title + " | Marcocarag.com" : "Marcocarag.com"
 
-//if lt IE 7
-    <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
-//if IE 7
-    <html class="no-js lt-ie9 lt-ie8" lang="en">
-//if IE 8
-    <html class="no-js lt-ie9" lang="en">
-// [if gt IE 8] <!
 html(class="no-js", lang="en")
-    // <![endif]
   head
     block head
       meta(charset="utf-8")
@@ -40,10 +32,8 @@ html(class="no-js", lang="en")
       link(rel="stylesheet", href="/css/style.css")
 
       script(src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js")
-  body(class=bodyclass)
-    //if lt IE 8
-      <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
 
+  body(class=bodyclass)
     header
       h1.logoType: a(href="/") Marco Carag
       h2
