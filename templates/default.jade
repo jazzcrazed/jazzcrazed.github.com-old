@@ -1,9 +1,10 @@
 doctype html
 block vars
   - var bodyclass = null;
-  - var description = page.description? page.description : "Marco's blog about stuff he's into."
-  - var ogPath = page.fbPath? page.fbPath : page.url
-  - var fbImage = page.fbImage? page.fbImage : page.image
+  - var pmeta = page.metadata
+  - var description = pmeta.description? pmeta.description : "Marco's blog about stuff he's into."
+  - var ogPath = pmeta.fbPath? pmeta.fbPath : page.url
+  - var fbImage = pmeta.fbImage? pmeta.fbImage : page.image
   - var title = page.title? page.title + " | Marcocarag.com" : "Marcocarag.com"
 
 html(class="no-js", lang="en")
@@ -64,7 +65,7 @@ html(class="no-js", lang="en")
             a(href="https://github.com/jazzcrazed/jazzcrazed.github.com") GitHub
             | .
           p
-            | I&rsquo;m also using the fonts
+            | I&rsquo;m also using the fonts 
             a(href="http://www.smeltery.net/fonts/audimat") AUdimat by SMeltery
             | , 
             a(href="http://www.fontsquirrel.com/fonts/afta-serif") Afta Serif by Oriol Esparraguera
@@ -73,8 +74,8 @@ html(class="no-js", lang="en")
             | , kitted up using 
             a(href="http://fontsquirrel.com") Font Squirrel&rsquo;s @font-face Generator
             | . Also using icons by 
-            a(href="http://keyamoon.com/icomoon") IcoMoon 
-            | fonted up using their
+            a(href="http://keyamoon.com/icomoon") IcoMoon
+            |  fonted up using their 
             a(href="http://keyamoon.com/icomoon/app/") excellent app
             | .
 
