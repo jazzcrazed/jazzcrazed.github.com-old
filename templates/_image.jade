@@ -1,0 +1,8 @@
+mixin image(meta)
+  figure.postImage(class=meta.imageClasses? meta.imageClasses : null)
+    .curledShadow
+      a(href=meta.imageUrl? meta.imageUrl : meta.image)
+        img(src=meta.image, alt=meta.imageAlt? meta.imageAlt : null)
+    if meta.imageCaption || meta.imageAltAsCaption == true
+      figcaption
+        = meta.imageCaption || meta.imageAlt

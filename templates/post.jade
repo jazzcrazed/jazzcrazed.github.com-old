@@ -1,42 +1,42 @@
 extends default
 
 block content
+  include _image
+
+  - pmeta = page.metadata
+
   article.post
     .postContent
       h1= page.title
       .postCopy
-        if page.imageClasses == "fullWidth"
-          if page.description
-            p= page.description
-          else if page.description_paragraphless
-            = page.description_paragraphless
+        mixin description
+          if pmeta.description
+            p!= pmeta.description
+          else if pmeta.description_paragraphless
+            != pmeta.description_paragraphless
 
-        if page.image
-          figure.postImage(class=page.imageClasses? page.imageClasses : null)
-            .curledShadow
-              a(href=page.imageUrl? page.imageUrl : page.image)
-                img(src=page.image, alt=page.imageAlt? page.imageAlt : null)
-            if page.imageCaption || page.imageAltAsCaption == true
-              figcaption
-                = page.imageCaption || page.imageAlt
+        if pmeta.imageClasses == "fullWidth"
+          +description
 
-        if page.imageClasses !== "fullWidth"
-          if page.description
-            p= page.description
-          else if page.description_paragraphless
-            = page.description_paragraphless
+        if pmeta.image
+          +image(pmeta)
+
+        if pmeta.imageClasses !== "fullWidth"
+          +description
+
         != typogr(page.html).typogrify()
 
       .postMeta
         | On
-        time(datetime=page.date.toDateString())
-          strong // Day, Month Date, Year
-          | at
-          strong // Time
+        time(datetime=page.date.toISOString())
+          - momentizedDate = moment(page.date)
+          strong #{momentizedDate.format("dddd")}, #{momentizedDate.format("MMMM")} #{momentizedDate.format("D")}, #{momentizedDate.format("YYYY")}
+          |  at 
+          strong #{momentizedDate.format("hh:mm")} #{momentizedDate.format("a")}
         if page.tags
           | in
           ul.tags
-            - for tag in page.tags
+            each tag in page.tags
               li: a(href="{{ site.JB.tags_path }}#{{ tag }}-ref") {{ tag }}
 
     #recentTweets.hidden
