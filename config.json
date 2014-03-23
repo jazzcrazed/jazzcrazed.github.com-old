@@ -9,7 +9,7 @@
     "./plugins/paginator.coffee",
     "./plugins/blog.coffee",
     "./plugins/facebookify_descriptions.coffee",
-    "wintersmith-tag"
+    "./plugins/wintersmith-tag.coffee"
   ],
   "require": {
     "moment": "moment",

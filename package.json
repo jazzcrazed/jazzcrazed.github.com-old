@@ -16,7 +16,6 @@
     "grunt-contrib-uglify": "~0.4.0",
     "grunt-contrib-coffee": "^0.10.1",
     "wintersmith": "^2.0.10",
-    "wintersmith-tag": "^1.0.1",
     "grunt-extend": "^0.4.2"
   }
 }

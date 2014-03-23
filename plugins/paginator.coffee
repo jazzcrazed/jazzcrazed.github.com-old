@@ -17,8 +17,10 @@ module.exports = (env, callback) ->
 
   getArticles = (contents) ->
     # helper that returns a list of articles found in *contents*
-    # note that each article is assumed to have its own directory in the articles directory
-    articles = contents[options.articles]._.directories.map (item) -> item.index
+    articles = []
+    for key, value of contents[options.articles]
+      articles.push value if value instanceof env.plugins.Page
+
     articles.sort (a, b) -> b.date - a.date
     return articles
 
