@@ -9,7 +9,7 @@ block content
         a.deeplyEngravedType(href=article.url)= article.title
 
       .postCopy
-        != typogr(article.intro).typogrify()
+        != typogr(env.helpers.figurifyImages(article.intro)).typogrify()
 
         if article.hasMore
           .centeredLink

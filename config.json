@@ -9,7 +9,8 @@
     "./plugins/paginator.coffee",
     "./plugins/blog.coffee",
     "./plugins/facebookify_descriptions.coffee",
-    "./plugins/wintersmith-tag.coffee"
+    "./plugins/wintersmith-tag.coffee",
+    "./plugins/figurify_images.coffee"
   ],
   "require": {
     "moment": "moment",

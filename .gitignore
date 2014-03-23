@@ -22,3 +22,6 @@ node_modules/
 
 config-preview.json
 config-production.json
+
+/contents/css/*.css
+/contents/js

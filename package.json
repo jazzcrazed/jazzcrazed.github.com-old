@@ -16,6 +16,7 @@
     "grunt-contrib-uglify": "~0.4.0",
     "grunt-contrib-coffee": "^0.10.1",
     "wintersmith": "^2.0.10",
-    "grunt-extend": "^0.4.2"
+    "grunt-extend": "^0.4.2",
+    "cheerio": "^0.13.1"
   }
 }
