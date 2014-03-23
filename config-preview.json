@@ -4,7 +4,8 @@
     "name": "MarcoCarag.com",
     "owner": "Marco Carag",
     "description": "Marco Carag's blog about stuff he's into.",
-    "tagline": "Expert ♥er of things"
+    "tagline": "Expert ♥er of things",
+    "environment": "development"
   },
   "plugins": [
     "./plugins/paginator.coffee",
