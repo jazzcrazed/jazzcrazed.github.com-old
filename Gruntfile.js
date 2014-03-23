@@ -8,6 +8,20 @@ module.exports = function(grunt) {
         dest: 'css'
       }
     },
+    coffee: {
+      preview: {
+        sourceMap: true,
+        files: {
+          'contents/js/script.js': ['contents/coffee/*.coffee']
+        }
+      },
+      production: {
+        sourceMap: false,
+        files: {
+          'contents/js/script.js': ['contents/coffee/*.coffee']
+        }
+      }
+    },
     compass: {
       dist: {
         options: {
@@ -45,6 +59,14 @@ module.exports = function(grunt) {
         tasks: [
           'compass:dev'
         ]
+      },
+      coffeescript: {
+        files: [
+          'contents/coffee/**/*.coffee'
+        ],
+        tasks: [
+          'coffee:preview'
+        ]
       }
     },
     uglify: {
@@ -55,16 +77,19 @@ module.exports = function(grunt) {
       }
     },
   });
+  grunt.loadNpmTasks("grunt-contrib-coffee");
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-wintersmith');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.registerTask('preview', [
+    'coffee:preview',
     'compass:dev',
     'wintersmith:preview'
   ]);
   grunt.registerTask('buildProduction', [
+    'coffee:production',
     'compass:dist',
     'wintersmith:production',
     'uglify:production',
