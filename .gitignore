@@ -15,3 +15,7 @@ Thumbs.db
 server/
 
 node_modules/
+
+*.swp
+
+.bundle/
