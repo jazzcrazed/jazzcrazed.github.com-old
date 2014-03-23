@@ -2,14 +2,10 @@ doctype html
 block vars
   - var bodyclass = null;
   if typeof(page) !== "undefined"
-    - var pmeta = page.metadata
-    - var description = pmeta.description? pmeta.description : locals.description
-    - var ogPath = pmeta.fbPath? pmeta.fbPath : locals.url
-    - var fbImage = pmeta.fbImage? pmeta.fbImage : pmeta.image
+    - var description = page.hasMore? env.helpers.facebookifyDescription(page.intro) : locals.description
+    - var ogPath = locals.url
   else
     - var description = locals.description
-    - var ogPath = locals.url
-    - var fbImage = null
 
 html(class="no-js", lang="en")
   head
@@ -28,7 +24,6 @@ html(class="no-js", lang="en")
         meta(property="og:type", content="article")
         meta(property="og:url", content="http://marcocarag.com" + ogPath)
         meta(property="og:site_name", content="MarcoCarag.com")
-        meta(property="og:image", content=fbImage)
         meta(property="og:title", content=title)
         meta(property="og:description", content=description)
 

@@ -8,6 +8,7 @@
   "plugins": [
     "./plugins/paginator.coffee",
     "./plugins/blog.coffee",
+    "./plugins/facebookify_descriptions.coffee",
     "wintersmith-tag"
   ],
   "require": {

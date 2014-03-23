@@ -13,21 +13,6 @@ block content
     .postContent
       h1= page.title
       .postCopy
-        mixin description
-          if pmeta.description
-            p!= pmeta.description
-          else if pmeta.description_paragraphless
-            != pmeta.description_paragraphless
-
-        if pmeta.imageClasses == "fullWidth"
-          +description
-
-        if pmeta.image
-          +image(pmeta)
-
-        if pmeta.imageClasses !== "fullWidth"
-          +description
-
         != typogr(page.html).typogrify()
 
       +postMeta(page.date, env.helpers.getTagsFromArticle(page))
