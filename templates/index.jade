@@ -24,12 +24,12 @@ block content
           .centeredLink
             a(href=article.url) Continue reading
       +postMeta(article.date, env.helpers.getTagsFromArticle(article))
+
+  nav.centeredCopy.pagination
     if prevPage
-      a(href=prevPage.url) « Newer
+      a.previous(href=prevPage.url) Previous
     else
-      a(href='/archive.html') « Archives
+      a.previous(href='/archive.html') Archives
+    span.page_number Page #{pageNum} of #{totalPages}
     if nextPage
-      a(href=nextPage.url) Next page »
-
-
-
+      a.next(href=nextPage.url) Next

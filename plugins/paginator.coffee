@@ -43,7 +43,7 @@ module.exports = (env, callback) ->
         return callback new Error "unknown paginator template '#{ options.template }'"
 
       # setup the template context
-      ctx = {@articles, @prevPage, @nextPage}
+      ctx = {@articles, @prevPage, @nextPage, @pageNum, @totalPages}
 
       # extend the template context with the enviroment locals
       env.utils.extend ctx, locals
@@ -67,6 +67,8 @@ module.exports = (env, callback) ->
 
     # add references to prev/next to each page
     for page, i in pages
+      page.currentPageNum = i
+      page.totalPages = pages.length
       page.prevPage = pages[i - 1]
       page.nextPage = pages[i + 1]
 
