@@ -12,6 +12,8 @@ $curledShadowColor: rgba(0, 0, 0, .7);
   z-index: -1;
 }
 
+.postCopy img { max-width: 100%; }
+
 figure,
 .postImage {
   float: left;
@@ -22,10 +24,10 @@ figure,
 
   &.right { margin: 0 0 .5em 1em; }
 
+	a, img, .img { max-width: 100%; }
   img, .img {
     border-radius: .25em;
     @include box-shadow(0 0 .15em rgba(0,0,0,.8));
-    max-width: 100%;
     z-index: 1;
   }
 
