@@ -1,7 +1,11 @@
 extends default
 
+block prepend title
+  | #{ page.title + " | "}
+
 block content
   include _image
+  include _post_meta
 
   - pmeta = page.metadata
 
@@ -26,18 +30,7 @@ block content
 
         != typogr(page.html).typogrify()
 
-      .postMeta
-        | On
-        time(datetime=page.date.toISOString())
-          - momentizedDate = moment(page.date)
-          strong #{momentizedDate.format("dddd")}, #{momentizedDate.format("MMMM")} #{momentizedDate.format("D")}, #{momentizedDate.format("YYYY")}
-          |  at 
-          strong #{momentizedDate.format("hh:mm")} #{momentizedDate.format("a")}
-        if page.tags
-          | in
-          ul.tags
-            each tag in page.tags
-              li: a(href="{{ site.JB.tags_path }}#{{ tag }}-ref") {{ tag }}
+      +postMeta(page.date, env.helpers.getTagsFromArticle(page))
 
     #recentTweets.hidden
       h3 Tweeted recently by:

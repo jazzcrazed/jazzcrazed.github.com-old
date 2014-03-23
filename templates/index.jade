@@ -1,22 +1,29 @@
-extends layout
+extends default
 
 block content
-  include author
-  each article in articles
-    article.article.intro
-      header
-        p.date
-          span= moment.utc(article.date).format('DD. MMMM YYYY')
-        h2
-          a(href=article.url)= article.title
-      section.content
-        | !{ typogr(article.intro).typogrify() }
-        if article.hasMore
-          p.more
-            a(href=article.url) more
+  include _post_meta
 
-block prepend footer
-  div.nav
+  each article in articles
+    .postPreview
+      h1
+        a.deeplyEngravedType(href=article.url)= article.title
+      if article.metadata.image
+        .postImage(class=article.metadata.imageClasses)
+          .curledShadow
+            img(src=article.metadata.image alt=article.image-alt)
+
+      .postCopy
+        if article.metadata.description
+          p.description!= article.metadata.description
+        else if article.metadata.description_paragraphless
+          != article.metadata.description_paragraphless
+        else
+          != typogr(article.html).typogrify()
+
+        if article.metadata.description || article.metadata.description_paragraphless
+          .centeredLink
+            a(href=article.url) Continue reading
+      +postMeta(article.date, env.helpers.getTagsFromArticle(article))
     if prevPage
       a(href=prevPage.url) « Newer
     else

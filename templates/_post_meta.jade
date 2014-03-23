@@ -1,0 +1,13 @@
+mixin postMeta(date, tags)
+  .postMeta
+    | On
+    time(datetime=date.toISOString())
+      - momentizedDate = moment(date)
+      strong #{momentizedDate.format("dddd")}, #{momentizedDate.format("MMMM")} #{momentizedDate.format("D")}, #{momentizedDate.format("YYYY")}
+      |  at 
+      strong #{momentizedDate.format("hh:mm")} #{momentizedDate.format("a")}
+    if typeof(tags) !== "undefined"
+      | in
+      ul.tags
+        each tag in tags
+          li: a(href=env.helpers.getTagHome(tag).url)= tag

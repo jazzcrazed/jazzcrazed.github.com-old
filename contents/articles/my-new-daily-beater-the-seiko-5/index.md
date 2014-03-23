@@ -6,7 +6,7 @@ description: |
   daily-use watch. One that is clearly readable in light and dark, not
   oversized, water resistant, and shows the date. I&rsquo;m surprised it took me
   this long to find all that in Seiko&rsquo;s venerable &ldquo;5&rdquo; series.
-tags: [fashion, watches]
+tags: fashion, watches
 image: https://lh3.googleusercontent.com/-4TfAkg4dL7A/UZrgrYzFbRI/AAAAAAAANRs/P30lIrPKTtk/w1197-h898-no/P5170132.jpg
 imageUrl: https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5880259299481316626?pid=5880259299481316626&oid=101625155591132408533
 imageAlt: The Seiko SNKL07 and SNKL29

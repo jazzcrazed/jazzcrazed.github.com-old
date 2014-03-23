@@ -1,11 +1,15 @@
 doctype html
 block vars
   - var bodyclass = null;
-  - var pmeta = page.metadata
-  - var description = pmeta.description? pmeta.description : "Marco's blog about stuff he's into."
-  - var ogPath = pmeta.fbPath? pmeta.fbPath : page.url
-  - var fbImage = pmeta.fbImage? pmeta.fbImage : page.image
-  - var title = page.title? page.title + " | Marcocarag.com" : "Marcocarag.com"
+  if typeof(page) !== "undefined"
+    - var pmeta = page.metadata
+    - var description = pmeta.description? pmeta.description : locals.description
+    - var ogPath = pmeta.fbPath? pmeta.fbPath : locals.url
+    - var fbImage = pmeta.fbImage? pmeta.fbImage : pmeta.image
+  else
+    - var description = locals.description
+    - var ogPath = locals.url
+    - var fbImage = null
 
 html(class="no-js", lang="en")
   head
@@ -16,7 +20,7 @@ html(class="no-js", lang="en")
 
       title
         block title
-          = title
+          = locals.name
       meta(name="description", content=description)
 
       if locals.environment !== "development"
