@@ -7,20 +7,11 @@ block content
     .postPreview
       h1
         a.deeplyEngravedType(href=article.url)= article.title
-      if article.metadata.image
-        .postImage(class=article.metadata.imageClasses)
-          .curledShadow
-            img(src=article.metadata.image alt=article.image-alt)
 
       .postCopy
-        if article.metadata.description
-          p.description!= article.metadata.description
-        else if article.metadata.description_paragraphless
-          != article.metadata.description_paragraphless
-        else
-          != typogr(article.html).typogrify()
+        != typogr(article.intro).typogrify()
 
-        if article.metadata.description || article.metadata.description_paragraphless
+        if article.hasMore
           .centeredLink
             a(href=article.url) Continue reading
       +postMeta(article.date, env.helpers.getTagsFromArticle(article))
