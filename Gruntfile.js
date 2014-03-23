@@ -38,6 +38,22 @@ module.exports = function(grunt) {
         }
       }
     },
+    extend: {
+      options: {
+        deep: true,
+        defaults: grunt.file.readJSON('config.json')
+      },
+      production: {
+        files: {
+          './config-production.json': ['./config-production-base.json']
+        }
+      },
+      preview: {
+        files: {
+          './config-preview.json': ['./config-preview-base.json']
+        }
+      }
+    },
     wintersmith: {
       production: {
         options: {
@@ -77,6 +93,7 @@ module.exports = function(grunt) {
       }
     },
   });
+  grunt.loadNpmTasks("grunt-extend");
   grunt.loadNpmTasks("grunt-contrib-coffee");
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-compass');
@@ -84,11 +101,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.registerTask('preview', [
+    'extend:preview',
     'coffee:preview',
     'compass:dev',
     'wintersmith:preview'
   ]);
   grunt.registerTask('buildProduction', [
+    'extend:production',
     'coffee:production',
     'compass:dist',
     'wintersmith:production',

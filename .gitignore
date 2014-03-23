@@ -19,3 +19,6 @@ node_modules/
 *.swp
 
 .bundle/
+
+config-preview.json
+config-production.json
