@@ -1,13 +1,15 @@
 ---
-layout: post
 title: "April Had Some Great Dev Culture Content"
-description:
-  Don&rsquo;t know what it is about April, but there were a lot of great posts
-  and presentations about development team culture that really struck a chord
-  in me. Here are a few faves; take a look if you haven&rsquo;t already.
-tags: [development]
-date: 2013-05-01 13:00:SS -0400
+tags: development
+date: 2013-05-01 13:00
 ---
+
+Don&rsquo;t know what it is about April, but there were a lot of great posts
+and presentations about development team culture that really struck a chord
+in me. Here are a few faves; take a look if you haven&rsquo;t already.
+
+<span class="more"></span>
+
 <dl>
   <dt>
     <a href="http://minifesto.org/" target="_blank">

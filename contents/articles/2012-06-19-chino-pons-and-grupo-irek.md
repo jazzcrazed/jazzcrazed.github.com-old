@@ -1,20 +1,18 @@
 ---
-layout: post
 title: "Chino Pons and Grupo Irék"
-tags: [music, Cuban, salsa]
-date: 2012-06-19 18:15:00 -0400
-description:
-  Around five years ago, I first met Chino, Eddie, Hensy, and Tosso when they
-  were part of a traditional Cuban band named Conjunto Guantanamo. They
-  performed regularly at one of my favorite bars near my work in DUMBO.
+tags: music, Cuban, salsa
+date: 2012-06-19 18:15
 image: https://lh5.googleusercontent.com/-0nH84_b6Lvg/T-D44EMomSI/AAAAAAAAIPA/1qOExDzEfHo/s888/P6096824_1.jpg
-image-url: https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5755873965862590754
-image-alt:
-  Grupo Irék bandleader, Chino Pons
-image-classes: "fullWidth"
-image-caption:
-  <a href="http://www.grupoirek.com">Grupo Irék</a> bandleader and my old friend, Chino Pons
 ---
+
+![<a href="http://www.grupoirek.com">Grupo Irék</a> bandleader and my old friend, Chino Pons](https://lh5.googleusercontent.com/-0nH84_b6Lvg/T-D44EMomSI/AAAAAAAAIPA/1qOExDzEfHo/s888/P6096824_1.jpg?align=fullWidth "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5755873965862590754")
+
+Around five years ago, I first met Chino, Eddie, Hensy, and Tosso when they
+were part of a traditional Cuban band named Conjunto Guantanamo. They
+performed regularly at one of my favorite bars near my work in DUMBO.
+
+<span class="more"></span>
+
 <figure>
   <div class="curledShadow">
     <a href="https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5755873896546930690">

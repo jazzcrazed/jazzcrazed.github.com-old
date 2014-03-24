@@ -1,16 +1,18 @@
 ---
-layout: post
 title: First impressions from Santo Domingo
-description: 'I&rsquo;ve settled in to my fiancee&rsquo;s parents&rsquo;
-  apartment here in the Dominican Republic, and so far I feel very far away from
-  home. Which is indeed awesome.'
-date: 2010-09-05 18:31:00 -0400
-tags: [travel, dominican republic]
-time: "8:31 PM EDT"
+date: 2010-09-05 18:31
+tags: travel, dominican republic
 image: "/images/IMG_1644_sml.png"
-image-alt: "A flowered tree outside Isa&#039;s parents&#039; apartment"
-image-classes: "fullWidth"
 ---
+
+![A flowered tree outside Isa&#039;s parents&#039; apartment](/images/IMG_1644_sml.png?align=fullWidth)
+
+I&rsquo;ve settled in to my fiancee&rsquo;s parents&rsquo;
+apartment here in the Dominican Republic, and so far I feel very far away from
+home. Which is indeed awesome.
+
+<span class="more"></span>
+
 <p>
   I am disgustingly ill-traveled. The last time I was out of the country was to
   play a wedding in Turks and Caicos, and I barely went outside the hotel. I

@@ -1,15 +1,12 @@
 ---
-layout: post
 title: "Trying Out Knit Ties"
-tags: [clothing, fashion, ties, accessories, shoes]
-date: 2012-05-19 00:10:00 -0400
+tags: clothing, fashion, ties, accessories, shoes
+date: 2012-05-19 00:10
 image: https://lh4.googleusercontent.com/-lLu9udZIRBc/T7fAlmj-7LI/AAAAAAAAH6M/g11q5BJQOZE/s888/P5096540.jpg
-image-url: https://plus.google.com/u/0/photos/101625155591132408533/albums/5728262585017161025/5744271601973521586
-image-alt:
-  Burma Bibas silk knit tie, found at Century 21
-image-classes: "fullWidth"
-image-alt-as-caption: true
 ---
+
+![Burma Bibas silk knit tie, found at Century 21](https://lh4.googleusercontent.com/-lLu9udZIRBc/T7fAlmj-7LI/AAAAAAAAH6M/g11q5BJQOZE/s888/P5096540.jpg?align=fullWidth "https://plus.google.com/u/0/photos/101625155591132408533/albums/5728262585017161025/5744271601973521586")
+
 <p>
   Been yearning to do neckwear outside of the usual business, formal, and
   Halloween situations, and I finally decided to give it an earnest shot this

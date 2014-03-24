@@ -1,24 +1,27 @@
 ---
-layout: post
 title: "My new favorite watch is my old one"
 description:
-  'I just got a springbar tool from Amazon, and I think it&rsquo;s the best nine bucks
-  I&rsquo;ve spent in a while. Why? Because it lets me do this:
-  <figure class="fullWidth">
-    <div class="curledShadow">
-      <a href="https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5745444214311080386">
-        <img src="https://lh3.googleusercontent.com/-J2VfGXPgd3w/T7vrEn7V0cI/AAAAAAAAH_8/eRTNaiV_bRA/s888/P5216660.jpg"
-          alt="My Parnis pilot watch on a beige NATO strap." />
-      </a>
-    </div>
-    <figcaption>
-      My Parnis pilot watch on a
-      <a href="http://www.amazon.com/gp/product/B005DF0ZKW/ref=oh_details_o00_s00_i00">beige NATO strap</a>.
-    </figcaption>
-  </figure>'
-tags: [watches, fashion]
-date: 2012-05-22 16:47:00 -0400
+tags: watches, fashion
+date: 2012-05-22 16:47
 ---
+
+I just got a springbar tool from Amazon, and I think it&rsquo;s the best nine bucks
+I&rsquo;ve spent in a while. Why? Because it lets me do this:
+<figure class="fullWidth">
+  <div class="curledShadow">
+    <a href="https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5745444214311080386">
+      <img src="https://lh3.googleusercontent.com/-J2VfGXPgd3w/T7vrEn7V0cI/AAAAAAAAH_8/eRTNaiV_bRA/s888/P5216660.jpg"
+        alt="My Parnis pilot watch on a beige NATO strap." />
+    </a>
+  </div>
+  <figcaption>
+    My Parnis pilot watch on a
+    <a href="http://www.amazon.com/gp/product/B005DF0ZKW/ref=oh_details_o00_s00_i00">beige NATO strap</a>.
+  </figcaption>
+</figure>
+
+<span class="more"></span>
+
 <p>
   That’s a light-brown nylon NATO strap on the very same Parnis pilot watch that
   I reviewed a while back. If you’ll remember (or as you’ll see, if you never

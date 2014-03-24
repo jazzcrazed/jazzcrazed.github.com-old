@@ -1,9 +1,7 @@
 ---
-layout: post
 title: Regressive Enhancement at SXSWi 2011!
-date: 2010-10-27 19:57:00 -0400
-tags: [css, design, development, conferences]
-time: "7:57 PM EDT"
+date: 2010-10-27 19:57
+tags: css, design, development, conferences
 ---
 <p>
   Just a quick one here, urging you to vote for the

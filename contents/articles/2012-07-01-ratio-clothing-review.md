@@ -1,16 +1,15 @@
 ---
-layout: post
 title: "Ratio Clothing Review"
-description:
-  How about something made in the USA this American Independence Day weekend? Some weeks ago, I arrived at my apartment door to a hotly anticipated Fedex box. It was my first custom shirt from online made-to-measure shirtmaker, <a href="http://www.ratioclothing.com">Ratio Clothing</a>.
-tags: [clothing, fashion, xs]
-date: 2012-07-01 09:27:00 -0400
+tags: clothing, fashion, xs
+date: 2012-07-01 09:27
 image: https://lh5.googleusercontent.com/-RKFEALGghzY/T_BFERItqAI/AAAAAAAAIZk/XwD514iR3d0/s1221/P6096792.jpg
-image-url: https://plus.google.com/photos/101625155591132408533/albums/5760179839650239585/5760179863028606978
-image-alt: Ratio Clothing shipping box.
-image-classes: "fullWidth"
-image-alt-as-caption: true
 ---
+
+![](https://lh5.googleusercontent.com/-RKFEALGghzY/T_BFERItqAI/AAAAAAAAIZk/XwD514iR3d0/s1221/P6096792.jpg?align=fullWidth "https://plus.google.com/photos/101625155591132408533/albums/5760179839650239585/5760179863028606978")
+
+How about something made in the USA this American Independence Day weekend? Some weeks ago, I arrived at my apartment door to a hotly anticipated Fedex box. It was my first custom shirt from online made-to-measure shirtmaker, <a href="http://www.ratioclothing.com">Ratio Clothing</a>.
+
+<span class="more"></span>
 
 <p>
   Out of necessity because of my small frame, made-to-measure is basically the way I shop for shirts nowadays, amongst other things (I’ll soon enough post about suits and outerwear). While I really like Joe Hemrajani’s <a href="/2012-06-10-online-made-to-measure-for-the-shorted.html">MyTailor.com</a>, there are *a lot* of new players to the scene, and I’ve been keen to try them out. One of the noteworthy ones is <a href="http://www.ratioclothing.com">Ratio Clothing</a>, which I heard about courtesy of the <a href="http://www.indochino-review.com/2012/04/ratio-clothing-introduction-review.html">Indochino Review blog</a>.

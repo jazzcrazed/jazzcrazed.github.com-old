@@ -1,17 +1,18 @@
 ---
-layout: post
 title: "Short Sighted: MyTailor.com&rsquo;s Online Made-to-Measure"
-description:
-  "I hate getting things altered. The effort usually involves toting clothes to work, making an extra subway stop on the way home, getting sized up and dropping the clothes off, and returning in a week with your fingers crossed that a second round of alterations won’t be needed. And that’s making the huge assumption that the off-the-rack clothes were salvageable to begin with &mdash; an expensive rarity for my skinny, 5′ 2″ frame.</p>
-  <p>Fortunately, the rise of online made-to-measure promises to make alterations the expensive rarity. Here’s my thoughts on my first made-to-measure experience &mdash; Hong Kong-based MyTailor.com &mdash; and why made-to-measure is a must for XS and down."
-tags: [clothing, fashion, xs]
-date: 2012-06-11 10:00:00 -0400
+tags: clothing, fashion, xs
+date: 2012-06-11 10:00
 image: https://lh3.googleusercontent.com/-xTp6cm2jkt4/T5x5Zvx4ZNI/AAAAAAAAHZY/SYnvwk2J0BQ/s888/P4286428.jpg
-image-url: https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5736593508592542930
-image-alt: Tuxedo shirt by Joe Hemrajani from MyTailor.com
-image-classes: fullWidth
-image-alt-as-caption: true
 ---
+
+![Tuxedo shirt by Joe Hemrajani from MyTailor.com](https://lh3.googleusercontent.com/-xTp6cm2jkt4/T5x5Zvx4ZNI/AAAAAAAAHZY/SYnvwk2J0BQ/s888/P4286428.jpg?align=fullWidth "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5736593508592542930")
+
+I hate getting things altered. The effort usually involves toting clothes to work, making an extra subway stop on the way home, getting sized up and dropping the clothes off, and returning in a week with your fingers crossed that a second round of alterations won’t be needed. And that’s making the huge assumption that the off-the-rack clothes were salvageable to begin with &mdash; an expensive rarity for my skinny, 5′ 2″ frame.
+
+Fortunately, the rise of online made-to-measure promises to make alterations the expensive rarity. Here’s my thoughts on my first made-to-measure experience &mdash; Hong Kong-based MyTailor.com &mdash; and why made-to-measure is a must for XS and down.
+
+<span class="more"></span>
+
 <p>
 MyTailor.com is run by the warmly demeanored Joe Hemrajani, who is clearly more tailor than website designer. The experience on MyTailor.com is a bit clunky, and often overwhelming in choice. You start the shirt-making process with fabric selection, which is a massive navigational tree branching off into hundreds of grids of cloth types and brand names that only a true shirt geek would care for. I’m not one, or at least not <i>this</i> much of one, so my first order ended up being the cheapest white fabric I could find.
 </p>

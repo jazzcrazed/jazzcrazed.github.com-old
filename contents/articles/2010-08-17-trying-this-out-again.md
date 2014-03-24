@@ -1,14 +1,16 @@
 ---
-layout: post
 title: "Trying this out again&hellip;"
-description: "I'm going to give blogging a shot again. I used to do this quite a bit, but that was about seven years ago. I lost my appetite for it not long after that, out of some combination of laziness and general lack of writing ability. I'm thinking by now I've gotten over the lazy bit."
-category:
-tags: [development, introductions, writing]
-date: 2010-08-17 02:02:00 -0400
-time: "2:02 AM EDT"
+tags: development, introductions, writing
+date: 2010-08-17 02:02
 image: "/images/IMG_1578_web-300x252.jpg"
-image-alt: "Me, with a hat and sunglasses."
 ---
+
+![Me, with a hat and sunglasses.](/images/IMG_1578_web-300x252.jpg)
+
+I'm going to give blogging a shot again. I used to do this quite a bit, but that was about seven years ago. I lost my appetite for it not long after that, out of some combination of laziness and general lack of writing ability. I'm thinking by now I've gotten over the lazy bit.
+
+<span class="more"></span>
+
 <p>
   My older blog I used to call my "everything website" -- describing its handy
   utility as a general dumping grounds for my brain. After nearly a decade, it

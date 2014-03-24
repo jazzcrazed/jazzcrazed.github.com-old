@@ -1,15 +1,16 @@
 ---
-layout: post
 title: CSS Transparency and Overlapping Glyphs
-description: "<code>rgba()</code> is a supremely useful CSS value. But I noticed, while
-  working on the footer of this site down below, that operating systems render
-  typography using this value in interesting ways."
-date: 2010-08-23 18:46:00 -0400
-tags: [css, design, development, type, webfonts]
-time: "6:46 PM EDT"
+date: 2010-08-23 18:46
+tags: css, design, development, type, webfonts
 image: "/images/a17d19ac55f1f16b3029cf026823e47d-300x134.png"
-image-alt: "Example of overlapping glyphs using CSS rgba()"
 ---
+
+![Example of overlapping glyphs using CSS rgba()](/images/a17d19ac55f1f16b3029cf026823e47d-300x134.png)
+
+<code>rgba()</code> is a supremely useful CSS value. But I noticed, while
+working on the footer of this site down below, that operating systems render
+typography using this value in interesting ways.
+
 <h2>About CSS transparency</h2>
 
 <p>

@@ -1,28 +1,27 @@
 ---
-layout: post
 title: "Self Hack: Take any train at 23rd Street and 8th Avenue"
-tags: [nyc, self hacks]
-date: 2013-01-15 18:13:00 -0500
-description:
-  <p>
-    One of my New Year&rsquo;s Resolutions (really, the only one with a specific
-    action) is to write a blog post at least once a week. The idea is that
-    I&rsquo;ll get better at writing with frequency. As you can tell, I&rsquo;m
-    already behind, but here&rsquo;s to catching up!
-  </p>
-
-  <p>
-    Part of fulfilling my quantity-for-better-quality strategy means smaller,
-    sillier posts (as if my prior posts bore any heft) like this one, in which I
-    simply write a tip to myself whenever I find myself on the local-only
-    downtown platform of the 23rd Street and 8th Avenue subway stop.
-  </p>
+tags: nyc, self hacks
+date: 2013-01-15 18:13
 image: "https://lh3.googleusercontent.com/-fqXhMSLbto8/UPXi3PtVgTI/AAAAAAAALcA/rjeYY-KgEHM/s1438/P1068094_1.jpg"
-image-url: "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5833818331065712946"
-image-alt:
-  Platform for the C or E trains at 23rd Street and 8th Avenue, Manhattan
-image-classes: "fullWidth"
 ---
+
+![Platform for the C or E trains at 23rd Street and 8th Avenue, Manhattan](https://lh3.googleusercontent.com/-fqXhMSLbto8/UPXi3PtVgTI/AAAAAAAALcA/rjeYY-KgEHM/s1438/P1068094_1.jpg?align=fullWidth "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5833818331065712946")
+
+<p>
+  One of my New Year&rsquo;s Resolutions (really, the only one with a specific
+  action) is to write a blog post at least once a week. The idea is that
+  I&rsquo;ll get better at writing with frequency. As you can tell, I&rsquo;m
+  already behind, but here&rsquo;s to catching up!
+</p>
+
+<p>
+  Part of fulfilling my quantity-for-better-quality strategy means smaller,
+  sillier posts (as if my prior posts bore any heft) like this one, in which I
+  simply write a tip to myself whenever I find myself on the local-only
+  downtown platform of the 23rd Street and 8th Avenue subway stop.
+</p>
+
+<span class="more"></span>
 
 <p>
   The tip?

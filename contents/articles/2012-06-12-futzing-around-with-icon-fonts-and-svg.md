@@ -1,16 +1,16 @@
 ---
-layout: post
 title: "Futzing Around with Icon Fonts and SVG"
-description:
-  'Vector graphics are great. They deserve more of a place on websites than they get &mdash; certainly compared to their rasterized cousins. Nowhere is this more true than with icon UI. I decided to dip my toes into two leading solutions to bringing vectors to webpages: icon fonts, and SVG.'
-tags: [development, design]
-date: 2012-06-12 17:50:00 -04/500
+tags: development, design
+date: 2012-06-12 17:50
 image: "/images/inkscape-minefold-logo.png"
-image-alt:
-  Minefold logo being created in Inkscape
-image-classes: "fullWidth"
-image-alt-as-caption: true
 ---
+
+![Minefold logo being created in Inkscape](/images/inkscape-minefold-logo.png?align=fullWidth)
+
+Vector graphics are great. They deserve more of a place on websites than they get &mdash; certainly compared to their rasterized cousins. Nowhere is this more true than with icon UI. I decided to dip my toes into two leading solutions to bringing vectors to webpages: icon fonts, and SVG.
+
+<span class="more"></span>
+
 <p>
   I won’t go too much into detail on either icon fonts or SVG, the former of
   which has seen terrific coverage by the likes of

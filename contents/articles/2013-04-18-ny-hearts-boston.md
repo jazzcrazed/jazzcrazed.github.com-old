@@ -1,8 +1,7 @@
 ---
-layout: post
 title: "NY &hearts; Boston"
-tags: [svg, current events]
-date: 2013-04-18 14:19:00 -0500
+tags: svg, current events
+date: 2013-04-18 14:19
 fb-image: https://raw.github.com/jazzcrazed/ny-hearts-boston/master/ny-hearts-boston.png
 fb-description: NY♥B logo in SVG, PNG, and WebP formats.
 ---

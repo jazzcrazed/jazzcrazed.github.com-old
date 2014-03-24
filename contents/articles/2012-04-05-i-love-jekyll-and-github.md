@@ -1,16 +1,15 @@
 ---
-layout: post
 title: "I Love Jekyll and Github"
-description:
-  I love <a href='http://jekyllbootstrap.com'>Jekyll Bootstrap</a> and
-  <a href='http://pages.github.com'>GitHub</a> as a blog platform &mdash; so much so
-  that I&rsquo;m sure I&rsquo;ll write posts more often than once a year. Really.
-  As a frontend developer and pixel-pusher, it might be the most pleasurable way to
-  blog that I&rsquo;ve tried yet. Not that I&rsquo;ve tried much, but hear me out.
-category:
-tags: [development, introductions, writing]
-date: 2012-04-05 20:37:00 -0400
+tags: development, introductions, writing
+date: 2012-04-05 20:37
 ---
+
+I love <a href='http://jekyllbootstrap.com'>Jekyll Bootstrap</a> and
+<a href='http://pages.github.com'>GitHub</a> as a blog platform &mdash; so much so
+that I&rsquo;m sure I&rsquo;ll write posts more often than once a year. Really.
+As a frontend developer and pixel-pusher, it might be the most pleasurable way to
+blog that I&rsquo;ve tried yet. Not that I&rsquo;ve tried much, but hear me out.
+
 <h2>The Tools</h2>
 
 <p>

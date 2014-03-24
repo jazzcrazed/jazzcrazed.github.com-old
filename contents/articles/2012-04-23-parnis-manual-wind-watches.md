@@ -1,20 +1,17 @@
 ---
-layout: post
 title: "Parnis Pilot&rsquo;s Watch"
-description:
-  Parnis is a Chinese mechanical watch maker specializing in homages to popular
-  styles. The ones that drew my attention are their &ldquo;pilot&rdquo;-styled
-  hand-winding watches. I just recently got one &mdash; unbranded, with the
-  seconds subdial at the 9-o-clock &mdash; and it&rsquo;s pretty great.
-tags: [watches, fashion]
-date: 2012-04-23 00:06:00 -0400
+tags: watches, fashion
+date: 2012-04-23 00:06
 image: https://lh6.googleusercontent.com/-IQx6IpATghk/T5R6hTzQtYI/AAAAAAAAHWs/0zaJsPZ00-0/s888/P4206377.jpg
-image-url: https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5734342938219033986
-image-alt:
-  Parnis &ldquo;Special@9&rdquo; 44mm manual hand-winding watch.
-image-classes: "fullWidth"
-image-alt-as-caption: true
 ---
+
+![Parnis &ldquo;Special@9&rdquo; 44mm manual hand-winding watch.](https://lh6.googleusercontent.com/-IQx6IpATghk/T5R6hTzQtYI/AAAAAAAAHWs/0zaJsPZ00-0/s888/P4206377.jpg?align=fullWidth "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5734342938219033986")
+
+Parnis is a Chinese mechanical watch maker specializing in homages to popular
+styles. The ones that drew my attention are their &ldquo;pilot&rdquo;-styled
+hand-winding watches. I just recently got one &mdash; unbranded, with the
+seconds subdial at the 9-o-clock &mdash; and it&rsquo;s pretty great.
+
 <p>
   I love mechanical watches. Despite being significantly less accurate than
   pretty much every other watch technology since the 1950s (like quartz),

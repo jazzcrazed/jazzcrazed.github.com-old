@@ -1,23 +1,19 @@
 ---
-layout: post
 title: "Trust In Styleguide"
-description:
-  Increasingly, web designers of today also are developers &mdash; which is awesome.
-  However, in my experience, most I&rsquo;ve worked with have never touched
-  code, and none expect to as a part of their day-to-day. For this and many
-  other reasons, coded styleguides are a must.
-tags: [css, design, development, type, webfonts]
-date: 2012-12-04 18:09:00 -0500
+tags: css, design, development, type, webfonts
+date: 2012-12-04 18:09
 image: "/images/couples-styleguide-1.png"
-image-alt: The styleguide for HowAboutWe for Couples
-image-caption:
-  The
-  <a href=\"/demos/couples-styleguide/index.html\" target=\"_blank\">styleguide</a>
-  for
-  <a href=\"http://couples.howaboutwe.com\" target=\"_blank\">HowAboutWe for
-    Couples</a>.
-image-classes: "fullWidth"
 ---
+
+![The <a href=\"/demos/couples-styleguide/index.html\" target=\"_blank\">styleguide</a> for <a href=\"http://couples.howaboutwe.com\" target=\"_blank\">HowAboutWe for Couples</a>.](/images/couples-styleguide-1.png?align=fullWidth)
+
+Increasingly, web designers of today also are developers &mdash; which is awesome.
+However, in my experience, most I&rsquo;ve worked with have never touched
+code, and none expect to as a part of their day-to-day. For this and many
+other reasons, coded styleguides are a must.
+
+<span class="more"></span>
+
 <p>
   The styleguide conversation&rsquo;s not a new one &mdash;
   <a href="http://maban.co.uk/" target="_blank">Anna Debenham</a>, for instance,

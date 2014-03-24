@@ -1,21 +1,16 @@
 ---
-layout: post
 title: "I&rsquo;ve upgraded to an Olympus E-P3"
-tags: [photography]
-date: 2012-07-25 23:37:00 -0400
-description: And I admittedly feel a bit of separation anxiety.
+tags: photography
+date: 2012-07-25 23:37
 image: https://lh6.googleusercontent.com/-CVGYvEViYlk/UA9nFNXSJ0I/AAAAAAAAI2w/LtF6TUpvVKw/s888/P7247685.jpg
-image-url: https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5768942986869221186
-image-alt:
-  Olympus E-P3 with Canon FD 50mm f1.4 S.S.C and leather case
-image-classes: "fullWidth"
-image-alt-as-caption: "true"
-image-caption:
-  Olympus E-P3 with <a href="http://www.mir.com.my/rb/photography/companies/canon/fdresources/fdlenses/earlyfdlenses/50mmfd.htm">
-    Canon FD 50mm f1.4 S.S.C</a> and a leather half-case (taken with my
-  E-P1 with <a href="http://panasonic.net/avc/lumix/systemcamera/gms/lens/g_20.html">
-    Panasonic 20mm f1.7</a>)
 ---
+
+![Olympus E-P3 with <a href="http://www.mir.com.my/rb/photography/companies/canon/fdresources/fdlenses/earlyfdlenses/50mmfd.htm"> Canon FD 50mm f1.4 S.S.C</a> and a leather half-case (taken with my E-P1 with <a href="http://panasonic.net/avc/lumix/systemcamera/gms/lens/g_20.html"> Panasonic 20mm f1.7</a>)](https://lh6.googleusercontent.com/-CVGYvEViYlk/UA9nFNXSJ0I/AAAAAAAAI2w/LtF6TUpvVKw/s888/P7247685.jpg?align=fullWidth "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5768942986869221186")
+
+And I admittedly feel a bit of separation anxiety.
+
+<span class="more"></span>
+
 <p>
   I upgraded today from my
   <a href="http://en.wikipedia.org/wiki/Olympus_PEN_E-P1">Olympus E-P1</a> to the

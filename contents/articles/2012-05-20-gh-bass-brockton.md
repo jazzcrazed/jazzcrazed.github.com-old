@@ -1,25 +1,22 @@
 ---
-layout: post
 title: "Blue Nubuck Shoes by Bass"
-tags: [shoes, fashion]
-date: 2012-05-20 09:45:00 -0400
-description:
-  I&rsquo;ve got a thing for navy shoes in the warmer months &mdash;
-  they&rsquo;re versatile like brown shoes, but bring a more vibrant
-  contrast to already brown-hued khaki pants. My fiancee recently turned
-  me to <a href="http://bassshoes.harborghb.com">Bass</a>, a 136-year-old
-  Maine-based company I&rsquo;d known solely for the loafers of my parent&rsquo;s
-  generation, as an affordable source for this shoe. After getting these,
-  it&rsquo;s clear that I didn&rsquo;t pay enough attention to the company over
-  the years.
+tags: shoes, fashion
+date: 2012-05-20 09:45
 image: https://lh6.googleusercontent.com/-nszPicW0Bec/T7rpjgAtHMI/AAAAAAAAH_Q/wlsDRoWzM1c/s888/P5206653.jpg
-image-url: https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5745161070762073282
-image-caption:
-  A <strike>tree</strike> shoe <strike>grows</strike> stares out a window in Brooklyn.
-  The denim-blue &ldquo;Brockton&rdquo; by <a href="https://bassshoes.harborghb.com/">Bass</a>
-image-classes: "fullWidth"
-image-alt-as-caption: "true"
 ---
+
+![A <strike>tree</strike> shoe <strike>grows</strike> stares out a window in Brooklyn. The denim-blue &ldquo;Brockton&rdquo; by <a href="https://bassshoes.harborghb.com/">Bass</a>](https://lh6.googleusercontent.com/-nszPicW0Bec/T7rpjgAtHMI/AAAAAAAAH_Q/wlsDRoWzM1c/s888/P5206653.jpg?align=fullWidth "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5745161070762073282")
+
+I&rsquo;ve got a thing for navy shoes in the warmer months &mdash;
+they&rsquo;re versatile like brown shoes, but bring a more vibrant
+contrast to already brown-hued khaki pants. My fiancee recently turned
+me to <a href="http://bassshoes.harborghb.com">Bass</a>, a 136-year-old
+Maine-based company I&rsquo;d known solely for the loafers of my parent&rsquo;s
+generation, as an affordable source for this shoe. After getting these,
+it&rsquo;s clear that I didn&rsquo;t pay enough attention to the company over
+the years.
+
+<span class="more"></span>
 
 <p>
   Got a pair of their &ldquo;Brockton&rdquo; model in &ldquo;Denim Blue&rdquo; nubuck off of

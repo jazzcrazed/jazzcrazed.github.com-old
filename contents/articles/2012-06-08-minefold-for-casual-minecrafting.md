@@ -1,22 +1,20 @@
 ---
-layout: post
 title: "Minefold for Casual Minecrafting"
-tags: [gaming]
-date: 2012-06-08 21:19:00 -0400
-description:
-  The sandbox smash, <a href="http://www.minecraft.net">Minecraft</a>, is really
-  fun. Setting up, port-forwarding to, and maintaining a multiplayer server, all
-  while moderating against and booting out &ldquo;griefers&rdquo; really sucks.
-  So, don&rsquo;t do any of that, and use
-  <a href="http://www.minefold.com">Minefold</a>, instead.
+tags: gaming
+date: 2012-06-08 21:19
 image: /images/minefold-treehouse.jpg
-image-url: https://minefold.com/marcocarag/jazzcrazedom
-image-alt: "My Minecraft world on Minefold"
-image-caption:
-  <a href="http://www.minefold.com">Minefold&#58;</a> A perfect fit with
-  Minecraft.
-image-classes: "fullWidth"
 ---
+
+![<a href="http://www.minefold.com">Minefold&#58;</a> A perfect fit with Minecraft.](/images/minefold-treehouse.jpg "https://minefold.com/marcocarag/jazzcrazedom")
+
+The sandbox smash, <a href="http://www.minecraft.net">Minecraft</a>, is really
+fun. Setting up, port-forwarding to, and maintaining a multiplayer server, all
+while moderating against and booting out &ldquo;griefers&rdquo; really sucks.
+So, don&rsquo;t do any of that, and use
+<a href="http://www.minefold.com">Minefold</a>, instead.
+
+<span class="more"></span>
+
 <p>
 I love <a href="http://www.minecraft.net">Minecraft</a>. After my curiosity
 was piqued by a random video of someone accidentally burning their blocky

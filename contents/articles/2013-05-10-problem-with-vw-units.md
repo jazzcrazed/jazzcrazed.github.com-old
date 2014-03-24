@@ -1,8 +1,7 @@
 ---
-layout: post
 title: "Problem with CSS viewport units for width?"
-tags: [css, development]
-date: 2013-05-10 09:07:00 -0400
+tags: css, development
+date: 2013-05-10 09:07
 ---
 <p>
   Getting some unexpected behavior when using viewport units (<code>vw</code>,

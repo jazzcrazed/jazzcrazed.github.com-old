@@ -1,22 +1,20 @@
 ---
-layout: post
 title: "NATO-Style Straps Rock"
-tags: [watches, fashion]
-date: 2012-07-29 17:33:00 -0400
-description:
-  "It <a href=\"/2012/05/22/my-new-favorite-watch-is-my-old-one/\">bears
-  repeating </a> that NATO-style straps do wondrous things. Like otherwise
-  dull clothing, watches transform with some accessorization &mdash; making them
-  something like the Russian nesting doll of accessories. Plus, NATO-style
-  straps are so cheap and mindless to deal with, it&rsquo;s a fun transformation
-  to make."
+tags: watches, fashion
+date: 2012-07-29 17:33
 image: https://lh6.googleusercontent.com/-bKnrl_TXQSw/UBWve5_GOwI/AAAAAAAAI6M/9302xnN_5ZI/s852/P7297695.jpg
-image-url: https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5770711443041565442
-image-alt:
-  Various NATO-style straps
-image-classes: "fullWidth"
-image-caption: Various NATO-style straps of nylon and leather.
 ---
+
+![Various NATO-style straps of nylon and leather.](https://lh6.googleusercontent.com/-bKnrl_TXQSw/UBWve5_GOwI/AAAAAAAAI6M/9302xnN_5ZI/s852/P7297695.jpg?align=fullWidth "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5770711443041565442")
+
+"It <a href=\"/2012/05/22/my-new-favorite-watch-is-my-old-one/\">bears
+repeating </a> that NATO-style straps do wondrous things. Like otherwise
+dull clothing, watches transform with some accessorization &mdash; making them
+something like the Russian nesting doll of accessories. Plus, NATO-style
+straps are so cheap and mindless to deal with, it&rsquo;s a fun transformation
+to make."
+
+<span class="more"></span>
 
 <p>
   That said, I&rsquo;ve gravitated towards certain combinations. You can do no

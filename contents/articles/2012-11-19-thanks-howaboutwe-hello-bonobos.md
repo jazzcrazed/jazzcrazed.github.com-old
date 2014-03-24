@@ -1,18 +1,19 @@
 ---
-layout: post
 title: "Thanks, HowAboutWe! Hello, Bonobos!"
-description_paragraphless:
-  <div class="bonobosLogo">
-    <a href="http://bonobos.com" class="bonobos block" target="_blank">Bonobos</a>
-  </div>
-  <p>
-    Bittersweet post here, to announce that I&rsquo;ve left
-    <a href="http://howaboutwe.com" target="_blank">HowAboutWe</a> to do frontend development
-    for <a href="http://bonobos.com" target="_blank">Bonobos</a>&rsquo; New York Office.
-  </p>
-tags: [development]
-date: 2012-11-19 18:26:00 -0500
+tags: development
+date: 2012-11-19 18:26
 ---
+
+<div class="bonobosLogo">
+  <a href="http://bonobos.com" class="bonobos block" target="_blank">Bonobos</a>
+</div>
+<p>
+  Bittersweet post here, to announce that I&rsquo;ve left
+  <a href="http://howaboutwe.com" target="_blank">HowAboutWe</a> to do frontend development
+  for <a href="http://bonobos.com" target="_blank">Bonobos</a>&rsquo; New York Office.
+</p>
+
+<span class="more"></span>
 
 <p>
   It&rsquo;s bitter because the HowAboutWe team is the best I&rsquo;ve

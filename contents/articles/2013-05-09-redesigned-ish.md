@@ -1,21 +1,20 @@
 ---
-layout: post
 title: "Redesigned-ish"
-description:
-  Been having the itch since the beginning of the year to make some changes to
-  my year-old site design. So I worked on it on-and-off for several days, and
-  launched it last week. In addition to some small clean-up, I&rsquo;ve changed
-  some fonts and colors. I&rsquo;d barely want to call it a
-  &ldquo;redesign&rdquo; at all, but there are some fun details I want to note.
-tags: [design, development, css]
-date: 2013-05-09 11:59:00 -0400
+tags: design, development, css
+date: 2013-05-09 11:59
 image: "https://lh4.googleusercontent.com/-FR2Fvmap1UY/UYj7W5BXPvI/AAAAAAAAM9I/bXAMqwck1Vk/w1131-h848-no/P3107827.jpg"
-image-url: "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5875222084587044594"
-image-alt:
-  Tools on the floor of our unfinished apartment in Astoria.
-image-classes: "fullWidth"
-image-alt-as-caption: true
 ---
+
+![Tools on the floor of our unfinished apartment in Astoria.](https://lh4.googleusercontent.com/-FR2Fvmap1UY/UYj7W5BXPvI/AAAAAAAAM9I/bXAMqwck1Vk/w1131-h848-no/P3107827.jpg?align=fullWidth "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5875222084587044594")
+
+Been having the itch since the beginning of the year to make some changes to
+my year-old site design. So I worked on it on-and-off for several days, and
+launched it last week. In addition to some small clean-up, I&rsquo;ve changed
+some fonts and colors. I&rsquo;d barely want to call it a
+&ldquo;redesign&rdquo; at all, but there are some fun details I want to note.
+
+<span class="more"></span>
+
 <p>
   Colors were the biggest deal for me. I was so done with the white over deep
   navy, and the radioactive green &mdash; it started to grate on me. So I
