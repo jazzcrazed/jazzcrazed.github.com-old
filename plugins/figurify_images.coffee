@@ -9,18 +9,18 @@ module.exports = (env, callback) ->
 
       figurify = (el) ->
         src = $(el).attr("src")
-        alignment = src.split("?align=")[1] || "fullWidth"
+        alignment = src.split("?align=")[1]
         url = $(el).attr("title")
         caption = $(el).attr("alt")
 
-        template = "<figure class='#{alignment}'>
-          <div class='curledShadow'>
-            <a href='#{url}'>
-              <img src='#{src}' alt='#{el.alt}' />
-            </a>
-          </div>
-          <figcaption>#{caption}</figcaption>
-        </figure>"
+        template = "<figure class='#{if alignment? then alignment else ""}'>
+          <div class='curledShadow'>"
+        template += "<a href='#{url}'>" if url?
+        template += "<img src='#{src}' alt='#{caption}' />"
+        template += "</a>" if url?
+        template += "</div>"
+        template += "<figcaption>#{caption}</figcaption>" if caption?
+        template += "</figure>"
 
         return template
 

@@ -5,13 +5,12 @@ tags: fashion, watches
 image: https://lh3.googleusercontent.com/-4TfAkg4dL7A/UZrgrYzFbRI/AAAAAAAANRs/P30lIrPKTtk/w1197-h898-no/P5170132.jpg
 template: post.jade
 ---
-
-![The Seiko SNKL07 and SNKL29](https://lh3.googleusercontent.com/-4TfAkg4dL7A/UZrgrYzFbRI/AAAAAAAANRs/P30lIrPKTtk/w1197-h898-no/P5170132.jpg "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5880259299481316626?pid=5880259299481316626&oid=101625155591132408533")
-
 I&rsquo;ve been wanting for a while a more practical
 daily-use watch. One that is clearly readable in light and dark, not
 oversized, water resistant, and shows the date. I&rsquo;m surprised it took me
 this long to find all that in Seiko&rsquo;s venerable &ldquo;5&rdquo; series.
+
+![The Seiko SNKL07 and SNKL29](https://lh3.googleusercontent.com/-4TfAkg4dL7A/UZrgrYzFbRI/AAAAAAAANRs/P30lIrPKTtk/w1197-h898-no/P5170132.jpg?align=fullWidth "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5880259299481316626?pid=5880259299481316626&oid=101625155591132408533")
 
 <span class="more"></span>
 
@@ -53,7 +52,7 @@ also exceedingly readable through the night. Literally &mdash; I could
 still read the time in the darkness of extremely early morning (the few
 times I was awake).
 
-![The Seiko SNKL07 and SNKL29. The 29 has an 18mm lug width, while the 07 has a 20mm.](https://lh5.googleusercontent.com/-0kskuCcKyI4/UZrodplTYaI/AAAAAAAANSk/Pfqne558zgA/w947-h710-no/P5170134.jpg?align=left "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5880267859561767330?pid=5880267859561767330&amp;oid=101625155591132408533")
+![The Seiko SNKL07 and SNKL29. The 29 has an 18mm lug width, while the 07 has a 20mm.](https://lh5.googleusercontent.com/-0kskuCcKyI4/UZrodplTYaI/AAAAAAAANSk/Pfqne558zgA/w947-h710-no/P5170134.jpg "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5880267859561767330?pid=5880267859561767330&amp;oid=101625155591132408533")
 
 One important thing to note is that the SNKL29 sports an 18mm lug width
 &mdash; *not* the 19mm specified on its Amazon page. This was annoying
@@ -84,7 +83,7 @@ On the 29, the tiny inset crown helps maintain a clean look on a dressy
 watch, though it can be hard to access; on the 07, it&rsquo;s more practically
 sized and positioned for a much more general-use watch.
 
-![The SNKL07 on an olive nylon strap.](https://lh4.googleusercontent.com/-pNk3U2Za5eo/UZkTd4HiKZI/AAAAAAAANRI/68eGlbfrBl0/w947-h710-no/P5180148.jpg?align=left "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5879752192510011794?pid=5879752192510011794&amp;oid=101625155591132408533")
+![The SNKL07 on an olive nylon strap.](https://lh4.googleusercontent.com/-pNk3U2Za5eo/UZkTd4HiKZI/AAAAAAAANRI/68eGlbfrBl0/w947-h710-no/P5180148.jpg "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5879752192510011794?pid=5879752192510011794&amp;oid=101625155591132408533")
 
 Despite not feeling as military as its black-dialed red-handed 09
 brother, the 07 is still gorgeous. It looks good on my [olive-green NATO
@@ -96,7 +95,7 @@ It&rsquo;s a bit weathered of a strap after accommodating the
 harsh-edged 44mm Parnis for so long, but I&rsquo;ve come to enjoy the
 added texture. It&rsquo;s literally become pretty much my daily watch.
 
-![The navy dial matches much better with caramel leather.](https://lh5.googleusercontent.com/-IAU8oQmYL_E/UZkTgCVHMYI/AAAAAAAANRQ/4OpamtUqPK4/w1197-h898-no/P5180149.jpg "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5879752229611057538?pid=5879752229611057538&amp;oid=101625155591132408533")
+![The navy dial matches much better with caramel leather.](https://lh5.googleusercontent.com/-IAU8oQmYL_E/UZkTgCVHMYI/AAAAAAAANRQ/4OpamtUqPK4/w1197-h898-no/P5180149.jpg?align=fullWidth "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5879752229611057538?pid=5879752229611057538&amp;oid=101625155591132408533")
 
 ## Seiko 5 Features ##
 ![38mm is clearly smaller than 44. The Parnis is slightly skinnier, though.](https://lh3.googleusercontent.com/-qMDI8gN7pKU/UZkTbFtIAOI/AAAAAAAANRA/LIJusLbUQrU/w1198-h898-no/P5170139.jpg?align=right "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5879752144617734370?pid=5879752144617734370&amp;oid=101625155591132408533")
@@ -120,7 +119,7 @@ watches, it&rsquo;s not going to be as accurate as a quartz. But I
 realize after years on mechanical watches that I don&rsquo;t really
 notice or care about the inaccuracy.
 
-![Seiko&rsquo;s workhorse automatic movement: the 7S26.](https://lh5.googleusercontent.com/-N6PuCDTggO4/UZkTU7d2iBI/AAAAAAAANQo/4-BQCcSp6vw/w946-h710-no/P5170137.jpg?align=left "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5879752038790105106?pid=5879752038790105106&amp;oid=101625155591132408533")
+![Seiko&rsquo;s workhorse automatic movement: the 7S26.](https://lh5.googleusercontent.com/-N6PuCDTggO4/UZkTU7d2iBI/AAAAAAAANQo/4-BQCcSp6vw/w946-h710-no/P5170137.jpg "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5879752038790105106?pid=5879752038790105106&amp;oid=101625155591132408533")
 
 The day/date function on both watches is about as good as it gets. First
 off, you get the *day*, while most watches are content with just the
@@ -137,7 +136,7 @@ these are readable after hours in the dark. And I don&rsquo;t explicitly
 &ldquo;charge&rdquo; these watches &mdash; this is just with the general office
 light and sunlight they receive during a rather average (I think) workday.
 
-![The Seiko lume is plenty for me. Parnis&rsquo; is barely there, which is too bad because it has an awesome dial.](https://lh6.googleusercontent.com/-c0zhfroVh1g/UZr034E2lsI/AAAAAAAANTE/XK-z8htfAZc/w1437-h736-no/P5180146.jpg "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5879752161044979890?pid=5879752161044979890&amp;oid=101625155591132408533")
+![The Seiko lume is plenty for me. Parnis&rsquo; is barely there, which is too bad because it has an awesome dial.](https://lh6.googleusercontent.com/-c0zhfroVh1g/UZr034E2lsI/AAAAAAAANTE/XK-z8htfAZc/w1437-h736-no/P5180146.jpg?align=fullWidth "https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5879752161044979890?pid=5879752161044979890&amp;oid=101625155591132408533")
 
 ## Other 5s&hellip; ##
 It&rsquo;ll be hard to make the 07 my last Seiko. It might swing too closely to
