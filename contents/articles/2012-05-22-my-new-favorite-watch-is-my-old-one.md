@@ -87,7 +87,7 @@ I&rsquo;ve spent in a while. Why? Because it lets me do this:
   <a href="http://www.amazon.com/s/ref=bl_sr_watches?_encoding=UTF8&node=377110011&field-brandtextbin=Clockwork%20Synergy%2C%20LLC">
     and comes in more colors than the rainbow</a>. I was concerned that I&rsquo;d
   have to
-  <a href="http://www.pmwf.com/Watches/WatchSchool/WS%2013%20How%20to%20add%20additional%20holes%20to%20Nylon%20straps/WS%2013%20How%20to%20make%20nice%20additional%20holes%20into%20Nylon%20straps.htm">
+  <a href="http://www.pmwf.com/Watches/WatchSchool/WS 13 How to add additional holes to Nylon straps/WS 13 How to make nice additional holes into Nylon straps.htm">
     melt holes in it</a> because these straps are notoriously long (probably
   to accommodate James Bond&rsquo;s massive Soviet-choking wrists), but &mdash;
   unlike its leather cousins &mdash; this one didn&rsquo;t need any modification.
