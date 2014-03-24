@@ -12,11 +12,12 @@ module.exports = (env, callback) ->
         alignment = src.split("?align=")[1]
         url = $(el).attr("title")
         caption = $(el).attr("alt")
+        alt = $(caption).text()
 
         template = "<figure class='#{if alignment? then alignment else ""}'>
           <div class='curledShadow'>"
         template += "<a href='#{url}'>" if url?
-        template += "<img src='#{src}' alt='#{caption}' />"
+        template += "<img src='#{src}' alt='#{alt}' />"
         template += "</a>" if url?
         template += "</div>"
         template += "<figcaption>#{caption}</figcaption>" if caption?
