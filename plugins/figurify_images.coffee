@@ -12,7 +12,7 @@ module.exports = (env, callback) ->
         alignment = src.split("?align=")[1]
         url = $(el).attr("title")
         caption = $(el).attr("alt")
-        alt = if caption? then $(caption).text() else null
+        alt = if caption? then $("<h2>#{caption}</h2>").text() else ""
 
         template = "<figure class='#{if alignment? then alignment else ""}'>
           <div class='curledShadow'>"
