@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MarcoCarag.com
+    </title>
+    <meta name="description" content="Marco Carag's blog about stuff he's into.">
+    <meta property="fb:app_id" content="127177063996357">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://marcocarag.comundefined">
+    <meta property="og:site_name" content="MarcoCarag.com">
+    <meta property="og:title">
+    <meta property="og:description" content="Marco Carag's blog about stuff he's into.">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="logoType"><a href="/">Marco Carag</a></h1>
+      <h2>Expert <span class="sansSerif heart">&hearts;</span> er of things.</h2>
+    </header>
+    <div role="main" class="clearfix">
+      <div class="postPreview">
+        <h1><a href="/2013/05/22/jekyll-plugins-in-github-pages/" class="deeplyEngravedType">Jekyll Plugins in Github&nbsp;Pages</a></h1>
+        <div class="postCopy"><p>I thought it was high time I made some effort in cleaning up and 
+streamlining my post composition workflow, while riding the wave of my
+<a href="/2013/05/09/redesigned-ish">small redesign</a>).</p>
+<p></p>
+          <div class="centeredLink"><a href="/2013/05/22/jekyll-plugins-in-github-pages/">Continue reading</a></div>
+        </div>
+              <div class="postMeta">On
+                <time datetime="2013-05-23T02:08:00.000Z"><strong>Wednesday, May 22, 2013</strong> at <strong>10:08 pm</strong>
+                </time>in
+                <ul class="tags">
+                  <li><a href="/tag/development/1/">development</a></li>
+                </ul>
+              </div>
+      </div>
+      <div class="postPreview">
+        <h1><a href="/2013/05/20/my-new-daily-beater-the-seiko-5/" class="deeplyEngravedType">My New Daily Beater: The Seiko&nbsp;5</a></h1>
+        <div class="postCopy"><p>I’ve been wanting for a while a more practical
+daily-use watch. One that is clearly readable in light and dark, not
+oversized, water resistant, and shows the date. I’m surprised it took me
+this long to find all that in Seiko’s venerable “5”&nbsp;series.</p>
+<figure class="fullWidth">          <div class="curledShadow"><a href="https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5880259299481316626?pid=5880259299481316626&amp;oid=101625155591132408533"><img src="https://lh3.googleusercontent.com/-4TfAkg4dL7A/UZrgrYzFbRI/AAAAAAAANRs/P30lIrPKTtk/w1197-h898-no/P5170132.jpg?align=fullWidth" alt="The Seiko SNKL07 and SNKL29"></a></div><figcaption>The Seiko <span class="caps">SNKL07</span> and SNKL29</figcaption></figure>
+<p></p>
+          <div class="centeredLink"><a href="/2013/05/20/my-new-daily-beater-the-seiko-5/">Continue reading</a></div>
+        </div>
+              <div class="postMeta">On
+                <time datetime="2013-05-21T02:43:00.000Z"><strong>Monday, May 20, 2013</strong> at <strong>10:43 pm</strong>
+                </time>in
+                <ul class="tags">
+                  <li><a href="/tag/fashion/1/">fashion</a></li>
+                  <li><a href="/tag/watches/1/">watches</a></li>
+                </ul>
+              </div>
+      </div>
+      <div class="postPreview">
+        <h1><a href="/2013/05/10/problem-with-css-viewport-units-for-width/" class="deeplyEngravedType">Problem with <span class="caps">CSS</span> viewport units for&nbsp;width?</a></h1>
+        <div class="postCopy"><p>
+  Getting some unexpected behavior when using viewport units (<code>vw</code>,
+  <code>vh</code>, <code>vmin</code>, and <code>vmax</code>) to size width in
+  Webkit&nbsp;browsers:
+</p>
+
+<blockquote class="big quotation">
+  When elements have a fixed width set in a viewport unit, their parents no
+  longer contain them properly in Webkit browsers.
+</blockquote>
+
+<p>
+  Open the following in Chrome (tried version 26 stable, and 29 Canary) or
+  Safari 6, and compare to Firefox (tried in version&nbsp;20):
+</p>
+
+<p><pre class="codepen" data-height="300" data-type="result" data-href="oABEh" data-user="jazzcrazed" data-safe="true"><code></code><a href="http://codepen.io/jazzcrazed/pen/oABEh">Check out this Pen!</a></pre></p>
+<script async src="http://codepen.io/assets/embed/ei.js"></script>
+
+<p>Here&rsquo;s a screenshot of what that looks like in Chrome&nbsp;26:</p>
+
+<figure class="fullWidth">
+  <div class="curledShadow">
+    <img src="/images/css-viewport-unit-width-chrome.png" alt="Elements not containing their children properly when children have widths set in viewport units in Chrome">
+  </div>
+</figure>
+
+<p>Here&rsquo;s the same thing in Firefox&nbsp;20:</p>
+
+<figure class="fullWidth">
+  <div class="curledShadow">
+    <img src="/images/css-viewport-unit-width-ff.png" alt="Elements containing their children properly when children have widths set in viewport units in Firefox">
+  </div>
+</figure>
+
+<p>
+  What I&rsquo;d expect is the Firefox case, where the dark green parent element
+  properly stretches to fit the width of its content (in this case, the child
+  elements with fixed viewport-unit&nbsp;widths).
+</p>
+
+<p>
+  What do you think? A real bug? Certainly, one of them is wrong, and I&rsquo;m
+  pretty sure it&rsquo;s Webkit, since the behavior with other types of units
+  (<code>px</code>, <code>em</code>, <code>rem</code>, etc.) is like the Firefox
+  screenshot. I&rsquo;ll have to check it out in <span class="caps">IE10</span>, which supports viewport
+  units as well, <a href="http://caniuse.com/viewport-units">according to
+    Can I Use</a>.
+</p>
+
+<p>
+  Additionally, it looks like there&rsquo;s weirdness in the height, considering
+  the lime green box in the Firefox screenshot is so much taller. Probably a
+  difference in what each browser is considering the viewport. I&rsquo;ll
+  investigate that&nbsp;further.
+</p>
+
+        </div>
+              <div class="postMeta">On
+                <time datetime="2013-05-10T13:07:00.000Z"><strong>Friday, May 10, 2013</strong> at <strong>09:07 am</strong>
+                </time>in
+                <ul class="tags">
+                  <li><a href="/tag/css/1/">css</a></li>
+                  <li><a href="/tag/development/1/">development</a></li>
+                </ul>
+              </div>
+      </div>
+      <div class="postPreview">
+        <h1><a href="/2013/05/09/redesigned-ish/" class="deeplyEngravedType">Redesigned-ish</a></h1>
+        <div class="postCopy"><figure class="fullWidth">          <div class="curledShadow"><a href="https://plus.google.com/photos/101625155591132408533/albums/5728262585017161025/5875222084587044594"><img src="https://lh4.googleusercontent.com/-FR2Fvmap1UY/UYj7W5BXPvI/AAAAAAAAM9I/bXAMqwck1Vk/w1131-h848-no/P3107827.jpg?align=fullWidth" alt="Tools on the floor of our unfinished apartment in Astoria."></a></div><figcaption>Tools on the floor of our unfinished apartment in Astoria.</figcaption></figure>
+<p>Been having the itch since the beginning of the year to make some changes to
+my year-old site design. So I worked on it on-and-off for several days, and
+launched it last week. In addition to some small clean-up, I&rsquo;ve changed
+some fonts and colors. I&rsquo;d barely want to call it a
+&ldquo;redesign&rdquo; at all, but there are some fun details I want to&nbsp;note.</p>
+<p></p>
+          <div class="centeredLink"><a href="/2013/05/09/redesigned-ish/">Continue reading</a></div>
+        </div>
+              <div class="postMeta">On
+                <time datetime="2013-05-09T15:59:00.000Z"><strong>Thursday, May 9, 2013</strong> at <strong>11:59 am</strong>
+                </time>in
+                <ul class="tags">
+                  <li><a href="/tag/design/1/">design</a></li>
+                  <li><a href="/tag/development/1/">development</a></li>
+                  <li><a href="/tag/css/1/">css</a></li>
+                </ul>
+              </div>
+      </div>
+      <nav class="centeredCopy pagination"><a href="/archive.html" class="previous">Archives</a><span class="page_number">Page 1 of 7</span><a href="/page/2/" class="next">Next</a>
+      </nav>
+    </div>
+    <footer class="audimat">
+      <div class="otherLinks"><a href="http://feeds.feedburner.com/marcocarag/iSwv" class="iconb replaceTextWithIcon icon-feed">Subscribe to RSS</a><a href="http://twitter.com/marcocarag" class="iconb replaceTextWithIcon icon-twitter">@marcocarag on Twitter</a><a href="https://github.com/jazzcrazed/jazzcrazed.github.com" class="iconb replaceTextWithIcon icon-github">This blog&rsquo;s Github repo</a></div><small>
+        <p>This site is generated using <a href="http://wintersmith.io/">Wintersmith</a>, uses the incomparable <a href="http://html5boilerplate.com">HTML5 Boilerplate</a>, and is hosted on <a href="https://github.com/jazzcrazed/jazzcrazed.github.com">GitHub</a>.</p>
+        <p>I&rsquo;m also using the fonts <a href="http://www.smeltery.net/fonts/audimat">AUdimat by SMeltery</a>, <a href="http://www.fontsquirrel.com/fonts/afta-serif">Afta Serif by Oriol Esparraguera</a>, and <a href="http://www.yanone.de/typedesign/kaffeesatz/">Yanone Kaffeesatz by Yanone</a>, kitted up using <a href="http://fontsquirrel.com">Font Squirrel&rsquo;s @font-face Generator</a>. Also using icons by <a href="http://keyamoon.com/icomoon">IcoMoon</a> fonted up using their <a href="http://keyamoon.com/icomoon/app/">excellent app</a>.</p></small>&copy; 2014 by
+      <big><a href="/about.html">Marco Carag</a></big>.
+    </footer>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '{{ site.JB.analytics.google.tracking_id }}']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      
+    </script>
+  </body>
+</html>

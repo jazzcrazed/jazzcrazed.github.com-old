@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CSS Transparency and Overlapping Glyphs | MarcoCarag.com
+    </title>
+    <meta name="description" content="
+rgba() is a supremely useful CSS value. But I noticed, while
+working on the footer of this site down below, that operating systems render
+typography using this value in interesting ways.
+">
+    <meta property="fb:app_id" content="127177063996357">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://marcocarag.comhttp://marcocarag.com">
+    <meta property="og:site_name" content="MarcoCarag.com">
+    <meta property="og:title">
+    <meta property="og:description" content="
+rgba() is a supremely useful CSS value. But I noticed, while
+working on the footer of this site down below, that operating systems render
+typography using this value in interesting ways.
+">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="logoType"><a href="/">Marco Carag</a></h1>
+      <h2>Expert <span class="sansSerif heart">&hearts;</span> er of things.</h2>
+    </header>
+    <div role="main" class="clearfix">
+      <article class="post">
+        <div class="postContent">
+          <h1><span class="caps">CSS</span> Transparency and Overlapping&nbsp;Glyphs</h1>
+          <div class="postCopy"><figure class="">          <div class="curledShadow"><img src="/images/a17d19ac55f1f16b3029cf026823e47d-300x134.png" alt="Example of overlapping glyphs using CSS rgba()"></div><figcaption>Example of overlapping glyphs using <span class="caps">CSS</span> rgba()</figcaption></figure>
+<p><code>rgba()</code> is a supremely useful <span class="caps">CSS</span> value. But I noticed, while
+working on the footer of this site down below, that operating systems render
+typography using this value in interesting&nbsp;ways.</p>
+<h2>About <span class="caps">CSS</span>&nbsp;transparency</h2>
+
+<p>
+  To start, a quick overview. <code>rgba()</code> is a <span class="caps">CSS</span> property value
+  specified in the <a href="http://www.w3.org/TR/css3-color/#rgba-color"><span class="caps">CSS3</span>
+  color module</a> that allows one to set in single value the traditional
+  red/green/blue color sub-values, as well as a fourth sub-value for
+  <a href="http://en.wikipedia.org/wiki/Alpha_compositing">alpha transparency</a>.
+  The syntax is pretty straightforward: <code>rgba(red,green,blue,alpha)</code>,
+  where red, green, and blue are specified either as a percentage (0 to 100%) or
+  as a number from 0 to 255, and alpha is specified as a decimal value — “1”
+  translating to 100% opaque, “.5” is 50% transparent, “0” is completely
+  transparent,&nbsp;etc.
+</p>
+
+<p>
+  The awesomeness of this idea is that with <code>rgba()</code> as a value, it
+  can be applied on any <span class="caps">CSS</span> property where color values are accepted, such as
+  <code>color</code>, <code>background-color</code>, <code>text-shadow</code>,
+  what-have-you. The end result is the ability to apply individual levels of
+  transparency to a single <span class="caps">CSS</span> selector for different properties — for instance,
+  you can set your background to one transparency, and your text to another.
+  Contrast this with the older <code>opacity</code> <span class="caps">CSS</span> property, which applies
+  an alpha transparency value (in the same 0 to 1 decimal scale) to the entire
+  selector — meaning, the selected element and any of its children would all
+  get the same opacity, background, text, and&nbsp;all.
+</p>
+
+<h2>Rendering issues with overlapping&nbsp;glyphs</h2>
+
+<p>
+  While tooling around with my footer down below, I noticed <code>rgba()</code>
+  being even more granular than I wanted it to be with regards to typefaces that
+  naturally had overlapping glyphs. I had my footer set to something like&nbsp;this:
+</p>
+
+<p>
+  <pre>
+  .myFooter {
+    font-family: DeftoneStylusRegular;
+    color: rgba(255,255,255,.2);
+  }
+  </pre>
+</p>
+
+<p>
+  Via <code>@font-face</code>, I’m using <a href="http://www.larabiefonts.com">
+  Ray Larabie’s</a> <a href="http://www.fontsquirrel.com/fonts/Deftone-Stylus">
+  Deftone Stylus</a>, which is a retro styled script font that’s intentionally
+  kerned so that there’s overlap for the glyph connectors, as are most script
+  fonts. The above <span class="caps">CSS</span> would set the text’s color to be white with 20% opacity.
+  And the result looked like&nbsp;this:
+</p>
+
+<figure class="fullWidth">
+  <div class="curledShadow">
+    <img src="/images/a17d19ac55f1f16b3029cf026823e47d-300x134.png" alt="Example of overlapping glyphs using CSS rgba()">
+  </div>
+  <figcaption>Example of overlapping glyphs using <span class="caps">CSS</span> rgba()</figcaption>
+</figure>
+
+<p>
+  Where the glyphs’ serifs overlap to act as connectors, the opacity is multiplied.
+  I created a simple little test to try to isolate what the issue&nbsp;was:
+</p>
+
+<p>
+  <pre>
+    &lt;style&gt;
+    .test{
+      font: bold 5em sans-serif;
+      color:(0,0,0,.25);
+      letter-spacing: -.2em;
+    }
+    &lt;/style&gt;
+
+    &lt;p class=”test”&gt;This is a test using rgba.&lt;/p&gt;
+  </pre>
+</p>
+
+<p>
+  This uses the browser’s standard sans-serif typeface, sets it to black at 25%
+  opacity via <code>rgba()</code>, and condenses the glyphs via negative <code>
+  letter-spacing</code> to get overlap. It looks like this in Firefox 3.6 and
+  Chrome 5 in <span class="caps">OS</span>&nbsp;X:
+</p>
+
+<figure class="">          <div class="curledShadow"><img src="http://files.droplr.com.s3.amazonaws.com/files/24522365/1Az9cg.Screen%20shot%202010-08-23%20at%2013:37:52.png" alt="OS X screengrab of standard sans-serif font condensed via negative
+    letter-spacing and set at 20% opacity via rgba()"></div><figcaption><span class="caps">OS</span> X screengrab of standard sans-serif font condensed via negative
+    letter-spacing and set at 20% opacity via rgba()</figcaption></figure>
+
+<p>
+  As you can see, it appears as if each character is being targeted for
+  transparency, and when they overlap they are treated as independent layers&hellip;
+  in <span class="caps">OS</span> X, that is. Take a look at the same in Windows Firefox and&nbsp;Chrome:
+</p>
+
+<figure class="">          <div class="curledShadow"><img src="http://gyazo.com/8e193b94ebb9668356b341ab64892f0d.png" alt="Windows screengrab of standard sans-serif font condensed via negative
+    letter-spacing and set at 20% opacity via rgba()"></div><figcaption>Windows screengrab of standard sans-serif font condensed via negative
+    letter-spacing and set at 20% opacity via rgba()</figcaption></figure>
+
+<p>
+  In Windows, in either browser, it looks like it renders all the glyphs as a
+  single vector object before then applying the transparency uniformly on the
+  whole shebang. So my best guess is that browsers use <span class="caps">OS</span>-level compositing here,
+  and there are discrepencies between operating systems. Most unfortunate, if
+  you’re aiming for semi-transparent typography that has intentional glyph
+  overlap. However, there’s a way out via&nbsp;opacity:
+</p>
+
+<p>
+  <pre>
+    &lt;style&gt;
+    .test{
+      font: bold 5em sans-serif;
+      color: #000;
+      letter-spacing: -.2em;
+      opacity: .25;
+    }
+    &lt;/style&gt;
+
+    &lt;p class=”test”&gt;This is a test using opacity.&lt;/p&gt;
+  </pre>
+</p>
+
+<p>
+  This should actually look exactly the same as the first example — and that
+  much is true in Windows. However, in <span class="caps">OS</span>&nbsp;X:
+</p>
+
+<figure class="">          <div class="curledShadow"><img src="http://files.droplr.com.s3.amazonaws.com/files/24522365/1AAw76.Screen%20shot%202010-08-23%20at%2014%3A34%3A44.png" alt="OS X screengrab of standard sans-serif font condensed via negative
+    letter-spacing and set at 20% opacity via opacity"></div><figcaption><span class="caps">OS</span> X screengrab of standard sans-serif font condensed via negative
+    letter-spacing and set at 20% opacity via opacity</figcaption></figure>
+
+<p>
+  It looks just like Windows does — and actually, it looks the way I had
+  originally intended. And this makes sense, since according to
+  <a href="http://www.w3.org/TR/css3-color/#transparency">the spec regarding <span class="caps">CSS</span>
+  transparency</a>, “<em>…after the element (including its descendants) is
+  rendered into an <span class="caps">RGBA</span> offscreen image, the opacity setting specifies how to
+  blend the offscreen rendering into the current composite rendering.</em>“ In
+  otherwords, render the elements at full opacity, and then crank the opacity
+  down post-rendering based on the <code>opacity</code> property value before
+  finally rendering on screen. Conceivably, <code>rgba()</code> is the same
+  thing, only with multiple layers nested across multiple properties — but
+  turns out <span class="caps">OS</span> X takes it a step further with text by isolating each&nbsp;glyph.
+</p>
+
+<p>
+  Check out <a href="/demos/alphafonts/index.html">this test page</a> for the
+  above examples (make sure to view in both Windows and <span class="caps">OS</span>&nbsp;X).
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+  Honestly, this shouldn’t make a big difference in the vast majority of
+  situations where traditional sans-serif or serif fonts are in use, as their
+  glyphs don’t usually overlap. But think twice about it if you’re thinking
+  about applying transparency to text set using a font with intentional character
+  overlap — which includes just about all script fonts. Here’s an example of
+  just a few, including Deftone Stylus which I used in my footer — these are
+  at their default kerning, with no forced condensing via <code>letter-spacing</code>:
+</p>
+
+<p></p>
+  <a href="/demos/alphafonts/naturally-overlapping-type.html">
+    Demo of fonts with intentional glyph overlap.
+  </a>
+<p></p><p></p>
+<p></p>
+  If I wanted to apply transparency to text using any of the fonts in the above
+  demo, I’d have to forego <code>rgba()</code> in favor of wrapping the text in
+  its own element, and then targeting that element with <code>opacity</code>,
+  instead. That’s exactly what I ended up doing for my footer, by the way. It
+  means extra <span class="caps">DOM</span> elements, but at least it works!
+<p></p><p></p>
+<h2>Note about Opera in&nbsp;Windows</h2>
+
+<p>
+  In <span class="caps">OS</span> X, Opera 10.61 looks much the same as Firefox and Chrome. But in Windows,
+  it has some issues with certain typefaces when transparency is used in any&nbsp;form:
+</p>
+
+<p></p>
+  <img src="http://gyazo.com/28451d7da372597d7b1aedb4599a3a81.png" alt="Screengrab of Opera 10.61 in Windows cutting off glyphs on certain fonts
+    when transparency is applied">
+<p></p><p></p>
+<p>
+  As you can see, it’s cutting off certain glyphs along the vertical. Not sure
+  what the issue is, but I haven’t hunted around much for answers, either, so
+  I’ll update this if I find&nbsp;anything.
+</p>
+
+<h2>Credits</h2>
+
+<p>
+  Thanks to the wonderful <a href="http://www.fontsquirrel.com">Font Squirrel</a>
+  and all of its participating typographers, for their wonderful collection of
+  type, and handy @font-face&nbsp;kits!
+</p>
+
+          </div>
+                <div class="postMeta">On
+                  <time datetime="2010-08-23T22:46:00.000Z"><strong>Monday, August 23, 2010</strong> at <strong>06:46 pm</strong>
+                  </time>in
+                  <ul class="tags">
+                    <li><a href="/tag/css/1/">css</a></li>
+                    <li><a href="/tag/design/1/">design</a></li>
+                    <li><a href="/tag/development/1/">development</a></li>
+                    <li><a href="/tag/type/1/">type</a></li>
+                    <li><a href="/tag/webfonts/1/">webfonts</a></li>
+                  </ul>
+                </div>
+        </div>
+        <div class="comments">
+          <div id="disqus_thread"></div>
+          <script>
+            var disqus_developer = 1,
+                disqus_shortname = 'marcocarag';
+                
+            // DON'T EDIT BELOW THIS LINE
+            (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the<a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by<span class="logo-disqus">Disqus</span></a>
+        </div>
+      </article>
+    </div>
+    <footer class="audimat">
+      <div class="otherLinks"><a href="http://feeds.feedburner.com/marcocarag/iSwv" class="iconb replaceTextWithIcon icon-feed">Subscribe to RSS</a><a href="http://twitter.com/marcocarag" class="iconb replaceTextWithIcon icon-twitter">@marcocarag on Twitter</a><a href="https://github.com/jazzcrazed/jazzcrazed.github.com" class="iconb replaceTextWithIcon icon-github">This blog&rsquo;s Github repo</a></div><small>
+        <p>This site is generated using <a href="http://wintersmith.io/">Wintersmith</a>, uses the incomparable <a href="http://html5boilerplate.com">HTML5 Boilerplate</a>, and is hosted on <a href="https://github.com/jazzcrazed/jazzcrazed.github.com">GitHub</a>.</p>
+        <p>I&rsquo;m also using the fonts <a href="http://www.smeltery.net/fonts/audimat">AUdimat by SMeltery</a>, <a href="http://www.fontsquirrel.com/fonts/afta-serif">Afta Serif by Oriol Esparraguera</a>, and <a href="http://www.yanone.de/typedesign/kaffeesatz/">Yanone Kaffeesatz by Yanone</a>, kitted up using <a href="http://fontsquirrel.com">Font Squirrel&rsquo;s @font-face Generator</a>. Also using icons by <a href="http://keyamoon.com/icomoon">IcoMoon</a> fonted up using their <a href="http://keyamoon.com/icomoon/app/">excellent app</a>.</p></small>&copy; 2014 by
+      <big><a href="/about.html">Marco Carag</a></big>.
+    </footer>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '{{ site.JB.analytics.google.tracking_id }}']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      
+    </script>
+  </body>
+</html>

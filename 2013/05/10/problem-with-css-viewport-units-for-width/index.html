@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Problem with CSS viewport units for width? | MarcoCarag.com
+    </title>
+    <meta name="description" content="Marco Carag's blog about stuff he's into.">
+    <meta property="fb:app_id" content="127177063996357">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://marcocarag.comhttp://marcocarag.com">
+    <meta property="og:site_name" content="MarcoCarag.com">
+    <meta property="og:title">
+    <meta property="og:description" content="Marco Carag's blog about stuff he's into.">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="logoType"><a href="/">Marco Carag</a></h1>
+      <h2>Expert <span class="sansSerif heart">&hearts;</span> er of things.</h2>
+    </header>
+    <div role="main" class="clearfix">
+      <article class="post">
+        <div class="postContent">
+          <h1>Problem with <span class="caps">CSS</span> viewport units for&nbsp;width?</h1>
+          <div class="postCopy"><p>
+  Getting some unexpected behavior when using viewport units (<code>vw</code>,
+  <code>vh</code>, <code>vmin</code>, and <code>vmax</code>) to size width in
+  Webkit&nbsp;browsers:
+</p>
+
+<blockquote class="big quotation">
+  When elements have a fixed width set in a viewport unit, their parents no
+  longer contain them properly in Webkit browsers.
+</blockquote>
+
+<p>
+  Open the following in Chrome (tried version 26 stable, and 29 Canary) or
+  Safari 6, and compare to Firefox (tried in version&nbsp;20):
+</p>
+
+<p><pre class="codepen" data-height="300" data-type="result" data-href="oABEh" data-user="jazzcrazed" data-safe="true"><code></code><a href="http://codepen.io/jazzcrazed/pen/oABEh">Check out this Pen!</a></pre></p>
+<script async src="http://codepen.io/assets/embed/ei.js"></script>
+
+<p>Here&rsquo;s a screenshot of what that looks like in Chrome&nbsp;26:</p>
+
+<figure class="fullWidth">
+  <div class="curledShadow">
+    <img src="/images/css-viewport-unit-width-chrome.png" alt="Elements not containing their children properly when children have widths set in viewport units in Chrome">
+  </div>
+</figure>
+
+<p>Here&rsquo;s the same thing in Firefox&nbsp;20:</p>
+
+<figure class="fullWidth">
+  <div class="curledShadow">
+    <img src="/images/css-viewport-unit-width-ff.png" alt="Elements containing their children properly when children have widths set in viewport units in Firefox">
+  </div>
+</figure>
+
+<p>
+  What I&rsquo;d expect is the Firefox case, where the dark green parent element
+  properly stretches to fit the width of its content (in this case, the child
+  elements with fixed viewport-unit&nbsp;widths).
+</p>
+
+<p>
+  What do you think? A real bug? Certainly, one of them is wrong, and I&rsquo;m
+  pretty sure it&rsquo;s Webkit, since the behavior with other types of units
+  (<code>px</code>, <code>em</code>, <code>rem</code>, etc.) is like the Firefox
+  screenshot. I&rsquo;ll have to check it out in <span class="caps">IE10</span>, which supports viewport
+  units as well, <a href="http://caniuse.com/viewport-units">according to
+    Can I Use</a>.
+</p>
+
+<p>
+  Additionally, it looks like there&rsquo;s weirdness in the height, considering
+  the lime green box in the Firefox screenshot is so much taller. Probably a
+  difference in what each browser is considering the viewport. I&rsquo;ll
+  investigate that&nbsp;further.
+</p>
+
+          </div>
+                <div class="postMeta">On
+                  <time datetime="2013-05-10T13:07:00.000Z"><strong>Friday, May 10, 2013</strong> at <strong>09:07 am</strong>
+                  </time>in
+                  <ul class="tags">
+                    <li><a href="/tag/css/1/">css</a></li>
+                    <li><a href="/tag/development/1/">development</a></li>
+                  </ul>
+                </div>
+        </div>
+        <div class="comments">
+          <div id="disqus_thread"></div>
+          <script>
+            var disqus_developer = 1,
+                disqus_shortname = 'marcocarag';
+                
+            // DON'T EDIT BELOW THIS LINE
+            (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the<a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by<span class="logo-disqus">Disqus</span></a>
+        </div>
+      </article>
+    </div>
+    <footer class="audimat">
+      <div class="otherLinks"><a href="http://feeds.feedburner.com/marcocarag/iSwv" class="iconb replaceTextWithIcon icon-feed">Subscribe to RSS</a><a href="http://twitter.com/marcocarag" class="iconb replaceTextWithIcon icon-twitter">@marcocarag on Twitter</a><a href="https://github.com/jazzcrazed/jazzcrazed.github.com" class="iconb replaceTextWithIcon icon-github">This blog&rsquo;s Github repo</a></div><small>
+        <p>This site is generated using <a href="http://wintersmith.io/">Wintersmith</a>, uses the incomparable <a href="http://html5boilerplate.com">HTML5 Boilerplate</a>, and is hosted on <a href="https://github.com/jazzcrazed/jazzcrazed.github.com">GitHub</a>.</p>
+        <p>I&rsquo;m also using the fonts <a href="http://www.smeltery.net/fonts/audimat">AUdimat by SMeltery</a>, <a href="http://www.fontsquirrel.com/fonts/afta-serif">Afta Serif by Oriol Esparraguera</a>, and <a href="http://www.yanone.de/typedesign/kaffeesatz/">Yanone Kaffeesatz by Yanone</a>, kitted up using <a href="http://fontsquirrel.com">Font Squirrel&rsquo;s @font-face Generator</a>. Also using icons by <a href="http://keyamoon.com/icomoon">IcoMoon</a> fonted up using their <a href="http://keyamoon.com/icomoon/app/">excellent app</a>.</p></small>&copy; 2014 by
+      <big><a href="/about.html">Marco Carag</a></big>.
+    </footer>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '{{ site.JB.analytics.google.tracking_id }}']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      
+    </script>
+  </body>
+</html>
