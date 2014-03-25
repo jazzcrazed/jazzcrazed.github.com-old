@@ -1,21 +1,44 @@
 ---
-view: none
+template: page.jade
+title: "About Me"
 ---
 
-Wintersmith is made by [Johan Nordberg][1] and licensed under the [MIT-license][2].
-This footer text can be edited in about.md
+![Me, playing a charity gig at <a href="http://www.centralbarnyc.com/"> Central Bar</a>.](https://lh6.googleusercontent.com/-SpqtQd4vx4c/TheeJFAyu5I/AAAAAAAAAvE/GMF6XqHWiwo/s471/violinist.png "https://plus.google.com/photos/101625155591132408533/albums/profile/5627140138224237458")
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
+I'm Marco Carag, a <del>Brooklyn</del> Queens-based web
+developer.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-dolore eu fugiat nulla pariatur.
+Currently, I'm a full-stack engineer for [Telecast](http://teleca.st) in the
+[Flatiron](http://en.wikipedia.org/wiki/Flatiron_District) area of Manhattan,
+NY. Previously, I was a developer for online menswear company
+[Bonobos](http://www.bonobos.com), dating startup
+[HowAboutWe](http://www.howaboutwe.com), frontend manager
+for [The Knot](http://www.theknot.com), and a dev manager for
+[Everyday Health](http://www.everydayhealth.com). I also help organize
+[BKLYN Green Drinks](http://bklyn.gd).
 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-deserunt mollit anim id est laborum.
+I have a degree in Communications Design from
+[Pratt Institute](http://www.pratt.edu) that is probably rather
+underutilized today.
 
+When not coding (which is often) or not hanging out with my beautiful wife
+(which is rarely), I enjoy listening to or performing
+Latin music, [Vim](http://en.wikipedia.org/wiki/VIM),
+single-malt whiskey, [over-dressing](/tag/fashion/1/),
+[trying to use my camera](/2012/07/25/just-upgraded-to-olympus-e-p3/), and
+playing video games.
 
-[1]: http://johan-nordberg.com
-[2]: http://opensource.org/licenses/MIT
+In fact, you could say video games are what got me into web development in the
+first place. Since elementary school, I was so into gaming that I wrote fiction
+about or inspired by them. Actually, my most
+[recent](http://web.archive.org/web/19970606000158/http://www.interplay.com/descent/first.html)
+[efforts](http://www.angelfire.com/games2/fsarchive/flamefront.html) (we're
+talking late 1990s here) garnered enough attention to warrant a couple of my
+very first websites (which will take some serious web archaeology to dig up if
+you care). I also helped run an online gaming group for my then
+[favorite game](http://en.wikipedia.org/wiki/Descent_(video_game)), which --
+during the era of 56k modems and 5MB web hosts -- inspired several more websites.
+
+To finish, here's another stupid fact about me: I made the "Star Trek Generations Overture"
+[MIDI](http://en.wikipedia.org/wiki/MIDI) on [this page](http://www.vic-fontaine.com/tng.php)
+(the one with 3 stars next to it).
