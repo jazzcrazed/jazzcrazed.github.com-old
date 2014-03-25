@@ -5,6 +5,12 @@
     "description": "Marco Carag's blog about stuff he's into.",
     "tagline": "Expert ♥er of things"
   },
+  "ignore": [
+    "**/.DS_Store",
+    ".sass-cache",
+    "sass",
+    "coffee"
+  ],
   "plugins": [
     "./plugins/paginator.coffee",
     "./plugins/blog.coffee",

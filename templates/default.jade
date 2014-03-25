@@ -38,9 +38,9 @@ html(class="no-js", lang="en")
     header
       h1.logoType: a(href="/") Marco Carag
       h2
-        | Expert
+        | Expert 
         span.sansSerif.heart &hearts;
-        | er of things.
+        |  er of things.
 
     .clearfix(role="main")
       block content
@@ -82,9 +82,6 @@ html(class="no-js", lang="en")
         | &copy; #{ new Date().getFullYear() } by
         big: a(href="/about.html") Marco Carag
         | .
-
-    script(src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js")
-    script(src="/js/script.js")
 
     if locals.environment !== "development"
       script.
