@@ -4,21 +4,15 @@ block prepend title
   | #{ page.title + " | "}
 
 block content
-  include _image
   include _post_meta
-
-  - pmeta = page.metadata
 
   article.post
     .postContent
-      h1= page.title
+      h1!= typogr(page.title).typogrify()
       .postCopy
         != typogr(env.helpers.figurifyImages(page.html)).typogrify()
 
       +postMeta(page.date, env.helpers.getTagsFromArticle(page))
-
-    #recentTweets.hidden
-      h3 Tweeted recently by:
 
     .comments
       #disqus_thread

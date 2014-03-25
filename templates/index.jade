@@ -6,7 +6,7 @@ block content
   each article in articles
     .postPreview
       h1
-        a.deeplyEngravedType(href=article.url)= article.title
+        a.deeplyEngravedType(href=article.url)!= typogr(article.title).typogrify()
 
       .postCopy
         != typogr(env.helpers.figurifyImages(article.intro)).typogrify()
